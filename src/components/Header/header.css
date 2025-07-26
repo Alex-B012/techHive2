@@ -1,11 +1,11 @@
 :root {
    --header-bg-color: rgb(0, 53, 133);
    --header-bg-color2: rgb(0, 26, 65);
-   --header-bg-cover: rgb(0, 26, 65, 0.8);
+   --header-bg-cover: rgba(206, 0, 0, 0.3);
    --mobileMenu-bg-color: rgb(0, 70, 175);
    --mobileMenu-bg-color2: rgb(0, 47, 117);
+   --mobileMenu-bg-color-shadow: rgb(128, 128, 128, 0.4);
 }
-
 
 header {
    display: grid;
@@ -15,7 +15,7 @@ header {
    row-gap: 0 10px;
    align-items: center;
    justify-content: center;
-   z-index: 10;
+   z-index: 15;
 }
 
 .header__row1 {
@@ -25,8 +25,6 @@ header {
    background: linear-gradient(90deg, var(--header-bg-color) 0%, var(--header-bg-color2)100%);
    align-items: center;
    justify-content: center;
-   margin: 0;
-   padding: 0;
 }
 
 .header__row2 {
@@ -35,14 +33,13 @@ header {
    grid-template-rows: 100px;
    justify-content: center;
    background-color: var(--header-bg-cover);
-   margin: 0;
-   padding: 0;
 }
 
 .header__mobileMenu {
    display: none;
    max-height: 400px;
    background: linear-gradient(90deg, var(--mobileMenu-bg-color) 0%, var(--mobileMenu-bg-color2)100%);
+   box-shadow: 0 15px 20px 0px var(--mobileMenu-bg-color-shadow);
 }
 
 .openMenu .header__mobileMenu {
@@ -59,8 +56,6 @@ header {
       grid-template-columns: 230px 1fr 230px;
       row-gap: 0 3px;
    }
-
-
 }
 
 @media screen and (max-width: 700px) {
@@ -70,7 +65,6 @@ header {
 
    .header__row1 {
       grid-template-columns: 130px 1fr 130px;
-      background-color: aquamarine;
    }
 
    .header__row2 {
@@ -92,7 +86,6 @@ header {
 @media screen and (max-width: 500px) {
    .header__row1 {
       grid-template-columns: 1fr 1fr;
-      background-color: aquamarine;
    }
 
    .openMenu .header__outerLinkList {
@@ -102,5 +95,22 @@ header {
    .openMenu nav {
       display: grid;
       padding-top: 20px;
+   }
+}
+
+
+@media screen and (max-height: 450px) and (max-width: 1000px) {
+   header {
+      grid-template-rows: 35px 100vh;
+   }
+
+   .header__row1 {
+      grid-template-rows: 35px;
+   }
+
+   .header__row2 {
+      width: 100%;
+      height: calc(100% - 35px);
+      margin-top: -35px;
    }
 }

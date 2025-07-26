@@ -38,3 +38,19 @@
       display: none;
    }
 }
+
+@media screen and (max-height: 450px) and (max-width: 1000px) {
+   .header__outerLinkList {
+      width: 120px;
+   }
+
+   .header__outerLink {
+      width: 25px;
+      height: 25px;
+   }
+
+   .header__outerIcon {
+      width: 18px;
+      height: 18px;
+   }
+}

@@ -1,14 +1,11 @@
 import { useState, useEffect } from 'react'
 import "./header.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { headerLinks, headerOuterLinks, burgerBtns } from '../../data/data'
 
 import Logo from "../Logo/Logo"
 import NavBar from './NavBar/NavBar';
 import OuterLinks from '../OuterLinks/OuterLinks';
 import BurgerMenu from './BurgerMenu/BurgerMenu';
-
-
 
 function Header() {
    const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,10 +16,7 @@ function Header() {
    };
 
    const closeMobileMenu = () => {
-      const width = window.innerWidth;
-      console.log('Screen width:', width);
-      if (width > 700) setIsMenuOpen(false)
-
+      if (window.innerWidth > 700) setIsMenuOpen(false);
    };
 
    useEffect(() => {
@@ -37,8 +31,6 @@ function Header() {
          window.removeEventListener('resize', handleResize);
       };
    }, []);
-
-
 
    return (
       <header>

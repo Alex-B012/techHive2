@@ -1,0 +1,13 @@
+:root {}
+
+.news__section {
+   display: grid;
+   grid-area: news;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(4, 1 fr);
+   row-gap: 0 10px;
+   align-items: start;
+   justify-content: center;
+   padding: 20px 5px;
+   background: linear-gradient(90deg, var(--header-bg-color) 0%, var(--header-bg-color2)100%);
+}

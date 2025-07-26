@@ -1,7 +1,7 @@
 .header__burger {
    display: none;
    justify-content: end;
-   padding-right: 7%;
+   padding-right: 10%;
 }
 
 .header__burger-btn {
@@ -36,5 +36,21 @@
    .header__burger {
       display: grid;
       min-width: 100px;
+   }
+}
+
+@media screen and (max-height: 450px) and (max-width: 1000px) {
+   .header__burger {
+      padding-right: 15%;
+   }
+
+   .header__burger-btn {
+      width: 25px;
+      height: 25px;
+   }
+
+   .header__closeBtn {
+      width: 15px;
+      height: 15px;
    }
 }

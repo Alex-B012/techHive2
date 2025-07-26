@@ -13,3 +13,12 @@
       padding: 0 15px;
    }
 }
+
+@media screen and (max-height: 450px) and (max-width: 1000px) {
+   .header__logo {
+      min-width: 70px;
+      max-width: 110px;
+      min-height: 20px;
+      padding: 0 15px;
+   }
+}
