@@ -2,7 +2,6 @@
    display: none;
    justify-content: end;
    padding-right: 7%;
-
 }
 
 .header__burger-btn {
@@ -36,7 +35,6 @@
 @media screen and (max-width: 700px) {
    .header__burger {
       display: grid;
-      background-color: brown;
       min-width: 100px;
    }
 }

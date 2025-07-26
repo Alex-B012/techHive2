@@ -9,12 +9,11 @@ interface LinkItem {
 
 interface NavBarProps {
    links: LinkItem[];
-   state: boolean
 }
 
-let openMenu = "openMenu"
 
-function NavBar({ links, state }: NavBarProps) {
+
+function NavBar({ links }: NavBarProps) {
    return (
       <nav className={`header__navbar`}>
          {

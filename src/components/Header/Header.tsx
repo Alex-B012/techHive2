@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import "./header.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { headerLinks, headerOuterLinks, burgerBtns } from '../../data/data'
@@ -18,17 +18,41 @@ function Header() {
       setIsMenuOpen(!isMenuOpen);
    };
 
+   const closeMobileMenu = () => {
+      const width = window.innerWidth;
+      console.log('Screen width:', width);
+      if (width > 700) setIsMenuOpen(false)
+
+   };
+
+   useEffect(() => {
+      closeMobileMenu();
+      const handleResize = () => {
+         closeMobileMenu();
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+         window.removeEventListener('resize', handleResize);
+      };
+   }, []);
+
+
+
    return (
       <header>
          <div className="header__row1">
             <Logo link={headerLinks[0]} />
-            <NavBar links={headerLinks} state={isMenuOpen} />
+            <NavBar links={headerLinks} />
             <OuterLinks links={headerOuterLinks} />
             <BurgerMenu state={isMenuOpen} toggleMenuFunc={toggleMenu} />
          </div>
          <div className={`header__row2 ${isMenuOpen ? openMenu : ""}`}>
-            <NavBar links={headerLinks} state={isMenuOpen} />
-            <OuterLinks links={headerOuterLinks} />
+            <div className='header__mobileMenu'>
+               <NavBar links={headerLinks} />
+               <OuterLinks links={headerOuterLinks} />
+            </div>
          </div>
          <div className='header__cover'></div>
       </header>

@@ -2,7 +2,6 @@
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    justify-self: end;
-   /* margin: 0 30px; */
    width: 100px;
 }
 
@@ -31,10 +30,8 @@
 @media screen and (max-width: 700px) {
    .header__outerLinkList {
       justify-self: center;
-      background-color: coral;
    }
 }
-
 
 @media screen and (max-width: 500px) {
    .header__outerLinkList {

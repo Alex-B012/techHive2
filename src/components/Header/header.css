@@ -1,3 +1,12 @@
+:root {
+   --header-bg-color: rgb(0, 53, 133);
+   --header-bg-color2: rgb(0, 26, 65);
+   --header-bg-cover: rgb(0, 26, 65, 0.8);
+   --mobileMenu-bg-color: rgb(0, 70, 175);
+   --mobileMenu-bg-color2: rgb(0, 47, 117);
+}
+
+
 header {
    display: grid;
    grid-area: header;
@@ -6,7 +15,6 @@ header {
    row-gap: 0 10px;
    align-items: center;
    justify-content: center;
-   background: linear-gradient(90deg, var(--header-bg-color) 0%, var(--header-bg-color2)100%);
    z-index: 10;
 }
 
@@ -14,7 +22,7 @@ header {
    display: grid;
    grid-template-columns: 260px 1fr 260px;
    grid-template-rows: 60px;
-   background-color: aqua;
+   background: linear-gradient(90deg, var(--header-bg-color) 0%, var(--header-bg-color2)100%);
    align-items: center;
    justify-content: center;
    margin: 0;
@@ -25,10 +33,25 @@ header {
    display: none;
    grid-template-columns: 1fr;
    grid-template-rows: 100px;
-   background-color: rgba(137, 43, 226, 0.589);
+   justify-content: center;
+   background-color: var(--header-bg-cover);
    margin: 0;
    padding: 0;
+}
 
+.header__mobileMenu {
+   display: none;
+   max-height: 400px;
+   background: linear-gradient(90deg, var(--mobileMenu-bg-color) 0%, var(--mobileMenu-bg-color2)100%);
+}
+
+.openMenu .header__mobileMenu {
+   display: block;
+}
+
+.header__row2 .header__outerLinkList {
+   display: none;
+   margin-top: 20px;
 }
 
 @media screen and (max-width: 750px) {
@@ -36,24 +59,32 @@ header {
       grid-template-columns: 230px 1fr 230px;
       row-gap: 0 3px;
    }
+
+
 }
 
-
-
 @media screen and (max-width: 700px) {
+   header {
+      grid-template-rows: 60px 100vh;
+   }
+
    .header__row1 {
       grid-template-columns: 130px 1fr 130px;
       background-color: aquamarine;
    }
 
    .header__row2 {
-      display: grid;
-      width: 100vw;
-      height: 94vh;
-      margin-bottom: -790px;
+      width: 100%;
+      height: calc(100% - 60px);
+      margin-top: -60px;
    }
 
    .openMenu nav {
+      display: grid;
+      padding-top: 40px;
+   }
+
+   .openMenu {
       display: grid;
    }
 }
@@ -62,5 +93,14 @@ header {
    .header__row1 {
       grid-template-columns: 1fr 1fr;
       background-color: aquamarine;
+   }
+
+   .openMenu .header__outerLinkList {
+      display: grid;
+   }
+
+   .openMenu nav {
+      display: grid;
+      padding-top: 20px;
    }
 }

@@ -14,12 +14,11 @@ interface OuterLinksProps {
    links: OuterLink[];
 }
 
-
-function OuterLinks({ links }: OuterLinksProps) {
+function OuterLinks({ links, }: OuterLinksProps) {
    return (
-      <div className="header__outerLinkList">
+      <div className={`header__outerLinkList `}>
          {links.map((link) => {
-            return <Link key={link.id} to={link.url} className='header__outerLink'><FontAwesomeIcon icon={link.icon} className="header__outerIcon" /></Link>;
+            return <Link key={link.id} to={link.url} className={`header__outerLink `}><FontAwesomeIcon icon={link.icon} className="header__outerIcon" /></Link>;
          })}
       </div>
    )
