@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./header.css"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { headerLinks, headerOuterLinks } from '../../data/data'
+import { headerLinks, headerOuterLinks, burgerBtns } from '../../data/data'
+
+
+
 
 function Header() {
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+   // Toggle the menu state
+   const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+   };
+
+
    return (
       <header>
          <Link to={headerLinks[0].url} className='header__logoLink'><img src="/techHive4.svg" alt="Logo" className='header__logo' /></Link>
@@ -21,7 +32,7 @@ function Header() {
          </div>
 
          <div className='header__burger'>
-            <button className='header__burger-btn'>btn</button>
+            {isMenuOpen ? (<button className='header__burger-btn'><FontAwesomeIcon icon={burgerBtns[0].icon} className="header__closeBtn" /></button>) : (<button className='header__burger-btn'><FontAwesomeIcon icon={burgerBtns[1].icon} className="header__closeBtn" /></button>)}
          </div>
 
          <div className='header__cover'></div>
