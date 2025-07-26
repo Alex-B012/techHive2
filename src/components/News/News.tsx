@@ -2,7 +2,12 @@ import "./news.css"
 
 function News() {
    return (
-      <section className="news__section">News This is a news section</section>
+      <section className="news__section">
+         <div className="news__card">
+
+         </div>
+
+      </section>
    )
 }
 

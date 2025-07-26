@@ -3,6 +3,7 @@
    grid-template-columns: 1fr 1fr 1fr;
    justify-self: end;
    width: 100px;
+   margin-right: 10%;
 }
 
 .header__outerLink {
@@ -30,6 +31,7 @@
 @media screen and (max-width: 700px) {
    .header__outerLinkList {
       justify-self: center;
+      margin-right: 0;
    }
 }
 
