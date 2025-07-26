@@ -1,40 +1,35 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import "./header.css"
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { headerLinks, headerOuterLinks, burgerBtns } from '../../data/data'
 
+import Logo from "../Logo/Logo"
+import NavBar from './NavBar/NavBar';
+import OuterLinks from '../OuterLinks/OuterLinks';
+import BurgerMenu from './BurgerMenu/BurgerMenu';
 
 
 
 function Header() {
    const [isMenuOpen, setIsMenuOpen] = useState(false);
+   const openMenu = "openMenu"
 
-   // Toggle the menu state
    const toggleMenu = () => {
       setIsMenuOpen(!isMenuOpen);
    };
 
-
    return (
       <header>
-         <Link to={headerLinks[0].url} className='header__logoLink'><img src="/techHive4.svg" alt="Logo" className='header__logo' /></Link>
-         <nav className="header__navbar">
-            {headerLinks.map((link) => {
-               return <Link key={link.id} to={link.url} className='header__link'>{link.name}</Link>;
-            })}
-         </nav>
-         <div className="header__outerLinkList">
-            {headerOuterLinks.map((link) => {
-               return <Link key={link.id} to={link.url} className='header__outerLink'><FontAwesomeIcon icon={link.icon} className="header__outerIcon" /></Link>;
-            })}
+         <div className="header__row1">
+            <Logo link={headerLinks[0]} />
+            <NavBar links={headerLinks} state={isMenuOpen} />
+            <OuterLinks links={headerOuterLinks} />
+            <BurgerMenu state={isMenuOpen} toggleMenuFunc={toggleMenu} />
          </div>
-
-         <div className='header__burger'>
-            {isMenuOpen ? (<button className='header__burger-btn'><FontAwesomeIcon icon={burgerBtns[0].icon} className="header__closeBtn" /></button>) : (<button className='header__burger-btn'><FontAwesomeIcon icon={burgerBtns[1].icon} className="header__closeBtn" /></button>)}
+         <div className={`header__row2 ${isMenuOpen ? openMenu : ""}`}>
+            <NavBar links={headerLinks} state={isMenuOpen} />
+            <OuterLinks links={headerOuterLinks} />
          </div>
-
          <div className='header__cover'></div>
       </header>
    )
