@@ -9,7 +9,8 @@ import HomeHelp from './HomeHelp/HomeHelp'
 function Home() {
    return (
       <div className='homePage'>
-         <Slider data={productCategories_data} />
+         {/* <Slider data={productCategories_data} /> */}
+         <Slider />
          <HomeBtn content="See More" link={""} />
          <HomeHelp />
       </div>
