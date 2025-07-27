@@ -1,311 +1,1163 @@
-import telecommunication_img from "../assets/images_news/1_telecom2.webp";
-
-import starlink_man_img from "../assets/images_news/3_starlink/starlink_man.webp";
-import starlink_phone_img from "../assets/images_news/3_starlink/starlink_phone.webp";
-import starlink_antenna_img from "../assets/images_news/3_starlink/starlink_antenna.webp";
-import starlink_star_img from "../assets/images_news/3_starlink/starlink_star.webp";
-
-import antivirus_img from "../assets/images_news/2_antivirus.webp";
+import ms_copilot_11 from "../assets/images_news/11_ms_copilot.webp";
+import ms_win11_10 from "../assets/images_news/10_win11.webp";
+import nintendo_9 from "../assets/images_news/9_nintendo.webp";
+import printer_8 from "../assets/images_news/8_printer.webp";
+import samsung_memory_8 from "../assets/images_news/8_samsung-memory.webp";
 
 export const news = [
    {
-      id: 4,
+      id: 11,
       url: "",
-      category: "Telecommunication",
-      title: "If You Want the Best Cell and Internet Service in 2025, Go With These Brands",
-      subtitle: "Data from 'millions' of consumer tests suggests you might want to switch to this mobile carrier and fixed internet provider, according to Ookla.",
-      promoTitle: "Switch to these top-rated mobile carriers and internet providers for faster speeds, reliable connections, and exceptional service in 2025.",
-      article_img: telecommunication_img,
-      article_video: "",
-      article_yt_video: "",
-      author: {
-         name: "Emily Forlini",
-         img: ""
+      category: "Digital",
+      title: "Microsoft Copilot now has a face",
+      subtitle: "We don't get it either.",
+      promoTitle: "Microsoft Copilot now offers a friendlier, more engaging face for consumers, bringing a fresh, approachable feel to assistance.",
+      article_img: {
+         img_author: "Windows",
+         name: "Unsplash",
+         source: "https://unsplash.com/photos/female-on-her-microsoft-laptop-at-work-drinking-coffee-KXIWqtmvfxg",
+         img: ms_copilot_11,
       },
-      date: "July 23, 2025",
-      text: [{
-         heading: "",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "",
-         parapgraphs: [
-            "The best mobile carrier and internet service providers (ISPs) in 2025 are—drumroll, please—T-Mobile and AT&T Fiber, according to a new report from Ookla.",
-            `Data gathered by the company's Speedtest tool in the first half of 2025 shows that T-Mobile earns the top spot for best mobile network, "across all technologies combined, and also specifically for 5G," with Speedtest score of 79.95, followed by Verizon (75.49) and AT&T (72.47).`,
-            "The score combines download and upload performance. T-Mobile's median download speed is 245.48Mbps and its median 5G download speed is an even better 299.36Mbps. T-Mobile also scores the highest for its consistency of connection and for mobile gaming."],
-      }],
-      source: {
-         name: "PCMag.com",
-         url: "https://www.pcmag.com/news/ookla-best-mobile-network-fastest-isp-2025-tmobile-att-fiber"
-      }
-   },
-   {
-      id: 3,
-      url: "",
-      category: "",
-      title: "T-Mobile Launches Its Cellular Starlink Service: What You Need to Know",
-      subtitle: "Although T-Satellite is a T-Mobile service, US users on rival carriers can access the satellite connectivity too for $10 per month. Here's how it works and how to sign up.",
-      promoTitle: "T-Mobile's Starlink service offers satellite connectivity for $10/month, available to all users, including those on rival carriers. Here's how to sign up!",
-      article_img: starlink_man_img,
-      article_video: "",
-      article_yt_video: "",
-      author: {
-         name: "Michael Kan",
-         img: ""
+      article_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: ""
+      },
+      article_yt_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: "",
+      },
+      article_author: {
+         name: "Mark Hachman",
+         img: "",
       },
       date: "July 25, 2025",
       text: [{
          heading: "",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
          paragraphs: [
-            "After years of work, T-Mobile and SpaceX are ready to officially launch the cellular Starlink service, allowing smartphone users to remain connected in dead zones. ",
-            `This "T-Satellite" service has been available since January through a free beta program, which attracted about 1.8 million sign-ups. But starting July 23, T-Mobile begins charging subscribers for T-Satellite, as competition in satellite-to-phone services heats up. `,
-            "Below, we’ll cover basic questions about the cellular Starlink service. Unlike the regular Starlink broadband system for homes, businesses, and RVs, the T-Satellite tech is designed to beam data to everyday smartphones, no accessories needed."]
-      }, {
-         heading: "How Do I Get T-Satellite? What If I Don't Use T-Mobile?",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "",
-         paragraphs: [
-            "Interested customers should go to T-Mobile’s dedicated website for satellite service. Existing T-Mobile subscribers can purchase the cellular Starlink service as an add-on by going into their account. But those on pricier plans (Experience Beyond and Go5G Next) get it as a free perk.",
-            "Meanwhile, US consumers on rival networks can also subscribe. T-Mobile is enabling satellite connectivity through a digital eSIM slot on supported phones. This means you can continue using your primary carrier but switch to the T-Satellite service through the secondary eSIM when you enter a cellular dead zone.",
-            "But in some bad news, non-T-Mobile customers will need to call the company at 877-686-8902 or visit a retail location to receive access. That's slightly inconvenient; during the free beta program, the sign-up process was conducted entirely online. Instead, it looks like T-Mobile is trying to entice customers on other carriers to switch over to access the cellular Starlink service.",
-            "Some AT&T and Verizon users may already have access to T-Satellite by participating in the free beta. These users should now expect an extra $10 on their monthly bills.", `T-Mobile tells us it notified beta users and "eligible customers" on June 23 that they'd be auto-enrolled in T-Satellite, effective July 23. Anyone else must "reactivate the service if they want to keep using T-Satellite," the carrier says. If you no longer wish to use the service, you can remove it in "Manage Data & Add-Ons" in your account," T-Mobile's support page adds.`]
-      }, {
-         heading: "Who Is This For?",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "https://youtu.be/_a1H-_rl2-o?si=f5Iy7mUapnbH4Zi1",
-         paragraphs: [
-            "If you live in a city or a densely populated suburb, cellular dead zones probably aren't a big problem. (Our sibling site CNET said the hardest part about testing T-Satellite was actually finding a dead zone.) But it's common for people who live in rural or remote areas, where cell coverage is sparse. T-Satellite is designed to fix this by “eliminating dead zones for good,” according to T-Mobile. To do so, SpaceX uses special Starlink satellites to act as orbiting cell towers in space.",
-            `"No towers nearby? No problem. If you can see the sky, you’re connected," T-Mobile says.`,
-            "We tried the service last month, and it works as advertised, although momentary delays can occur when receiving or transmitting satellite-powered messages. The cellular Starlink won’t appeal to city dwellers, but if you’re planning long hiking or camping trips, it might be worthwhile.",
-            "The satellite connectivity activates when you enter a T-Mobile dead zone. Although it works best with a clear view of the sky, it still functions inside a car and when the phone’s in your pocket. ",
-            `T-Mobile also views satellite connectivity as a life-saving service for people in emergencies. “Later this year, T-Satellite will provide 911 texting service to any mobile customer with a compatible device, regardless of carrier or whether or not they are subscribed to the service,” the carrier said last month. (T-Mobile said T-Satellite was not impacted by the recent Starlink outage.)`]
-      }, {
-         heading: "What Can I Do With the Satellite Connectivity?",
-         heading_img: starlink_phone_img,
-         heading_video: "",
-         heading_yt_video: "",
-         paragraphs: [
-            "For now, the system is restricted to SMS messages and sharing your location. But it’s recently begun supporting MMS messages on certain Samsung and Motorola phones, allowing users to send images. On Oct. 1, T-Satellite is adding the ability to transmit data to a select group of third-party apps, including those from Google and Apple, AccuWeather, and hiking guide app AllTrails.",
-            "The list of supported apps will grow over time. Another major goal is to bring voice and video calls to the cellular Starlink system. But SpaceX might need to secure more radio spectrum before it can pull this off."]
-      }, {
-         heading: "How Much Does T-Satellite Cost?",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "",
-         paragraphs: [
-            "If you’re a T-Mobile subscriber on the Experience Beyond and Go5G Next plans, you’ll receive the satellite connectivity for free. Everyone else, including users on rival carriers, will need to pay $10 per month, a slight decrease from T-Mobile’s original plan to charge $15 and $20 per month, respectively. T-Mobile also notes that if you’re a subscriber on the ​​Experience More plan, you’ll receive free satellite service through the end of the year.​",
-         ]
-      }, {
-         heading: "Which Phones Are Supported?",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "",
-         paragraphs: [
-            "The service works on around 60 phone models, including devices that were released as far back as 2021. The devices include the iPhone 13 and up, the Samsung Galaxy S21 and higher, and Pixel 9 phones. You can find the full list at T-Mobile’s support page for the service. Expect the carrier to add more phones over time.",
+            "First there was Clippy. Now Microsoft Copilot has a face, with reactions to what you tell it.",
+            `Microsoft is showing off how Copilot could “look”: as an anthropomorphic teardrop of sorts, with expressions that react to your interactions in real time. The discovery was reported Friday by The Verge.`,
+            `Right now, the new look of Copilot is being presented to a limited number of users. Microsoft’s web page shows how to discover if you have it: by opening Copilot, clicking the “mic” icon to launch verbal interactions with Copilot, then clicking the “gear,” or settings, icon. That will open up the options to toggle the “appearance” off or on.`,
+            `“What if you could see Copilot react and speak as you chat?” Microsoft says. “With this experiment, we are bringing more non-verbal communication to Copilot, enhancing voice conversations with real-time visual expression. This early prototype allows you to chat, brainstorm, seek advice, or just mess around with Copilot, in a more engaging and expressive way.”`,
+            `Right now, the new Copilot appearance option is just being offered to consumers, and not people who subscribe to a Microsoft 365 business plan.`,
+            `Microsoft has tended to try and give its assistants a friendlier face, from the Office Assistant (which included Clippit/Clippy) as well as Microsoft Bob and its coterie of animated assistants. That didn’t go so well, however, when Microsoft launched and cancelled Microsoft Tay, its assistant who was quickly corrupted by internet trolls. Anthropomorphic mascots have also become a staple in some cultures, such as Japan.`,
+            `Copilot already leans pretty heavily on emojis to communicate how it “feels.” Ironically, when Bing Search / Copilot was launched, it was pretty personable — probably too much. Now, it’s much more bland.`,
+            `Will users clamor for a Clippy option? Why not? If you have opinions, let us know on our Facebook page or on Bluesky. We can promise that our PCWorld logo will remain just the static image it is.`,
             ``,
-            ""]
-      }, {
-         heading: "Where Exactly Does T-Satellite Work?",
-         heading_img: starlink_antenna_img,
-         heading_video: "",
-         heading_yt_video: "",
-         paragraphs: [
-            "T-Mobile has an online coverage map for the US. The bright pink areas are cellular dead zones, where the T-Satellite service should automatically activate. But if it's a small, narrow dead zone, you might not always receive a connection, as our testing found.",
          ]
-      }, {
-         heading: "Is the Service Available in Other Countries?",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "",
-         paragraphs: [
-            "Yes, SpaceX has been offering satellite capability through mobile carriers in other markets. In Canada, the company has partnered with Rogers Communications to offer a free beta program before an official launch after October, when it will be CAD$15 per month. In New Zealand, cellular Starlink is available through One NZ.",
-            "Other carriers that plan on offering the service include Japan’s KDDI, Entel in Peru and Chile, and Optus and Telstra in Australia. "]
-      }, {
-         heading: "What About Other Satellite Services?",
-         heading_img: starlink_star_img,
-         heading_video: "",
-         heading_yt_video: "",
-         paragraphs: [
-            `SpaceX isn’t the first to offer satellite-based messaging. Apple has it as a free feature on the iPhone 14 and up through a partnership with satellite provider Globalstar. We found the service to be competitive with T-Satellite during our own testing. Still, it's unclear if Apple will continue offering satellite connectivity as a free perk or if it’ll start charging later this year.`,
-            `Meanwhile, Verizon has been powering free satellite messaging for supported phones, including the Pixel 9 and Samsung Galaxy S25 phones, with the help of Skylo.`,
-            "Another major competitor is AST SpaceMobile, which is developing satellite connectivity to power video calls and internet downloads. Although the company needs to launch more satellites, AST is aiming to kick off commercial services early next year through partners including AT&T and Verizon."]
+      }],
+      source: {
+         name: "PCWorld",
+         url: "https://www.pcworld.com/article/2859508/microsoft-copilot-now-has-a-face.html"
+      }
+   }, {
+      id: 10,
+      url: "",
+      category: "Digital",
+      title: `Microsoft claims Windows 11 24H2 is the ‘most reliable’ Windows version ever`,
+      subtitle: `But given the source and Windows 11 24H2's track record, it's hard not to be skeptical of the claim.`,
+      promoTitle: "Windows 11 24H2 offers unprecedented reliability, making your system more stable with fewer unexpected restarts and improved performance.",
+      article_img: {
+         img_author: "Philip Oroni",
+         name: "Unsplash",
+         source: "https://unsplash.com/photos/icon-NBQH9hYvCwY",
+         img: ms_win11_10,
       },
-      {
-         heading: "How Do I Activate It? What About My iPhone?",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "",
+      article_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: ""
+      },
+      article_yt_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: "",
+      },
+      article_author: {
+         name: `Hans-Christian Dirscherl`,
+         img: "",
+      },
+      date: "July 25, 2025",
+      text: [{
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
          paragraphs: [
-            `You actually can't manually activate T-Satellite. Instead, your phone is supposed to automatically connect to the orbiting Starlink satellites once you enter a cellular dead zone for T-Mobile. Your phone will indicate this by displaying the "T-Mobile SpaceX" words at the top-left side of the screen.`,
-            `Still, one issue we faced in our testing was that our iPhone seemed to only switch to Apple's satellite messaging through Globalstar, rather than to T-Satellite. T-Mobile later told us to ignore the iPhone’s pop-up prompting a connection through Apple’s satellite system.`,
-            "The company also says that iPhones will try and connect to T-Satellite first before launching Apple’s own satellite system, which has its own interface and will display an SOS icon on the phone."]
+            `In a recent Windows IT Pro blog post, Microsoft commented on the latest innovations in Windows 11, sparked by the optional July update (KB5062660) that brought several new features to Windows 11 24H2.`,
+            `Some of the biggest improvements in update KB5062660 include Windows Recall for EU users, replacing the Blue Screen of Death, and a new feature called Quick Machine Recovery that helps repair Windows PCs that can’t boot in case of a widespread issue.`,
+            `However, according to Microsoft, Windows 11 24H2 is much more than all of this, claiming that Windows 11 24H2 is “[the] most reliable version of Windows yet” while taking a subtle jab at Windows 10, surely hoping to convince Windows 10 holdouts to make the upgrade. Here’s what Microsoft has to say about it: "We’re also proud to share that Windows 11 24H2 is our most reliable version of Windows yet. Compared to Windows 10 22H2, failure rates for unexpected restarts have dropped by 24%."`,
+            `The above statement cites “reliability telemetry collected by Microsoft,” which calls its veracity into question. Microsoft collects a lot of telemetry data, but it doesn’t know everything—especially when it comes to older versions of Windows prior to aggressive telemetry. For example, a comparison of Windows 11 to Windows 2000, NT, or XP isn’t possible.`,
+            `It’s easy to see why Microsoft is only comparing Windows 11 with Windows 10. Microsoft has been pushing Windows 11 for a while now, and even though Windows 11 market share is increasing, Windows 10 users are either reluctant to make the switch or simply can’t upgrade due to Windows 11’s strict requirements.`,
+            `So, sure, maybe Windows 11 24H2 actually is the “most reliable” Windows version of all time. Or maybe it isn’t. Who can really say? Given that Windows 11 24H2 has broken all kinds of stuff—including USB printers, audio output, Bluetooth connections, Windows Update, and Windows Firewall as recently as this month—we can’t fault anyone for being skeptical of Microsoft’s claim here.`,
+         ]
       },],
       source: {
-         name: "PCMag.com",
-         url: "https://www.pcmag.com/news/tmobile-cellular-starlink-tsatellite-launch-everything-you-need-to-know"
+         name: "PCWorld",
+         url: "https://www.pcworld.com/article/2859173/microsoft-claims-windows-11-24h2-is-the-most-reliable-version-ever.html"
       }
-   },
-   {
-      id: 2,
+   }, {
+      id: 9,
       url: "",
-      category: "Cyber Security",
-      title: "The Best Free Antivirus Software for 2025",
-      subtitle: "Microsoft Defender isn't bad, but it's not enough to fully protect your PC. You don't have to pay extra, though. We’ve tested and ranked the best free antivirus apps.",
-      promoTitle: "Find out which free antivirus tools earned Editors' Choice honors. Protect your device today and get trusted, expert recommendations!",
-      article_img: antivirus_img,
-      article_video: "",
-      article_yt_video: "",
-      author: {
-         name: "Neil J. Rubenking",
-         img: ""
+      category: "Gaming",
+      title: "LEGO’s delightful Nintendo Game Boy tribute doesn’t need batteries",
+      subtitle: "The perfectly-proportioned set includes swappable cartridges and lenticular screens. It'll release in October for $60.",
+      promoTitle: "LEGO’s Nintendo Game Boy tribute set features swappable cartridges and lenticular screens, offering a nostalgic, battery-free experience for $60.",
+      article_img: {
+         img_author: "Marlon Medau",
+         name: "Unsplash",
+         source: "https://unsplash.com/photos/a-nintendo-game-boy-with-a-card-and-a-case-I9D0KESaDR8",
+         img: nintendo_9,
+      },
+      article_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: ""
+      },
+      article_yt_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: "",
+      },
+      article_author: {
+         name: `Michael Crider`,
+         img: "",
       },
       date: "July 24, 2025",
       text: [{
          heading: "",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
          paragraphs: [
-            `When antivirus apps for the PC appeared in the 1980s, nobody knew exactly how they should be priced. Prices in one early PCMag roundup ranged from a $10 shareware offering to $189. In the '90s, we saw an average price of around $90—that would be more like $190 today. A different trend arose with the then-new internet. Companies like Panda and Trend Micro offered a free online scan for malware, and full-scale free antivirus apps soon followed. These days, we put free antivirus tools through the same real-world testing that we apply to their commercial counterparts. Based on those tests and hands-on experience, we’ve awarded Editors’ Choice honors to Avast One Basic and AVG AntiVirus Free, but you may prefer one of the other choices described below. Read on for the full list, and keep reading for advice on how to choose the best free antivirus for your situation.`,
-            ``,
-            ""]
-      }, {
-         heading: "Free Antivirus vs. Paid Antivirus",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "https://www.youtube.com/watch?v=Yh5MuUc94uw",
-         paragraphs: [
-            "If free antivirus tools are so good at protecting internet security, why should anybody pay? For one thing, many of these are free only for noncommercial use. If you have a business or lots of computers to protect, you need to pony up for the paid edition. You should probably consider upgrading to a full security suite at that point. After all, it's your business's security on the line.",
-            `Even for personal use, most paid antivirus tools offer more than their free counterparts — sometimes a lot more. For example, ZoneAlarm's paid edition protects against malicious and fraudulent websites, which the free version does not. And Panda reserves quite a few features for paying customers, among them firewall protection, application control, cross-platform support, and detection of insecure Wi-Fi connections.`,
-            "In addition, many companies don't offer full-scale tech support for users of their free editions. The first time you need extra help digging a particularly stubborn malware out of your system, you might regret the lack of support."]
-      }, {
-         heading: "Which Free Anitvirus Has the Best Lab Scores?",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "",
-         paragraphs: [
-            "Around the world, researchers at independent antivirus testing labs spend their days putting antivirus tools to the test. Some of these labs regularly release public reports on their findings. We follow Windows antivirus test results from four such labs closely: AV-Comparatives, MRG-Effitas, SE Labs, and AV-Test Institute. AV-Test and AV-Comparatives also test Mac-specific antivirus apps.",
-            `Security companies typically pay for the privilege of being included in testing. In return, the labs supply detailed reports that can help improve their antiviruses. The number of labs that include a particular vendor is a measure of significance. In each case, the lab considered the program important enough to test, and the vendor felt the price was worthwhile. The labs don't necessarily test a vendor's free edition, but most vendors pack full protection into the free offering, enhancing premium versions with additional features.`,
-         ]
-      }, {
-         heading: "The Best Free Malware Protection",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "",
-         paragraphs: [
-            "In addition to carefully perusing results from the independent labs, we also run our own hands-on malware protection test. We expose each antivirus to a collection of malware samples, including a variety of different malware types, and note its reaction. Typically, the antivirus will wipe out most of the samples on sight and detect some of the remaining ones when we try to launch them. Based on how thoroughly the antivirus protects the test system from these samples, we derive a malware-blocking score from 0 to 10 points.",
-            `Since we use the same samples month after month, the malware-blocking test doesn't measure an antivirus tool's ability to detect brand-new threats. In a separate test, we attempt to download malware from a collection of very new malicious URLs supplied by London-based testing lab MRG-Effitas, typically less than a few days old. We note whether the antivirus blocked all access to the URL, wiped out the malicious payload during download, or did nothing. When we've got 100 or so valid samples, we calculate a score.`,
-            `If you're interested in learning more about our testing techniques, you're welcome to read more about how we test security software.`,
-         ]
-      }, {
-         heading: "What Else Can Free Antivirus Do?",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "",
-         paragraphs: [
-            "Almost every antivirus scans files on access to ensure malware can't launch, and it also scans the entire system on demand or on a schedule you set. Once cleaning and scheduling are done, blocking all access to malware-hosting URLs is another good way to avoid trouble. Many extend that protection to steer users away from fraudulent websites and phishing sites that try to steal login credentials for financial sites and other sensitive sites. A few rate links in search results, flagging any dangerous or iffy ones.",
+            `If you’re old enough to remember the original, brick-like Game Boy, you’ll want to check out LEGO’s newest play for adult brickheads. The officially licensed Game Boy building set comes with 421 pieces, including two cartridges for Zelda and Mario games. While you can’t actually play them, you can swap out the simulated screens to match.`,
+            `At 5.5 x 3.5 inches (14 x 9 centimeters, for those who live in civilized countries), the set is a near-perfect match for the original handheld from 1989, though the real thing is ever-so-slightly taller. The set includes a display stand for both the main body itself and the Legend of Zelda: Link’s Awakening and Super Mario Land cartridges. You get a choice of three swappable screens with lenticular black-and-white screenshots of the games or the boot screen, which simulate a bit of screen motion based on how you look at them.`,
+            `Check out the serial number on the back of the battery bay. The Game Boy was first released in Japan on April 21st, 1989.`,
+            `Considering that it’s a relatively small set, it’s impressive how faithfully the original hardware has been reproduced — even the slanted Start and Select buttons are accounted for with some clever use of ramped pieces. And at $60, it’s surprisingly cheap for a licensed Nintendo set. The far larger and more complex LEGO Nintendo Entertainment System, over 2500 pieces, cost $230 when it debuted in 2020.`,
+            `LEGO is currently making a big play for nostalgia sets for adult builders. In addition to the Game Boy and NES, there’s an officially licensed Atari 2600, a Pac-Man arcade cabinet, and 80s cartoon staples like Transformers and Voltron. The new Game Boy set is up for pre-order now, shipping in October.`
          ]
       },],
       source: {
-         name: "PCMag.com",
-         url: "https://www.pcmag.com/picks/the-best-free-antivirus-protection"
+         name: "PCWorld",
+         url: "https://www.pcworld.com/article/2858078/legos-delightful-nintendo-game-boy-tribute-doesnt-need-batteries.html"
       }
-   },
-   {
+   }, {
+      id: 8,
+      url: "",
+      category: "Tech Hardware",
+      title: "Update your printer! Over 700 models actively being attacked by hackers",
+      subtitle: "Printers by Brother, Toshiba, Fujifilm, Konica Minolta, and Ricoh are susceptible to attacks, thanks to dangerous security flaws.",
+      promoTitle: "Over 700 printer models from Brother, Toshiba, Fujifilm, Konica Minolta, and Ricoh are vulnerable to hacker attacks. Update now!",
+      article_img: {
+         img_author: "Jakub Żerdzicki",
+         name: "Unsplash",
+         source: "https://unsplash.com/photos/a-close-up-of-a-printer-on-a-table-Da9qsu-0a00",
+         img: printer_8,
+      },
+      article_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: ""
+      },
+      article_yt_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: "",
+      },
+      article_author: {
+         name: `Laura Pippig`,
+         img: "",
+      },
+      date: "July 24, 2025",
+      text: [{
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            `Back in June, security researchers from Rapid7 discovered several security vulnerabilities in over 700 different printer models that pose a risk to users. Printers from well-known brands—mostly Brother but also Fujifilm, Ricoh, Toshiba, and Konica Minolta—were named as affected.`,
+            `Now things are getting serious as hackers are exploiting these security vulnerabilities to carry out real-world attacks. Among other things, they can find out the default password of a printer by reading out the serial number and thus gain admin access. This makes it possible to, for example, integrate printers into botnets, which are then exploited and used for further attacks.`,
+            `The attacks appear to be both random and widespread. Any printer that’s affected by security vulnerabilities CVE-2024-51977 and CVE-2024-51978 is a perfect target for hackers.`
+         ]
+      }, {
+         heading: "Be sure to update your printers!",
+         heading_img: {
+            img_author: "Samsung Memory",
+            name: "Unsplash",
+            source: "https://unsplash.com/photos/a-person-holding-a-device-bvxXJZnx24o",
+            img: samsung_memory_8,
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            `As it stands right now, this is a serious wave of attacks that’s only going to gather its pace as more printers are taken over and exploited for further attacks. You may not even realize it’s happening to your printer.`,
+            `If you want to protect yourself, the most important thing you can do is update your printer’s firmware to the latest version ASAP. The relevant manufacturers have already provided patches to resolve these vulnerabilities. You can find a list of all affected models here.`,
+            `You should also change the admin password of your printer so that it can no longer be deduced from its serial number.`,
+         ]
+      },],
+      source: {
+         name: "PCWorld",
+         url: "https://www.pcworld.com/article/2857923/update-your-printer-over-700-models-actively-being-attacked-by-hackers.html"
+      }
+   }, {
+      id: 7,
+      url: "",
+      category: "",
+      title: "",
+      subtitle: "",
+      promoTitle: "",
+      article_img: {
+         img_author: "",
+         name: "",
+         source: "",
+         img: "",
+      },
+      article_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: ""
+      },
+      article_yt_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: "",
+      },
+      article_author: {
+         name: ``,
+         img: "",
+      },
+      date: "",
+      text: [{
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      }, {
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      }, {
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      },],
+      source: {
+         name: "",
+         url: ""
+      }
+   }, {
+      id: 6,
+      url: "",
+      category: "",
+      title: "",
+      subtitle: "",
+      promoTitle: "",
+      article_img: {
+         img_author: "",
+         name: "",
+         source: "",
+         img: "",
+      },
+      article_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: ""
+      },
+      article_yt_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: "",
+      },
+      article_author: {
+         name: ``,
+         img: "",
+      },
+      date: "",
+      text: [{
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      }, {
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      }, {
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      },],
+      source: {
+         name: "",
+         url: ""
+      }
+   }, {
+      id: 5,
+      url: "",
+      category: "",
+      title: "",
+      subtitle: "",
+      promoTitle: "",
+      article_img: {
+         img_author: "",
+         name: "",
+         source: "",
+         img: "",
+      },
+      article_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: ""
+      },
+      article_yt_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: "",
+      },
+      article_author: {
+         name: ``,
+         img: "",
+      },
+      date: "",
+      text: [{
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      }, {
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      }, {
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      },],
+      source: {
+         name: "",
+         url: ""
+      }
+   }, {
+      id: 4,
+      url: "",
+      category: "",
+      title: "",
+      subtitle: "",
+      promoTitle: "",
+      article_img: {
+         img_author: "",
+         name: "",
+         source: "",
+         img: "",
+      },
+      article_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: ""
+      },
+      article_yt_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: "",
+      },
+      article_author: {
+         name: ``,
+         img: "",
+      },
+      date: "",
+      text: [{
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      }, {
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      }, {
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      },],
+      source: {
+         name: "",
+         url: ""
+      }
+   }, {
+      id: 3,
+      url: "",
+      category: "",
+      title: "",
+      subtitle: "",
+      promoTitle: "",
+      article_img: {
+         img_author: "",
+         name: "",
+         source: "",
+         img: "",
+      },
+      article_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: ""
+      },
+      article_yt_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: "",
+      },
+      article_author: {
+         name: ``,
+         img: "",
+      },
+      date: "",
+      text: [{
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      }, {
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      }, {
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      },],
+      source: {
+         name: "",
+         url: ""
+      }
+   }, {
+      id: 2,
+      url: "",
+      category: "",
+      title: "",
+      subtitle: "",
+      promoTitle: "",
+      article_img: {
+         img_author: "",
+         name: "",
+         source: "",
+         img: "",
+      },
+      article_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: ""
+      },
+      article_yt_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: "",
+      },
+      article_author: {
+         name: ``,
+         img: "",
+      },
+      date: "",
+      text: [{
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      }, {
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      }, {
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      },],
+      source: {
+         name: "",
+         url: ""
+      }
+   }, {
       id: 1,
       url: "",
       category: "",
       title: "",
       subtitle: "",
-      promoTitle: "Save 34% on Bose QuietComfort Headphones. Find unbeatable deals on top electronics, with this standout offer leading the way for savings!",
-      article_img: "",
-      article_video: "",
-      article_yt_video: "",
-      author: {
+      promoTitle: "",
+      article_img: {
+         img_author: "",
          name: "",
-         img: ""
+         source: "",
+         img: "",
+      },
+      article_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: ""
+      },
+      article_yt_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: "",
+      },
+      article_author: {
+         name: ``,
+         img: "",
       },
       date: "",
       text: [{
          heading: "",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
          paragraphs: [
-            "", ``, ``
+            ``,
+            ``,
+            ``
          ]
       }, {
          heading: "",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
          paragraphs: [
-            "", ``, ``
+            ``,
+            ``,
+            ``
          ]
       }, {
          heading: "",
-         heading_img: "",
-         heading_video: "",
-         heading_yt_video: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
          paragraphs: [
-            "", ``, ``
+            ``,
+            ``,
+            ``
          ]
       },],
       source: {
-         name: "PCMag.com",
+         name: "",
          url: ""
       }
-   },
-   {
+   }, {
       id: 0,
+      url: "",
+      category: "",
       title: "",
       subtitle: "",
       promoTitle: "",
-      text: [
-         {
-            heading: "",
-            heading_img: "",
-            heading_video: "",
-            heading_yt_video: "",
-            paragraphs: [
-               "",
-               ``,
-               ""]
-         }, {
-            heading: "",
-            heading_img: "",
-            heading_video: "",
-            heading_yt_video: "",
-            paragraphs: [
-               "",
-               ``,
-               ""]
-         }, {
-            heading: "",
-            heading_img: "",
-            heading_video: "",
-            heading_yt_video: "",
-            paragraphs: [
-               "",
-               ``,
-               ""]
-         },
-      ],
-      url: "",
-      article_img: "",
-      article_video: "",
-      date: "",
-      author: {
+      article_img: {
+         img_author: "",
          name: "",
-         img: ""
+         source: "",
+         img: "",
       },
-      category: "",
-      sourse: {
-         id: "",
+      article_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: ""
+      },
+      article_yt_video: {
+         video_author: "",
+         name: "",
+         source: "",
+         video: "",
+      },
+      article_author: {
+         name: ``,
+         img: "",
+      },
+      date: "",
+      text: [{
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      }, {
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      }, {
+         heading: "",
+         heading_img: {
+            img_author: "",
+            name: "",
+            source: "",
+            img: "",
+         },
+         heading_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         heading_yt_video: {
+            video_author: "",
+            name: "",
+            source: "",
+            video: ""
+         },
+         paragraphs: [
+            ``,
+            ``,
+            ``
+         ]
+      },],
+      source: {
          name: "",
          url: ""
       }
