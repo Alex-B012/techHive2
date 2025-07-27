@@ -3,19 +3,23 @@
 .news__section {
    display: grid;
    grid-area: news;
-   grid-template-columns: 1fr;
-   grid-template-rows: auto;
    align-items: start;
-   justify-content: center;
-   padding: 60px 10px;
+   padding: 3.3vh 10px 3.3vh 3vh;
    background: linear-gradient(90deg, var(--header-bg-color) 0%, var(--header-bg-color2)100%);
 }
 
 .news__cardsList {
    display: grid;
-   grid-template-columns: 1fr;
    grid-template-rows: repeat(4, minmax(70px, auto));
    align-items: start;
-   justify-content: center;
-   row-gap: 20px;
+   row-gap: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+   .news__cardsList {
+      display: grid;
+      grid-template-rows: repeat(4, minmax(40px, auto));
+      align-items: start;
+      row-gap: 20px;
+   }
 }

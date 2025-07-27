@@ -8,13 +8,13 @@ export function shuffleArray<T>(array: T[]): T[] {
 }
 
 
-// Кemove empty objects; shuffle and limit the array up to 6 object
+// Кemove empty objects; shuffle and limit the array up to 4 object
 export function prepareNewsArray<T extends { promoTitle?: string }>(array: T[]): T[] {
    const filteredArray = array.filter(item => item.promoTitle && item.promoTitle.length > 0);
 
    const shuffledArray = shuffleArray(filteredArray);
-   if (filteredArray.length <= 6) {
+   if (filteredArray.length <= 4) {
       return filteredArray;
    }
-   return shuffledArray.slice(0, 6);
+   return shuffledArray.slice(0, 4);
 }
