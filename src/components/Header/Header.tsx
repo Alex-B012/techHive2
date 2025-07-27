@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import "./header.css"
-import { headerLinks, headerOuterLinks, burgerBtns } from '../../data/data'
+import { headerLinks, headerOuterLinks } from '../../data/data'
 
 import Logo from "../Logo/Logo"
 import NavBar from './NavBar/NavBar';
