@@ -211,8 +211,8 @@ export const news = [
          ]
       },],
       source: {
-         name: "",
-         url: ""
+         name: "PCMag.com",
+         url: "https://www.pcmag.com/picks/the-best-free-antivirus-protection"
       }
    },
    {
@@ -230,9 +230,33 @@ export const news = [
          img: ""
       },
       date: "",
-      text: [{ heading: "", paragraphs: ["", ""] }],
+      text: [{
+         heading: "",
+         heading_img: "",
+         heading_video: "",
+         heading_yt_video: "",
+         paragraphs: [
+            "", ``, ``
+         ]
+      }, {
+         heading: "",
+         heading_img: "",
+         heading_video: "",
+         heading_yt_video: "",
+         paragraphs: [
+            "", ``, ``
+         ]
+      }, {
+         heading: "",
+         heading_img: "",
+         heading_video: "",
+         heading_yt_video: "",
+         paragraphs: [
+            "", ``, ``
+         ]
+      },],
       source: {
-         name: "",
+         name: "PCMag.com",
          url: ""
       }
    },
