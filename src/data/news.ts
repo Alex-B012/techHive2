@@ -4,7 +4,7 @@ import nintendo_9 from "../assets/images_news/9_nintendo.webp";
 import printer_8 from "../assets/images_news/8_printer.webp";
 import samsung_memory_8 from "../assets/images_news/8_samsung-memory.webp";
 
-export const news = [
+export const news_data = [
    {
       id: 11,
       url: "",
