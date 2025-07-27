@@ -1,7 +1,7 @@
 .homePage {
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-rows: 1fr, 20px, 80px;
+   grid-template-rows: 1fr, 20px, 120px;
    place-items: center;
    font-family: "Tomorrow", Arial, Helvetica, sans-serif;
    background: linear-gradient(90deg, var(--mobileMenu-bg-color) 0%, var(--header-bg-color)100%);

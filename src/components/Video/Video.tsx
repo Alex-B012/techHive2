@@ -49,9 +49,11 @@ function Video() {
                Your browser does not support the video tag.
             </video>
             <div className="effect"></div>
-            <div className="video__text video-text">
-               <h1 className="text-capitalize">Pioneering <span className="video__nowrap">the future</span></h1>
-            </div>
+
+            {!videoError && (
+               <div className="video__text video-text">
+                  <h1 className="text-capitalize">Pioneering <span className="video__nowrap">the future</span></h1>
+               </div>)}
          </div>
 
 
