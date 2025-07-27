@@ -30,8 +30,14 @@
 
 .news__animation {
    display: inline-block;
+   animation: moveRight 10s infinite;
+}
+
+.news__animation2 {
+   display: inline-block;
    animation: moveRight 15s infinite;
 }
+
 
 @keyframes moveRight {
    0% {

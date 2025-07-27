@@ -25,6 +25,7 @@
   height: 100vh;
   font-family: "Tomorrow", Arial, Helvetica, sans-serif;
   color: lightgray;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 500px) {}
