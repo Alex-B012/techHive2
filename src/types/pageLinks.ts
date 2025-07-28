@@ -5,5 +5,5 @@ export interface PageLinkInterface {
 }
 
 export interface PageLinkArrayInterface {
-   array: PageLinkInterface;
+   array: PageLinkInterface[];
 }
