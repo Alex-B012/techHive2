@@ -3,10 +3,60 @@
 }
 
 footer {
+   display: grid;
    grid-area: footer;
-   height: 120px;
    background-color: rgb(80, 80, 80);
    background: linear-gradient(270deg, var(--header-bg-color) 10%, var(--header-bg-color2)90%);
    /* box-shadow: -5px 0px 5px 5px var(--footer-bg-color-shadow); */
    z-index: 1;
+}
+
+.footer__section {
+   display: grid;
+   grid-template-columns: 0.3fr 1fr 0.3fr;
+   grid-template-areas:
+      "brandInfo contantInfo socials";
+   padding: 20px 0;
+   align-items: center;
+}
+
+.footer__brandInfo {
+   display: grid;
+   grid-area: brandInfo;
+   align-items: start;
+}
+
+.footer__contantInfo {
+   display: grid;
+   grid-area: contantInfo;
+   padding-top: 20px;
+}
+
+.footer__socials {
+   display: grid;
+   grid-area: socials;
+}
+
+@media screen and (max-width: 700px) {
+   .footer__section {
+      grid-template-columns: 3fr 7fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+         "brandInfo contantInfo"
+         "brandInfo socials";
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .footer__section .header__outerLinkList {
+      display: grid;
+   }
+
+   .footer__brandInfo .header__logo {
+      margin-top: -20px;
+   }
+
+   .footer__contantInfo {
+      padding-top: 0px;
+   }
 }

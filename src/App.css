@@ -16,7 +16,7 @@
   justify-content: center;
   display: grid;
   grid-template-columns: 1fr 0.4fr;
-  grid-template-rows: 60px 0fr 1fr 120px;
+  grid-template-rows: 60px 0fr 1fr 1fr;
   grid-template-areas:
     "header header"
     "video video"
@@ -28,10 +28,16 @@
   font-size: 16px;
 }
 
+@media screen and (max-width: 1500px) {
+  .App {
+    grid-template-rows: 60px 0fr 1fr 1fr;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .App {
     grid-template-columns: 1fr;
-    grid-template-rows: 60px 0fr 1fr 1fr 120px;
+    grid-template-rows: 60px 0fr 1fr 1fr 1fr;
     grid-template-areas:
       "header "
       "video "
@@ -41,11 +47,10 @@
   }
 }
 
-
 @media screen and (max-width: 500px) {}
 
 @media screen and (max-height: 450px) and (max-width: 1000px) {
   .App {
-    grid-template-rows: 35px 0fr 1fr 120px;
+    grid-template-rows: 35px 0fr 1fr 1fr;
   }
 }

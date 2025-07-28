@@ -1,8 +1,9 @@
 import "./footer.css"
-import { headerLinks } from '../../data/data'
+import { headerLinks, headerOuterLinks } from '../../data/data'
 import Logo from '../Logo/Logo'
 import AllRightsReserved from './AllRightsReserved/AllRightsReserved'
 import FooterNav from "./FooterNav/FooterNav"
+import OuterLinks from "../OuterLinks/OuterLinks"
 
 function Footer() {
    return (
@@ -10,8 +11,14 @@ function Footer() {
          <div className="footer__brandInfo">
             <Logo link={headerLinks[0]} />
             <AllRightsReserved />
+         </div>
+         <div className="footer__contantInfo">
             <FooterNav />
          </div>
+         <div className="footer__socials">
+            <OuterLinks links={headerOuterLinks} />
+         </div>
+
       </footer>
    )
 }

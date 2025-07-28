@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+
       {isHomePage && <Video />}
       <Routes>
         <Route path="/" element={<Home />} />

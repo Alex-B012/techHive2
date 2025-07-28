@@ -28,7 +28,13 @@ export const headerOuterLinks = [
 export const contact_info = {
   company_name: "TechHive",
   phone: "+1 (123) 456-7890",
-  address: "1127 Industrial Rd, San Carlos, CA 94070, USA",
+  address: {
+    street: "1127 Industrial Rd",
+    city: "San Carlos",
+    state: "CA",
+    zipcode: "94070",
+    country: "USA"
+  },
   email: "info@techhive.com",
 }
 

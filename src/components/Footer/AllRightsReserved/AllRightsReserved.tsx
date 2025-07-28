@@ -4,9 +4,12 @@ import { contact_info, allRights } from "../../../data/data"
 function AllRightsReserved() {
    return (
       <div className="allRightsReserved__container">
-         <span className="allRightsReserved__span">{`${allRights.iconChar} ${allRights.year}, ${contact_info.company_name}, `}</span>
-         <span className="allRightsReserved__span">{`${contact_info.address}. `}</span>
-         <span className="allRightsReserved__span">{`${allRights.text}`}</span>
+         <div className="allRightsReserved__line">{`${allRights.iconChar} ${allRights.year}, ${contact_info.company_name} `}</div>
+         <div className="allRightsReserved__line ">
+            <span className="allRightsReserved__span">{`${contact_info.address.street}, `}</span>
+            <span className="allRightsReserved__span">{`${contact_info.address.city}, ${contact_info.address.state} ${contact_info.address.zipcode}, ${contact_info.address.country}`} </span>
+         </div>
+         <div className="allRightsReserved__line">{`${allRights.text}`}</div>
       </div>
    )
 }

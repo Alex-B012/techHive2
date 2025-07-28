@@ -1,0 +1,28 @@
+.footerNav__container {
+   display: grid;
+   grid-template-columns: repeat(3, minmax(80px, 90px));
+   column-gap: 10px;
+   align-items: center;
+   justify-content: center;
+   font-size: 0.95em;
+   text-align: center;
+}
+
+.footerNav__link {
+   text-decoration: none;
+   color: var(--link-color);
+}
+
+.footerNav__link:hover {
+   color: var(--link-color-hover)
+}
+
+@media screen and (max-width: 500px) {
+   .footerNav__container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      align-items: start;
+      row-gap: 3px;
+      font-size: 0.85em;
+   }
+}
