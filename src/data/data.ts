@@ -47,10 +47,12 @@ export const allRights = {
 export const pages_links = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "Pricing", link: "/pricing" },
-  { id: 6, name: "Category", link: "/pricing/:categoryId" },
-  { id: 7, name: "Product", link: "/pricing/:categoryId/:productId" },
-  { id: 3, name: "Contacts", link: "/contacts" },
-  { id: 4, name: "Careers", link: "/careers" },
-  { id: 5, name: "Our Team", link: "/team" },
-  { id: 8, name: "NotFound", link: "*" },
+  { id: 3, name: "Category", link: "/pricing/:categoryId" },
+  { id: 4, name: "Product", link: "/pricing/:categoryId/:productId" },
+  { id: 5, name: "Contacts", link: "/contacts" },
+  { id: 6, name: "Careers", link: "/careers" },
+  { id: 7, name: "Our Team", link: "/team" },
+  { id: 8, name: "NewsList", link: "/news" },
+  { id: 9, name: "News", link: "/news/:newsId" },
+  { id: 10, name: "NotFound", link: "*" },
 ]

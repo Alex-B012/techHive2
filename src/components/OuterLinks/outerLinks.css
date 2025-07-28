@@ -13,13 +13,14 @@
    width: 28px;
    height: 28px;
    border-radius: 50%;
-   transition: all 2s;
+
 }
 
 .header__outerIcon {
    width: 20px;
    height: 20px;
    color: var(--link-color);
+   transition: all 2s;
 }
 
 .header__outerLink:hover .header__outerIcon {

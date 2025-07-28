@@ -3,6 +3,12 @@
    min-width: 140px;
    min-height: 40px;
    padding: 0 30px;
+   transition: all 2s;
+}
+
+.header__logo:hover {
+   scale: 1.05;
+   transition: all 0.5s;
 }
 
 @media screen and (max-width: 1024px) {

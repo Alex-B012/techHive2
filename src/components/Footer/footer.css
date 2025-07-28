@@ -29,7 +29,9 @@ footer {
 .footer__contantInfo {
    display: grid;
    grid-area: contantInfo;
-   padding-top: 20px;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
 }
 
 .footer__socials {
@@ -54,9 +56,5 @@ footer {
 
    .footer__brandInfo .header__logo {
       margin-top: -20px;
-   }
-
-   .footer__contantInfo {
-      padding-top: 0px;
    }
 }

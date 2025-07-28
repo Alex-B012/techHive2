@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 import Home from "./pages/Home/Home";
-import News from "./components/News/News";
+import NewsPanel from "./components/NewsPanel/NewsPanel";
 import Video from "./components/Video/Video";
 // import Home from "./Pages/Pricing/Pricing";
 
@@ -26,9 +26,12 @@ function App() {
         {/* <Route path="/contacts" element={<Contacts />} /> */}
         {/* <Route path="/careers" element={<Careers />} /> */}
         {/* <Route path="/team" element={<Team />} /> */}
+        {/* <Route path="/news" element={<NewsList />} /> */}
+        {/* <Route path="/news/:newsId" element={<NewsPage />} /> */}
+
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
-      <News />
+      <NewsPanel />
       <Footer />
     </div>
   );

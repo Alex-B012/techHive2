@@ -11,10 +11,12 @@
 .footerNav__link {
    text-decoration: none;
    color: var(--link-color);
+   transition: all 2s;
 }
 
 .footerNav__link:hover {
-   color: var(--link-color-hover)
+   color: var(--link-color-hover);
+   transition: all 0.5s;
 }
 
 @media screen and (max-width: 500px) {

@@ -97,9 +97,16 @@
    }
 }
 
-@media screen and (max-height: 450px) and (max-width: 1000px) {
+@media screen and (max-height: 1000px) and (max-width: 1300px) {
+   .video__section {
+      max-height: 300px;
+   }
+}
+
+@media screen and (max-height: 550px) and (max-width: 1000px) {
    .video__section {
       height: calc(100vh - 35px);
+      max-height: calc(100vh - 35px);
    }
 
    .video__text {
