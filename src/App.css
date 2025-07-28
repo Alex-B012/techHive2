@@ -23,7 +23,7 @@ html, body {
   grid-template-rows: 60px 0fr 1fr 1fr;
   grid-template-areas:
     "header header"
-    "video video"
+    "promo_content promo_content"
     "page news"
     "footer footer";
   height: 100vh;
@@ -44,7 +44,7 @@ html, body {
     grid-template-rows: 60px 0fr 1fr 1fr 1fr;
     grid-template-areas:
       "header "
-      "video "
+      "promo_content"
       "page"
       "news"
       "footer";

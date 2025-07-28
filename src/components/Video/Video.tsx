@@ -18,7 +18,6 @@ function Video() {
       const videoElement = e.target as HTMLVideoElement;
       console.error("Error loading video:", videoElement?.src);
       console.error("Error event:", e.nativeEvent);
-
       setVideoError(true);
       handleVideoEnd()
    };

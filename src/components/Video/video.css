@@ -1,20 +1,12 @@
 .video__section {
-   display: grid;
-   grid-area: video;
-   grid-template-columns: 1fr;
-   grid-template-rows: 668px;
-   align-items: center;
-   justify-content: center;
-}
-
-.video__section {
-   position: relative;
-   width: 100%;
-   height: 668px;
-   overflow: hidden;
    display: flex;
    align-items: center;
    justify-content: center;
+   grid-area: promo_content;
+   width: 100%;
+   height: 668px;
+   overflow: hidden;
+   position: relative;
 }
 
 .bgvideo {

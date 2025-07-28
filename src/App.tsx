@@ -15,6 +15,11 @@ import Team from "./pages/Team/Team";
 import NotFound from "./pages/NotFound/NotFound";
 
 
+import Banner from "./components/Banner/banner";
+import { banner_info } from "./data/pricing"
+
+
+
 function App() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
@@ -25,8 +30,8 @@ function App() {
     <div className="App">
       <Header />
       {isHomePage && <Video />}
-      {/* {isPricingPage && <BannerPricing />} */}
-      {/* {isNewsPage && <BannerNews />} */}
+      {isPricingPage && <Banner data={banner_info[0]} />}
+      {/* {isNewsPage && <Banner data={""} />} */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />
