@@ -16,7 +16,8 @@ export const squarePhone = faSquarePhone;
 export const headerLinks = [
   { id: 1, name: "Home", url: "/" },
   { id: 2, name: "Pricing", url: "/pricing" },
-  { id: 3, name: "Contacts", url: "/contacts" },
+  { id: 3, name: "News", url: "/news" },
+  { id: 4, name: "Contacts", url: "/contacts" },
 ];
 
 export const headerOuterLinks = [
@@ -53,6 +54,6 @@ export const pages_links = [
   { id: 6, name: "Careers", link: "/careers" },
   { id: 7, name: "Our Team", link: "/team" },
   { id: 8, name: "NewsList", link: "/news" },
-  { id: 9, name: "News", link: "/news/:newsId" },
+  { id: 9, name: "NewsPage", link: "/news/:newsId" },
   { id: 10, name: "NotFound", link: "*" },
 ]

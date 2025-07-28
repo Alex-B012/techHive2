@@ -12,6 +12,10 @@
   --video-text-shadow: rgb(6, 77, 53);
 }
 
+html, body {
+  height: 100%;
+}
+
 .App {
   justify-content: center;
   display: grid;

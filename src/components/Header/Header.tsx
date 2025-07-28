@@ -46,7 +46,6 @@ function Header() {
                <OuterLinks links={headerOuterLinks} />
             </div>
          </div>
-         <div className='header__cover'></div>
       </header>
    )
 }
