@@ -23,3 +23,9 @@
       row-gap: 20px;
    }
 }
+
+@media screen and (max-width: 1000px) {
+   .news__section {
+      padding: 3.3vh 10px 3.3vh 1vh;
+   }
+}
