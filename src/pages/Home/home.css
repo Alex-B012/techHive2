@@ -1,5 +1,6 @@
 .homePage {
    display: grid;
+   grid-area: page;
    grid-template-columns: 10vw 1fr;
    place-items: center;
    font-family: "Tomorrow", Arial, Helvetica, sans-serif;

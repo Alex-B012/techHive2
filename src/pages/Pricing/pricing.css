@@ -1,0 +1,8 @@
+.pricingPage {
+   display: grid;
+   grid-area: page;
+   grid-template-columns: 10vw 1fr;
+   place-items: center;
+   font-family: "Tomorrow", Arial, Helvetica, sans-serif;
+   background: linear-gradient(90deg, var(--mobileMenu-bg-color) 0%, var(--header-bg-color)100%);
+}
