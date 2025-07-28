@@ -29,10 +29,4 @@
 
 }
 
-@media screen and (max-width: 400px) {
-   .header__link {
-
-      padding: 2px 3px;
-
-   }
-}
+@media screen and (max-width: 400px) {}
