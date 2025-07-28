@@ -15,7 +15,6 @@ function Home() {
             <HomeBtn content="See More" link={""} />
             <HomeHelp />
          </div>
-
       </div>
    )
 }
