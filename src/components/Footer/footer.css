@@ -7,6 +7,6 @@ footer {
    height: 120px;
    background-color: rgb(80, 80, 80);
    background: linear-gradient(270deg, var(--header-bg-color) 10%, var(--header-bg-color2)90%);
-   box-shadow: -5px 0px 5px 5px var(--footer-bg-color-shadow);
+   /* box-shadow: -5px 0px 5px 5px var(--footer-bg-color-shadow); */
    z-index: 1;
 }

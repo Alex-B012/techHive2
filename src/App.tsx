@@ -9,6 +9,7 @@ import News from "./components/News/News";
 import Video from "./components/Video/Video";
 // import Home from "./Pages/Pricing/Pricing";
 
+
 function App() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
@@ -19,6 +20,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/pricing" element={<Pricing />} /> */}
+        {/* <Route path="/pricing/:categoryId" element={<Category />} /> */}
+        {/* <Route path="/pricing/:categoryId/:productId" element={<Product />} /> */}
+        {/* <Route path="/contacts" element={<Contacts />} /> */}
+        {/* <Route path="/careers" element={<Careers />} /> */}
+        {/* <Route path="/team" element={<Team />} /> */}
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
       <News />
       <Footer />
