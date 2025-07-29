@@ -2,34 +2,40 @@
    display: grid;
    grid-area: page;
    grid-template-columns: 10vw 1fr;
-   grid-template-rows: 1fr;
    place-items: center;
    font-family: "Tomorrow", Arial, Helvetica, sans-serif;
    background: linear-gradient(90deg, var(--mobileMenu-bg-color) 0%, var(--header-bg-color)100%);
-   padding-bottom: 20px;
+   padding: 3vh 0;
 }
 
 .pricingPage__container {
    width: 100%;
    height: 100%;
    display: grid;
+   grid-template-rows: minmax(250px, 1fr) repeat(2, minmax(200px, 1fr));
+   row-gap: 7vh;
    justify-items: center;
-   padding: 1vh 2% 0 0;
+   padding: 0 2% 0 0;
 }
 
 @media screen and (max-width: 1200px) {
    .pricingPage {
       grid-template-columns: 5vw 1fr;
    }
+
+   .pricingPage__container {
+      row-gap: 3vh;
+   }
 }
 
 @media screen and (max-width: 1000px) {
    .pricingPage {
-      grid-template-columns: 3vw 1fr;
+      grid-template-columns: 20vw 1fr;
    }
 
    .pricingPage__container {
-      padding: 1vh 0 5vh;
+      padding: 0 0 5vh;
+      row-gap: 5vh;
    }
 }
 
@@ -38,14 +44,10 @@
       grid-template-columns: 1fr;
       background: linear-gradient(90deg, var(--mobileMenu-bg-color) 0%, var(--header-bg-color2)100%);
    }
-
-   .pricingPage__container {
-      padding: 1vh 0 2vh;
-   }
 }
 
-@media screen and (max-width: 550px) {
-   .pricingPage {
-      grid-template-columns: 1fr;
+@media screen and (max-width: 400px) {
+   .pricingPage__container {
+      row-gap: 7vh;
    }
 }

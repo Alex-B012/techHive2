@@ -1,16 +1,15 @@
 .promoHotOffersCard__container {
    display: grid;
-   grid-template-rows: minmax(140px, 300px);
+   grid-template-rows: minmax(140px, 1fr);
    grid-template-columns: minmax(140px, 200px);
 }
 
 .promoHotOffersCard__link {
    width: 100%;
    display: grid;
-   grid-template-rows: minmax(140px, 200px), minmax(30px, 60px), 30px;
+   grid-template-rows: minmax(140px, 200px) minmax(30px, 80px) 25px;
    grid-template-columns: minmax(140px, 200px);
    align-self: start;
-   row-gap: 5px;
    text-decoration: none;
    transition: all 2s;
 }
@@ -24,11 +23,14 @@
 }
 
 .promoHotOfferCard__heading {
-   font-size: 1em;
+   display: grid;
+   align-self: start;
+   font-size: 0.95em;
    font-weight: 700;
    color: white;
    transition: all 2s;
-   align-self: start;
+   min-height: 60px;
+   padding-top: 10px;
 }
 
 .promoHotOfferCard__btn {
@@ -44,6 +46,28 @@
    transition: all 0.5s;
 }
 
+@media screen and (max-width: 1400px) {
+   .promoHotOffersCard__link {
+      grid-template-rows: minmax(140px, 1fr) minmax(30px, 80px) 30px;
+   }
+}
+
+@media screen and (max-width: 1350px) {
+   .promoHotOffersCard__link {
+      grid-template-rows: minmax(140px, 1fr) minmax(30px, 70px) 30px;
+   }
+
+   .promoHotOfferCard__heading {
+      font-size: 0.9em;
+   }
+}
+
+@media screen and (max-width: 1300px) {
+   .promoHotOffersCard__link {
+      grid-template-rows: minmax(140px, 1fr) minmax(30px, 80px) 30px;
+   }
+}
+
 @media screen and (max-width: 1200px) {
    .promoHotOfferCard__heading {
       font-size: 0.9em;
@@ -55,11 +79,33 @@
 }
 
 @media screen and (max-width: 1000px) {
+   .promoHotOffersCard__link {
+      grid-template-rows: minmax(140px, 1fr) minmax(30px, 75px) 30px;
+   }
+
    .promoHotOfferCard__heading {
       font-size: 0.8em;
    }
 
    .promoHotOfferCard__btn {
-      font-size: 0.7em;
+      font-size: 0.775em;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .promoHotOffersCard__link {
+      grid-template-rows: minmax(140px, 1fr) minmax(30px, 75px) 30px;
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .promoHotOffersCard__link {
+      grid-template-rows: minmax(140px, 150px) minmax(30px, 75px) 30px;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .promoHotOffersCard__link {
+      grid-template-rows: minmax(140px, 140px) minmax(30px, 75px) 30px;
    }
 }

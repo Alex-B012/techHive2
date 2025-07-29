@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
 import './promoHotOffersCard.css'
+import { Link } from 'react-router-dom'
 import { ProductCategory } from '../../../types/productCategories';
 
 interface PromoHotOffersCardProps {

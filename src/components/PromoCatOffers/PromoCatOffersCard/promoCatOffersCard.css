@@ -1,0 +1,64 @@
+.promoCatOffersCard__container {
+   display: grid;
+   grid-template-rows: minmax(140px, 240px);
+   grid-template-columns: minmax(140px, 200px);
+}
+
+.promoCatOffersCard__link {
+   width: 100%;
+   display: grid;
+   grid-template-rows: minmax(140px, 200px), 40px;
+   grid-template-columns: minmax(140px, 200px);
+   align-self: start;
+   text-decoration: none;
+   transition: all 2s;
+}
+
+.promoCatOffersCard__img {
+   display: block;
+   max-width: 200px;
+   min-width: 140px;
+   object-fit: cover;
+   max-width: 100%;
+}
+
+.promoCatOffersCard__heading {
+   display: grid;
+   height: 100%;
+   min-height: 30px;
+   font-size: 1em;
+   font-weight: 400;
+   color: white;
+   transition: all 2s;
+   text-align: center;
+   align-content: center;
+}
+
+.promoCatOffersCard__link:hover .promoCatOffersCard__heading {
+   color: var(--link-color-hover);
+   transition: all 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+   .promoCatOffersCard__heading {
+      font-size: 0.9em;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .promoCatOffersCard__heading {
+      font-size: 0.8em;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .promoCatOffersCard__container {
+      grid-template-rows: minmax(140px, 205px);
+      grid-template-columns: minmax(140px, 175px);
+   }
+
+   .promoCatOffersCard__link {
+      grid-template-rows: minmax(140px, 175px), 30px;
+      grid-template-columns: minmax(140px, 175px);
+   }
+}
