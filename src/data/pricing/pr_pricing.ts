@@ -1,7 +1,8 @@
-import banner_connect from "../assets/images_pricing/banner_connect.webp"
-import banner_together from "../assets/images_pricing/banner_together.webp"
-import banner_evening from "../assets/images_pricing/banner_evening.webp"
+import banner_connect from "../../assets/images_pricing/banner_connect.webp"
+import banner_together from "../../assets/images_pricing/banner_together.webp"
+import banner_evening from "../../assets/images_pricing/banner_evening.webp"
 
+import { pc_data } from "./pc"
 
 export const banner_info = [
    {
@@ -28,3 +29,9 @@ export const banner_info = [
          url: banner_evening,
       }
    },]
+
+export const products_data = [pc_data]
+
+// Our hottest offers
+// Popular picks for Back to School
+// Shop by category

@@ -1,11 +1,11 @@
-import laptop_img from "../assets/images_product_categories/laptop.webp"
-import pc_img from "../assets/images_product_categories/pc.webp"
-import gamepads_img from "../assets/images_product_categories/gamepads.webp"
-import vr_img from "../assets/images_product_categories/vr.webp"
-import cgu2_img from "../assets/images_product_categories/gpu2.webp"
-import cpu_img from "../assets/images_product_categories/cpu.webp"
-import keyboard_img from "../assets/images_product_categories/keyboard.webp"
-import screen_img from "../assets/images_product_categories/screen.webp"
+import laptop_img from "../../assets/images_product_categories/laptop.webp"
+import pc_img from "../../assets/images_product_categories/pc.webp"
+import gamepads_img from "../../assets/images_product_categories/gamepads.webp"
+import vr_img from "../../assets/images_product_categories/vr.webp"
+import cgu2_img from "../../assets/images_product_categories/gpu2.webp"
+import cpu_img from "../../assets/images_product_categories/cpu.webp"
+import keyboard_img from "../../assets/images_product_categories/keyboard.webp"
+import screen_img from "../../assets/images_product_categories/screen.webp"
 
 
 export const productCategories_data = [{

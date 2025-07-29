@@ -1,7 +1,7 @@
 import React from 'react'
 import "./home.css"
 import HomeSlider from './HomeSlider/HomeSlider'
-import { productCategories_data } from '../../data/productCategories'
+import { productCategories_data } from '../../data/pricing/productCategories'
 
 import HomeBtn from './HomeBtn/HomeBtn'
 import HomeHelp from './HomeHelp/HomeHelp'
