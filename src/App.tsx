@@ -16,7 +16,7 @@ import NotFound from "./pages/NotFound/NotFound";
 
 
 import Banner from "./components/Banner/banner";
-import { banner_info } from "./data/pricing/pricing"
+import { banner_info } from "./data/pricing/pr_pricing"
 
 
 

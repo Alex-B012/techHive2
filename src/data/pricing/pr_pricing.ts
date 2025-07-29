@@ -2,7 +2,7 @@ import banner_connect from "../../assets/images_pricing/banner_connect.webp"
 import banner_together from "../../assets/images_pricing/banner_together.webp"
 import banner_evening from "../../assets/images_pricing/banner_evening.webp"
 
-import { pc_data } from "./pc"
+import { pc_data } from "./pr02_pc"
 
 export const banner_info = [
    {

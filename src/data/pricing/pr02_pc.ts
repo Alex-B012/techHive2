@@ -48,7 +48,7 @@ export const pc_data = [
             type: "16 GB DDR5-5200 MT/s"
          },
          ssd: "1 TB",
-         dedicated_gpu: true,
+         dedicated_gpu: "y",
          gpu: {
             brand: "NVIDIA",
             name: "GeForce RTX 5060 Ti 16GB",
@@ -104,7 +104,7 @@ export const pc_data = [
             type: "",
          },
          ssd: "1024 GB",
-         dedicated_gpu: true,
+         dedicated_gpu: "y",
          gpu: {
             brand: "NVIDIA",
             name: "RTX 3060",
@@ -166,7 +166,7 @@ export const pc_data = [
             type: "DDR5",
          },
          ssd: "2 TB",
-         dedicated_gpu: true,
+         dedicated_gpu: "y",
          gpu: {
             brand: "NVIDIA",
             name: "GeForce RTX 5070 PRIME 12GB GDDR7",
@@ -225,7 +225,7 @@ export const pc_data = [
             type: "DDR5",
          },
          ssd: "2 TB",
-         dedicated_gpu: true,
+         dedicated_gpu: "y",
          gpu: {
             brand: "NVIDIA",
             name: "RTX 4060 8G",
