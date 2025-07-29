@@ -10,13 +10,13 @@ interface BannerProps {
 function Banner({ data }: BannerProps) {
    return (
       <section className="banner__section">
-         <Carousel>
+         <Carousel indicators={false} controls={false} interval={4000}>
             {data.map((item) => (
-               <Carousel.Item interval={1000}>
+               <Carousel.Item>
                   <BannerImage img_data={item} key={item.id} />
                </Carousel.Item>))}
          </Carousel>
-      </section>
+      </section >
    )
 }
 

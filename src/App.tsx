@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       <Header />
       {isHomePage && <Video />}
-      {isPricingPage && <Banner data={banner_info[0]} />}
+      {isPricingPage && <Banner data={banner_info} />}
       {/* {isNewsPage && <Banner data={""} />} */}
       <Routes>
         <Route path="/" element={<Home />} />

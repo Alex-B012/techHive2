@@ -1,4 +1,7 @@
 import banner_connect from "../assets/images_pricing/banner_connect.webp"
+import banner_together from "../assets/images_pricing/banner_together.webp"
+import banner_evening from "../assets/images_pricing/banner_evening.webp"
+
 
 export const banner_info = [
    {
@@ -10,26 +13,18 @@ export const banner_info = [
       }
    },
    {
-      id: 2,
-      title: "",
-      subtitle: {
-         line1: "",
-         line2: ""
-      },
+      id: 2, title: "Ignite Joy Inside!",
+      subtitle: { line1: "Together we create joy and", line2: " unforgettable memories" },
       img: {
-         name: "",
-         url: ""
+         name: "Watching TV",
+         url: banner_together,
       }
    },
    {
-      id: 3,
-      title: "",
-      subtitle: {
-         line1: "",
-         line2: ""
-      },
+      id: 3, title: "Bond Beyond Words!",
+      subtitle: { line1: "Foster a deeper connection with ", line2: " moments of shared serenity" },
       img: {
-         name: "",
-         url: ""
+         name: "Evening together",
+         url: banner_evening,
       }
-   }]
+   },]

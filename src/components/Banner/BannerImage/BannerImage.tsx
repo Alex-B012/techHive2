@@ -16,7 +16,6 @@ function BannerImage({ img_data }: BannerImageProps) {
             </h3>
          </div>
       </div>
-
    )
 }
 
