@@ -55,6 +55,6 @@ html, body {
 
 @media screen and (max-height: 450px) and (max-width: 1000px) {
   .App {
-    grid-template-rows: 35px 0fr 1fr 1fr;
+    grid-template-rows: 35px 0fr 1fr 1fr 1fr;
   }
 }

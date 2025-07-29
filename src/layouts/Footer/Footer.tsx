@@ -1,9 +1,9 @@
 import "./footer.css"
 import { headerLinks, headerOuterLinks } from '../../data/data'
-import Logo from '../Logo/Logo'
+import Logo from '../../components/Logo/Logo'
 import AllRightsReserved from './AllRightsReserved/AllRightsReserved'
 import FooterNav from "./FooterNav/FooterNav"
-import OuterLinks from "../OuterLinks/OuterLinks"
+import OuterLinks from "../../components/OuterLinks/OuterLinks"
 
 function Footer() {
    return (

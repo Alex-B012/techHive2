@@ -1,7 +1,7 @@
-import hp_omen_16l from "./../../assets/images_pricing/pc/HP_OMEN_16L.webp"
-import hp_omen_40l from "./../../assets/images_pricing/pc/HP_OMEN_40L.webp"
-import asus_rog_g6700 from "./../../assets/images_pricing/pc/ASUS_ROG_ G700.webp"
-import acer_nitro_60 from "./../../assets/images_pricing/pc/Acer_Nitro_60.webp"
+import hp_omen_16l from "./../../assets/images_pricing/pr02_pc/HP_OMEN_16L.webp"
+import hp_omen_40l from "./../../assets/images_pricing/pr02_pc/HP_OMEN_40L.webp"
+import asus_rog_g6700 from "./../../assets/images_pricing/pr02_pc/ASUS_ROG_ G700.webp"
+import acer_nitro_60 from "./../../assets/images_pricing/pr02_pc/Acer_Nitro_60.webp"
 
 
 export const pc_data = [

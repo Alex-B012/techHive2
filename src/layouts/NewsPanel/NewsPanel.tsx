@@ -1,10 +1,14 @@
 import "./newspanel.css";
-import { news_data } from "../../data/news";
 import NewsPanelCard from "./NewsPanelCard/NewsPanelCard";
 import { prepareNewsArray } from "../../utils/arrayFuncs";
+import { Article } from "../../types/newsPanel";
 
-function NewsPanel() {
-   const shuffledNews = prepareNewsArray(news_data);
+interface NewsPanelProps {
+   data: Article[]
+}
+
+function NewsPanel({ data }: NewsPanelProps) {
+   const shuffledNews = prepareNewsArray(data);
 
    return (
       <section className="newsPanel__section">

@@ -12,10 +12,10 @@ function HomeSlider({ data }: HomeSliderProps) {
       <Carousel className='homeCarousel__container'>
          {data.map((item) => (
             <Carousel.Item interval={5000} key={item.id} className='homeCarousel__itemContainer'>
-               <img src={item.img} alt={item.name} className='homeCarousel__img' />
+               <img src={item.promo.home.img} alt={item.name} className='homeCarousel__img' />
                <Carousel.Caption className='homeCarousel__caption' >
                   <h3 className='homeCarousel__title'>{item.name}</h3>
-                  <p className='homeCarousel__text'>{item.promo}</p>
+                  <p className='homeCarousel__text'>{item.promo.home.text}</p>
                </Carousel.Caption>
             </Carousel.Item>))}
       </Carousel>

@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 import "./header.css"
 import { headerLinks, headerOuterLinks } from '../../data/data'
 
-import Logo from "../Logo/Logo"
+import Logo from "../../components/Logo/Logo"
 import NavBar from './NavBar/NavBar';
-import OuterLinks from '../OuterLinks/OuterLinks';
+import OuterLinks from '../../components/OuterLinks/OuterLinks';
 import BurgerMenu from './BurgerMenu/BurgerMenu';
 
 function Header() {

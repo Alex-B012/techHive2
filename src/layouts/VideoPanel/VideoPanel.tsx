@@ -1,13 +1,17 @@
-import "./video.css";
-import { videoSources } from "../../data/videos";
+import "./videoPanel.css";
 import { useState, useEffect } from "react";
+import { VideoInterface } from "../../types/videoPanel";
 
-function Video() {
+interface VideoPanelProps {
+   data: VideoInterface[],
+}
+
+function VideoPanel({ data }: VideoPanelProps) {
    const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
    const [videoError, setVideoError] = useState(false);
 
    const handleVideoEnd = () => {
-      if (currentVideoIndex < videoSources.length - 1) {
+      if (currentVideoIndex < data.length - 1) {
          setCurrentVideoIndex(currentVideoIndex + 1);
       } else {
          setCurrentVideoIndex(0);
@@ -34,9 +38,9 @@ function Video() {
          <div className="bgvideo">
 
             <video
-               key={videoSources[currentVideoIndex].id}
+               key={data[currentVideoIndex].id}
                id="video_id"
-               src={videoSources[currentVideoIndex].src}
+               src={data[currentVideoIndex].src}
                autoPlay
                muted
                loop={false}
@@ -55,7 +59,6 @@ function Video() {
                </div>)}
          </div>
 
-
          {videoError && (
             <div className="error-message">
                <p>Sorry, there was an error loading the video. <span className="video__nowrap">Please try again.</span></p>
@@ -65,4 +68,4 @@ function Video() {
    );
 }
 
-export default Video;
+export default VideoPanel;

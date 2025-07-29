@@ -1,0 +1,22 @@
+import { Link } from 'react-router-dom'
+import './promoHotOffersCard.css'
+import { ProductCategory } from '../../../types/productCategories';
+
+interface PromoHotOffersCardProps {
+   data: ProductCategory;
+}
+
+function PromoHotOffersCard({ data }: PromoHotOffersCardProps) {
+   return (
+      <div className='promoHotOffersCard__container'>
+         <Link to={`/pricing/:${data.id}`} className="promoHotOffersCard__link">
+            <img src={data.promo.pricing_cat.img} alt={data.name} className="promoHotOfferCard__img" />
+            <h3 className="promoHotOfferCard__heading">{data.promo.pricing_cat.text}</h3>
+            <div className="promoHotOfferCard__btn">Shop now <span className="promoHotOfferCard__span">{" >"}</span>
+            </div>
+         </Link >
+      </div>
+   )
+}
+
+export default PromoHotOffersCard

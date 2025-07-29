@@ -1,12 +1,10 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import './App.css';
 
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "./layouts/Header/Header";
+import Footer from "./layouts/Footer/Footer";
 
 import Home from "./pages/Home/Home";
-import NewsPanel from "./components/NewsPanel/NewsPanel";
-import Video from "./components/Video/Video";
 import Pricing from "./pages/Pricing/Pricing";
 import NewsList from "./pages/NewsList/NewsList";
 import Contacts from "./pages/Contacts/Contacts";
@@ -14,8 +12,13 @@ import Careers from "./pages/Careers/Careers";
 import Team from "./pages/Team/Team";
 import NotFound from "./pages/NotFound/NotFound";
 
+import NewsPanel from "./layouts/NewsPanel/NewsPanel";
+import { news_data } from "./data/news";
 
-import Banner from "./components/Banner/banner";
+import Video from "./layouts/VideoPanel/VideoPanel";
+import { videoSources } from "./data/videos";
+
+import Banner from "./layouts/Banner/banner";
 import { banner_info } from "./data/pricing/pr_pricing"
 
 
@@ -29,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {isHomePage && <Video />}
+      {isHomePage && <Video data={videoSources} />}
       {isPricingPage && <Banner data={banner_info} />}
       {/* {isNewsPage && <Banner data={""} />} */}
       <Routes>
@@ -46,7 +49,7 @@ function App() {
 
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <NewsPanel />
+      <NewsPanel data={news_data} />
       <Footer />
     </div>
   );

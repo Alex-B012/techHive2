@@ -9,7 +9,7 @@ export function shuffleArray<T>(array: T[]): T[] {
    return array;
 }
 
-// Remove empty objects; shuffle and limit the array up to 4 object
+// Remove empty objects; shuffle and limit the News array up to 4 object
 export function prepareNewsArray<T extends { promoTitle?: string }>(array: T[]): T[] {
    const filteredArray = array.filter(item => item.promoTitle && item.promoTitle.length > 0);
 
@@ -29,4 +29,13 @@ export function filterPageLinksByNames(array: PageLinkInterface[], pageNames: st
       const indexB = pageNames.indexOf(b.name);
       return indexA - indexB;
    });
+}
+
+// Shuffle and limit the array up to 4 object
+
+export function prepareArrayWithLimit<T>(array: T[], limit: number = 4): T[] {
+   const shuffledArray = shuffleArray(array);
+   if (array.length <= limit) return shuffledArray;
+
+   return shuffledArray.slice(0, limit);
 }

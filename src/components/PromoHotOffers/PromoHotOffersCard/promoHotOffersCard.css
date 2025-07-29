@@ -1,0 +1,65 @@
+.promoHotOffersCard__container {
+   display: grid;
+   grid-template-rows: minmax(140px, 300px);
+   grid-template-columns: minmax(140px, 200px);
+}
+
+.promoHotOffersCard__link {
+   width: 100%;
+   display: grid;
+   grid-template-rows: minmax(140px, 200px), minmax(30px, 60px), 30px;
+   grid-template-columns: minmax(140px, 200px);
+   align-self: start;
+   row-gap: 5px;
+   text-decoration: none;
+   transition: all 2s;
+}
+
+.promoHotOfferCard__img {
+   display: block;
+   max-width: 200px;
+   min-width: 140px;
+   object-fit: cover;
+   max-width: 100%;
+}
+
+.promoHotOfferCard__heading {
+   font-size: 1em;
+   font-weight: 700;
+   color: white;
+   transition: all 2s;
+   align-self: start;
+}
+
+.promoHotOfferCard__btn {
+   font-size: 0.9em;
+   font-weight: 700;
+   color: var(--text-color);
+   transition: all 2s;
+}
+
+.promoHotOffersCard__link:hover .promoHotOfferCard__heading,
+.promoHotOffersCard__link:hover .promoHotOfferCard__btn {
+   color: var(--link-color-hover);
+   transition: all 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+   .promoHotOfferCard__heading {
+      font-size: 0.9em;
+   }
+
+   .promoHotOfferCard__btn {
+      font-size: 0.8em;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .promoHotOfferCard__heading {
+      font-size: 0.8em;
+   }
+
+   .promoHotOfferCard__btn {
+      font-size: 0.7em;
+   }
+}

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./newsPanelCard.css";
-import { Article } from "../../../types/news";
+import { Article } from "../../../types/newsPanel";
 
 interface NewsPanelCardProps {
    item: Article;
