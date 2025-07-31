@@ -1,4 +1,4 @@
-import { ContactsInfo } from "../../../types/contactsInfo";
+import { ContactsInfo } from "../../../../types/contactsInfo";
 import "./contactsAddress.css"
 
 interface ContactsAddressProps {

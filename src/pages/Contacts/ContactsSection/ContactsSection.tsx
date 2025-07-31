@@ -1,7 +1,7 @@
 import { ContactsInfo } from '../../../types/contactsInfo';
 import ContactsBusinessHoursList from '../components/ContactsBusinessHoursList/ContactsBusinessHoursList';
 import ContactsLinkLine from '../components/ContactsLinkLine/ContactsLinkLine';
-import ContactsAddress from '../ContactsAddress/ContactsAddress';
+import ContactsAddress from '../components/ContactsAddress/ContactsAddress';
 import './contactsSection.css'
 
 interface ContactsSectionProps {
