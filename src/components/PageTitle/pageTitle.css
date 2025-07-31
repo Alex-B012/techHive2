@@ -1,0 +1,49 @@
+.pageTitle_container {
+   background-color: brown;
+   padding-bottom: 4vh;
+}
+
+.pageTitle_title {
+   background-color: blue;
+   font-size: 1.6rem;
+   max-width: 290px;
+   overflow: hidden;
+}
+
+.pageTitle_text-center {
+   text-align: center;
+}
+
+.pageTitle_text-right {
+   text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+   .pageTitle_container {
+      padding-bottom: 3vh;
+   }
+
+   .pageTitle_title {
+      font-size: 1.4rem;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .pageTitle_container {
+      padding-bottom: 2vh;
+   }
+
+   .pageTitle_title {
+      font-size: 1.2rem;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .pageTitle_container {
+      padding-bottom: 1vh;
+   }
+
+   .pageTitle_title {
+      font-size: 1.1rem;
+   }
+}

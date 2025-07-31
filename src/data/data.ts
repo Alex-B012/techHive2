@@ -37,6 +37,11 @@ export const contact_info = {
     country: "USA"
   },
   email: "info@techhive.com",
+  business_hours: [
+    { id: 1, days: "Mon - Thu", hours: "10 AM - 8 PM" },
+    { id: 2, days: "Fri", hours: "10 AM - 7 PM" },
+    { id: 3, days: "Sat", hours: "11 AM - 6 PM" },
+    { id: 4, days: "Sun", hours: "11 AM - 5 PM" }]
 }
 
 export const allRights = {

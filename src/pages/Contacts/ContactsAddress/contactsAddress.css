@@ -1,0 +1,16 @@
+.contactsAddress__container {
+   /* padding-top: 5px; */
+   background-color: aquamarine;
+}
+
+@media screen and (max-width: 1200px) {
+   .contactsAddress__span {
+      font-size: 0.9em;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .contactsAddress__span {
+      font-size: 0.8em;
+   }
+}
