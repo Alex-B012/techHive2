@@ -1,20 +1,24 @@
 .promoCatOffers__container {
    width: 100%;
-   height: 100%;
    display: grid;
-   grid-template-rows: 35px 240px;
+   grid-template-rows: 50px 0.9fr;
+   row-gap: 2vh;
 }
 
 .promoCatOffers__title {
+   display: grid;
    text-align: center;
    font-size: 1.5em;
+   min-height: 50px;
 }
 
 .promoCatOffers__cardsList {
    display: grid;
    grid-template-columns: repeat(4, minmax(140px, 200px));
-   grid-template-rows: 240px;
+   grid-template-rows: 0.9fr;
    column-gap: 20px;
+   justify-content: center;
+   justify-items: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -25,11 +29,7 @@
 
 @media screen and (max-width: 1000px) {
    .promoCatOffers__container {
-      width: 100%;
-      height: 100%;
-      display: grid;
-      grid-template-rows: 30px 435px;
-      row-gap: 2vh;
+      grid-template-rows: 30px 1fr;
    }
 
    .promoCatOffers__title {
@@ -37,51 +37,28 @@
    }
 
    .promoCatOffers__cardsList {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(140px, 200px));
-      grid-template-rows: repeat(2, minmax(140px, 215px));
-      row-gap: 3vh;
-      justify-content: center;
-      justify-items: center;
+      grid-template-columns: repeat(2, minmax(140px, 160px));
+      grid-template-rows: repeat(2, minmax(140px, 1fr));
+      gap: 1vh 3vh;
    }
 }
 
 @media screen and (max-width: 800px) {
    .promoCatOffers__cardsList {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(140px, 175px));
-      grid-template-rows: repeat(2, minmax(140px, 205px));
-      justify-content: center;
-      justify-items: center;
+      grid-template-rows: repeat(2, minmax(140px, 1fr));
    }
 }
 
 @media screen and (max-width: 450px) {
-   .promoCatOffers__container {
-      grid-template-rows: 30px 425px;
-   }
-
    .promoCatOffers__cardsList {
-      display: grid;
       grid-template-columns: repeat(2, minmax(140px, 150px));
-      grid-template-rows: repeat(2, minmax(140px, 205px));
-      row-gap: 3vh;
-      justify-content: center;
-      justify-items: center;
    }
 }
 
 @media screen and (max-width: 400px) {
-   .promoCatOffers__container {
-      grid-template-rows: 30px 300px;
-   }
 
    .promoCatOffers__cardsList {
-      display: grid;
       grid-template-columns: repeat(2, minmax(140px, 140px));
-      grid-template-rows: repeat(2, minmax(140px, 150px));
-      column-gap: 3vw;
-      justify-content: center;
-      justify-items: center;
+      gap: 1vh 1vh;
    }
 }

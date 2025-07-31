@@ -15,7 +15,7 @@
 }
 
 .promoHotOfferCard__img {
-   display: block;
+   display: grid;
    max-width: 200px;
    min-width: 140px;
    object-fit: cover;
@@ -25,12 +25,12 @@
 .promoHotOfferCard__heading {
    display: grid;
    align-self: start;
+   min-height: 60px;
+   padding-top: 10px;
    font-size: 0.95em;
    font-weight: 700;
    color: white;
    transition: all 2s;
-   min-height: 60px;
-   padding-top: 10px;
 }
 
 .promoHotOfferCard__btn {
