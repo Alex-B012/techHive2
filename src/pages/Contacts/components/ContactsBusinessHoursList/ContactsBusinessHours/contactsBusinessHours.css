@@ -1,0 +1,18 @@
+.contactsBusinessHours__line {
+   width: 200px;
+   display: grid;
+   grid-template-columns: 81px 100px;
+   column-gap: 1vw;
+}
+
+@media screen and (max-width: 1200px) {
+   .contactsBusinessHours__span {
+      font-size: 0.9em;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .contactsBusinessHours__span {
+      font-size: 0.8em;
+   }
+}

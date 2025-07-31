@@ -15,7 +15,7 @@
    grid-template-rows: minmax(200px, 1fr) repeat(2, minmax(200px, 0.82fr));
    row-gap: 7vh;
    justify-items: center;
-   padding: 0 2% 0 0;
+   padding: 40px 2% 90px 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -25,6 +25,7 @@
 
    .pricingPage__container {
       row-gap: 3vh;
+      padding: 30px 2% 90px 0;
    }
 }
 
@@ -34,7 +35,7 @@
    }
 
    .pricingPage__container {
-      padding: 0 0 5vh;
+      padding: 20px 0 60px;
       row-gap: 5vh;
    }
 }

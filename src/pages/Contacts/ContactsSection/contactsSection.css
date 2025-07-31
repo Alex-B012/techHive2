@@ -1,0 +1,15 @@
+ .contactsSection__title {
+    font-size: 1.1em;
+ }
+
+ @media screen and (max-width: 1200px) {
+    .contactsSection__title {
+       font-size: 1em;
+    }
+ }
+
+ @media screen and (max-width: 1000px) {
+    .contactsSection__title {
+       font-size: 0.9em;
+    }
+ }

@@ -10,7 +10,7 @@ interface BannerProps {
 function Banner({ data }: BannerProps) {
    return (
       <section className="banner__section">
-         <Carousel indicators={false} controls={false} interval={10000}>
+         <Carousel indicators={false} controls={false} interval={8000}>
             {data.map((item) => (
                <Carousel.Item>
                   <BannerImage img_data={item} key={item.id} />

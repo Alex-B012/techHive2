@@ -19,7 +19,7 @@
    grid-template-rows: 1fr 60px 140px;
    row-gap: 50px;
    justify-items: center;
-   padding: 20px 1% 0;
+   padding: 40px 1% 60px;
 }
 
 
@@ -40,7 +40,7 @@
 
    .homePage__container {
       grid-template-rows: 370px 60px 140px;
-      padding: 20px 2% 0 1%;
+      padding: 40px 2% 60px 1%;
    }
 }
 
@@ -52,7 +52,7 @@
 
    .homePage__container {
       grid-template-rows: 310px 60px 140px;
-      padding: 20px 2% 0 1%;
+      padding: 30px 2% 40px 1%;
       row-gap: 45px;
    }
 }
@@ -64,7 +64,7 @@
 
    .homePage__container {
       grid-template-rows: 461px 60px 140px;
-      padding: 10px 1% 0;
+      padding: 30px 1%;
       row-gap: 40px;
    }
 }
@@ -81,5 +81,4 @@
       grid-template-rows: 501px 60px 120px;
       row-gap: 20px;
    }
-
 }

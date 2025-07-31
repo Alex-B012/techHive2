@@ -1,0 +1,10 @@
+.map__iframe {
+   width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+   .map__iframe {
+      width: calc(100% + 4vw);
+      margin: 0 -2vw 0;
+   }
+}

@@ -21,8 +21,6 @@ import { videoSources } from "./data/videos";
 import Banner from "./layouts/Banner/banner";
 import { banner_info } from "./data/pricing/pr_pricing"
 
-
-
 function App() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";

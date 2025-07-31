@@ -1,12 +1,10 @@
-import Logo from "../../components/Logo/Logo"
-import PageTitle from "../../components/PageTitle/PageTitle"
 import { contact_info } from "../../data/data"
 import "./contacts.css"
-import ContactsAddress from "./ContactsAddress/ContactsAddress"
-import ContactsBusinessHours from "./ContactsBusinessHours/ContactsBusinessHours"
-import ContactsEmail from "./ContactsEmail/ContactsEmail"
-import ContactsMap from "./ContactsMap/ContactsMap"
-import ContactsPhone from "./ContactsPhone/ContactsPhone"
+import PageTitle from "../../components/PageTitle/PageTitle"
+import Logo from "../../components/Logo/Logo"
+import Map from "../../components/Map/Map"
+import ContactsSection from "./ContactsSection/ContactsSection"
+
 
 function Contacts() {
    return (
@@ -17,11 +15,11 @@ function Contacts() {
             <div className="contactsPage__logoContainer">
                <Logo />
             </div>
-            <ContactsAddress data={contact_info} />
-            <ContactsBusinessHours data={contact_info} />
-            <ContactsPhone data={contact_info} />
-            <ContactsEmail data={contact_info} />
-            <ContactsMap />
+            <ContactsSection data={contact_info} title="Address" />
+            <ContactsSection data={contact_info} title="Business Hours" />
+            <ContactsSection data={contact_info} title="Phone" />
+            <ContactsSection data={contact_info} title="Email" />
+            <Map />
          </div>
       </div>
    )
