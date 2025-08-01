@@ -1,0 +1,58 @@
+.welcomeParagraph__container {
+   width: 100%;
+   display: grid;
+   grid-template-rows: 44px 1fr;
+   background-color: brown;
+}
+
+.welcomeParagraph__title {
+   display: grid;
+   text-align: center;
+   font-size: 1.6em;
+   font-weight: 700;
+   background-color: darkolivegreen;
+}
+
+.welcomeParagraph__text {
+   background-color: deeppink;
+}
+
+@media screen and (max-width: 1200px) {
+   .welcomeParagraph__container {
+      grid-template-rows: 38px 1fr;
+   }
+
+   .welcomeParagraph__title {
+      font-size: 1.4rem;
+   }
+
+   .welcomeParagraph__text {
+      font-size: 0.9em;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .welcomeParagraph__title {
+      font-size: 1.2rem;
+   }
+
+   .welcomeParagraph__text {
+      font-size: 0.8em;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .welcomeParagraph__container {
+      grid-template-rows: 35px 1fr;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .welcomeParagraph__container {
+      grid-template-rows: 31px 1fr;
+   }
+
+   .welcomeParagraph__title {
+      font-size: 1.1rem;
+   }
+}

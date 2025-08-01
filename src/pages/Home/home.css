@@ -7,11 +7,6 @@
    background: linear-gradient(90deg, var(--mobileMenu-bg-color) 0%, var(--header-bg-color)100%);
 }
 
-.homePage__empty {
-   width: 100%;
-   display: grid;
-}
-
 .homePage__container {
    width: 100%;
    height: 100%;

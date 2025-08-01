@@ -1,40 +1,47 @@
-export interface ArticleImage {
+type ImageData = {
    img_author: string;
    name: string;
    source: string;
    img: string;
-}
+};
 
-export interface ArticleVideo {
+type VideoData = {
    video_author: string;
    name: string;
    source: string;
    video: string;
-}
+};
 
-export interface ArticleAuthor {
+type ArticleAuthor = {
    name: string;
    img: string;
-}
+};
 
-export interface Heading {
+type ArticleSource = {
+   name: string;
+   url: string;
+};
+
+type ArticleParagraph = {
+   id_par: number;
    heading: string;
-   heading_img: ArticleImage;
-   heading_video: ArticleVideo;
-   heading_yt_video: ArticleVideo;
+   heading_img?: ImageData;
+   heading_video?: VideoData;
+   heading_yt_video?: VideoData;
    paragraphs: string[];
 }
 
-export interface Article {
+export type NewsItem = {
    id: number;
    category: string;
    title: string;
-   subtitle: string;
-   promoTitle: string;
-   article_img: ArticleImage;
-   article_video: ArticleVideo;
-   article_yt_video: ArticleVideo;
+   subtitle?: string;
+   promoTitle?: string;
+   article_img?: ImageData;
+   article_video?: VideoData;
+   article_yt_video?: VideoData;
    article_author: ArticleAuthor;
    date: string;
-   text: Heading[];
-}
+   text: ArticleParagraph[];
+   source?: ArticleSource;
+};

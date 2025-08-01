@@ -1,3 +1,5 @@
+import { NewsCategoryBtnInfo } from "../types/news";
+import { NewsItem } from "../types/newsPanel";
 import { PageLinkInterface } from "../types/pageLinks"
 
 // Fisher-Yates (or Knuth) shuffle algorithm
@@ -32,10 +34,20 @@ export function filterPageLinksByNames(array: PageLinkInterface[], pageNames: st
 }
 
 // Shuffle and limit the array up to 4 object
-
 export function prepareArrayWithLimit<T>(array: T[], limit: number = 4): T[] {
    const shuffledArray = shuffleArray(array);
    if (array.length <= limit) return shuffledArray;
 
    return shuffledArray.slice(0, limit);
 }
+
+// Get an array of unique news categories
+export const getUniqueCategories = (inputArray: NewsItem[]): NewsCategoryBtnInfo[] => {
+   const categorySet = new Set<string>();
+   inputArray.forEach(item => categorySet.add(item.category));
+
+   return Array.from(categorySet).map((category, index) => ({
+      id: index,
+      cat_name: category
+   }));
+};

@@ -1,10 +1,10 @@
 import "./newspanel.css";
 import NewsPanelCard from "./NewsPanelCard/NewsPanelCard";
 import { prepareNewsArray } from "../../utils/arrayFuncs";
-import { Article } from "../../types/newsPanel";
+import { NewsItem } from "../../types/newsPanel";
 
 interface NewsPanelProps {
-   data: Article[]
+   data: NewsItem[];
 }
 
 function NewsPanel({ data }: NewsPanelProps) {

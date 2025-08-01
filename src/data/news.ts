@@ -9,10 +9,22 @@ import blur_keyboard1 from "../assets/images_news/6_blur_keyboard1.webp"
 import blur_keyboard2 from "../assets/images_news/6_blur_keyboard2.webp"
 import blur_keyboard3 from "../assets/images_news/6_blur_keyboard3.webp"
 
+export const newsPage_intro = {
+   title: "Latest News",
+   // text: [""]
+}
+
+export const newsCategories_info = {
+   digital: { name: "Digital", url: "/digital" },
+   gaming: { name: "Gaming", url: "/gaming" },
+   tech_hardware: { name: "Tech Hardware", url: "/techhardware" },
+   pc_peripherals: { name: "PC Peripherals", url: "/pcperiherals" },
+}
+
 export const news_data = [
    {
       id: 11,
-      category: "Digital",
+      category: String(newsCategories_info.digital.name),
       title: "Microsoft Copilot now has a face",
       subtitle: "We don't get it either.",
       promoTitle: "Microsoft Copilot now offers a friendlier, more engaging face for consumers, bringing a fresh, approachable feel to assistance.",
@@ -78,7 +90,7 @@ export const news_data = [
       }
    }, {
       id: 10,
-      category: "Digital",
+      category: newsCategories_info.digital.name,
       title: `Microsoft claims Windows 11 24H2 is the ‘most reliable’ Windows version ever`,
       subtitle: `But given the source and Windows 11 24H2's track record, it's hard not to be skeptical of the claim.`,
       promoTitle: "Windows 11 24H2 offers unprecedented reliability, making your system more stable with fewer unexpected restarts and improved performance.",
@@ -141,7 +153,7 @@ export const news_data = [
       }
    }, {
       id: 9,
-      category: "Gaming",
+      category: newsCategories_info.gaming.name,
       title: "LEGO’s delightful Nintendo Game Boy tribute doesn’t need batteries",
       subtitle: "The perfectly-proportioned set includes swappable cartridges and lenticular screens. It'll release in October for $60.",
       promoTitle: "LEGO’s Nintendo Game Boy tribute set features swappable cartridges and lenticular screens, offering a nostalgic, battery-free experience for $60.",
@@ -203,7 +215,7 @@ export const news_data = [
       }
    }, {
       id: 8,
-      category: "Tech Hardware",
+      category: newsCategories_info.tech_hardware.name,
       title: "Update your printer! Over 700 models actively being attacked by hackers",
       subtitle: "Printers by Brother, Toshiba, Fujifilm, Konica Minolta, and Ricoh are susceptible to attacks, thanks to dangerous security flaws.",
       promoTitle: "Over 700 printer models from Brother, Toshiba, Fujifilm, Konica Minolta, and Ricoh are vulnerable to hacker attacks. Update now!",
@@ -289,7 +301,7 @@ export const news_data = [
       }
    }, {
       id: 7,
-      category: "Tech Hardware",
+      category: newsCategories_info.tech_hardware.name,
       title: "Amazon sells a legacy MSI CPU air cooler for $5,340",
       subtitle: "Are you willing to spend a fortune on old PC hardware?",
       promoTitle: "The mythical MSI Core Frozr L, an iconic piece of history, priced at $5,340.25 for PC nostalgia enthusiasts.",
@@ -375,14 +387,14 @@ export const news_data = [
       }
    }, {
       id: 6,
-      category: "PC Peripherals",
+      category: newsCategories_info.pc_peripherals.name,
       title: "BLUR Basecamp 75+ keyboard with potato-mode façade announced",
       subtitle: "The greasy-lens aesthetic is designed as ‘tribute to PS1-era motion and texture,’ explains maker Higround.",
-      promoTitle: "",
+      promoTitle: `Higround’s BLUR Basecamp 75+ keyboard combines retro gaming aesthetics with premium features: hot-swappable switches, dampening tech, RGB lighting.`,
       article_img: {
-         img_author: "",
-         name: "",
-         source: "",
+         img_author: "Adrien",
+         name: "Unsplash",
+         source: "https://unsplash.com/photos/a-close-up-of-a-computer-keyboard-with-colorful-lights-D5kDcF1JvEM",
          img: blur_keyboard1,
       },
       article_video: {
@@ -432,7 +444,7 @@ export const news_data = [
          id_par: 2,
          heading: "",
          heading_img: {
-            iimg_author: "Evgeniy Bezkorovayniy",
+            img_author: "Evgeniy Bezkorovayniy",
             name: "Unsplash",
             source: "https://unsplash.com/photos/a-glowing-keyboard-lights-up-the-dark-nChUss0P6oE",
             img: blur_keyboard2,

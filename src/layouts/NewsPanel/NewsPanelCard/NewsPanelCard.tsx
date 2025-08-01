@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import "./newsPanelCard.css";
-import { Article } from "../../../types/newsPanel";
+import { NewsItem } from "../../../types/newsPanel";
 
 interface NewsPanelCardProps {
-   item: Article;
+   item: NewsItem;
    order: number;
 }
 
