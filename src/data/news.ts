@@ -3,11 +3,15 @@ import ms_win11_10 from "../assets/images_news/10_win11.webp";
 import nintendo_9 from "../assets/images_news/9_nintendo.webp";
 import printer_8 from "../assets/images_news/8_printer.webp";
 import samsung_memory_8 from "../assets/images_news/8_samsung-memory.webp";
+import msi_cpu_cooler1 from "../assets/images_news/7_MSI_cpu_cooler1.webp"
+import msi_cpu_cooler2 from "../assets/images_news/7_MSI_cpu_cooler2.webp"
+import blur_keyboard1 from "../assets/images_news/6_blur_keyboard1.webp"
+import blur_keyboard2 from "../assets/images_news/6_blur_keyboard2.webp"
+import blur_keyboard3 from "../assets/images_news/6_blur_keyboard3.webp"
 
 export const news_data = [
    {
       id: 11,
-      url: "",
       category: "Digital",
       title: "Microsoft Copilot now has a face",
       subtitle: "We don't get it either.",
@@ -36,6 +40,7 @@ export const news_data = [
       },
       date: "July 25, 2025",
       text: [{
+         id_par: 1,
          heading: "",
          heading_img: {
             img_author: "",
@@ -73,7 +78,6 @@ export const news_data = [
       }
    }, {
       id: 10,
-      url: "",
       category: "Digital",
       title: `Microsoft claims Windows 11 24H2 is the ‘most reliable’ Windows version ever`,
       subtitle: `But given the source and Windows 11 24H2's track record, it's hard not to be skeptical of the claim.`,
@@ -102,6 +106,7 @@ export const news_data = [
       },
       date: "July 25, 2025",
       text: [{
+         id_par: 1,
          heading: "",
          heading_img: {
             img_author: "",
@@ -136,7 +141,6 @@ export const news_data = [
       }
    }, {
       id: 9,
-      url: "",
       category: "Gaming",
       title: "LEGO’s delightful Nintendo Game Boy tribute doesn’t need batteries",
       subtitle: "The perfectly-proportioned set includes swappable cartridges and lenticular screens. It'll release in October for $60.",
@@ -165,6 +169,7 @@ export const news_data = [
       },
       date: "July 24, 2025",
       text: [{
+         id_par: 1,
          heading: "",
          heading_img: {
             img_author: "",
@@ -198,7 +203,6 @@ export const news_data = [
       }
    }, {
       id: 8,
-      url: "",
       category: "Tech Hardware",
       title: "Update your printer! Over 700 models actively being attacked by hackers",
       subtitle: "Printers by Brother, Toshiba, Fujifilm, Konica Minolta, and Ricoh are susceptible to attacks, thanks to dangerous security flaws.",
@@ -227,6 +231,7 @@ export const news_data = [
       },
       date: "July 24, 2025",
       text: [{
+         id_par: 1,
          heading: "",
          heading_img: {
             img_author: "",
@@ -252,6 +257,7 @@ export const news_data = [
             `The attacks appear to be both random and widespread. Any printer that’s affected by security vulnerabilities CVE-2024-51977 and CVE-2024-51978 is a perfect target for hackers.`
          ]
       }, {
+         id_par: 2,
          heading: "Be sure to update your printers!",
          heading_img: {
             img_author: "Samsung Memory",
@@ -283,16 +289,15 @@ export const news_data = [
       }
    }, {
       id: 7,
-      url: "",
-      category: "",
-      title: "",
-      subtitle: "",
-      promoTitle: "",
+      category: "Tech Hardware",
+      title: "Amazon sells a legacy MSI CPU air cooler for $5,340",
+      subtitle: "Are you willing to spend a fortune on old PC hardware?",
+      promoTitle: "The mythical MSI Core Frozr L, an iconic piece of history, priced at $5,340.25 for PC nostalgia enthusiasts.",
       article_img: {
-         img_author: "",
-         name: "",
-         source: "",
-         img: "",
+         img_author: "Andrey Matveev",
+         name: "Unsplash",
+         source: "https://unsplash.com/photos/a-couple-of-coolers-sitting-on-top-of-a-table-e3w0E3od6xQ",
+         img: msi_cpu_cooler1,
       },
       article_video: {
          video_author: "",
@@ -301,17 +306,18 @@ export const news_data = [
          video: ""
       },
       article_yt_video: {
-         video_author: "",
+         video_author: "Matt's Paddock",
          name: "",
-         source: "",
+         source: "https://youtu.be/74G7ZxTmIIc?si=VPJda6WcU7GWouiU",
          video: "",
       },
       article_author: {
-         name: ``,
+         name: `Jowi Morales`,
          img: "",
       },
-      date: "",
+      date: "July 26, 2025",
       text: [{
+         id_par: 1,
          heading: "",
          heading_img: {
             img_author: "",
@@ -332,17 +338,18 @@ export const news_data = [
             video: ""
          },
          paragraphs: [
-            ``,
-            ``,
-            ``
+            `MSI is returning to the air-cooling space with the MAG Core Frozr AA13, after a nearly 10-year break from its last release. However, it doesn’t mean that its old air cooler lineup has already disappeared — in fact, Amazon is still selling the MSI Core Frozr L for $5,340.25.`,
+            `The Core Frozr L launched in 2016. Not only is it available, but you also have to pay a premium to get your hands on it. It’s currently priced at $5,340.25 on the online marketplace, a far cry from its $49.99 MSRP at launch. Even if you account for inflation, the cooler should only be priced at just $66.71.`,
+            `The latest chips compatible with this air cooler are the 6th to 9th generation Intel Core processors and the AMD Ryzen 5000-series CPUs. While the newest Intel CPUs may no longer be compatible with this cooler, you can still make it work with AMD processors, such as the Ryzen 5 5500X3D, which was launched just last month.`,
          ]
       }, {
+         id_par: 2,
          heading: "",
          heading_img: {
-            img_author: "",
-            name: "",
-            source: "",
-            img: "",
+            img_author: "Nassim Allia",
+            name: "Unsplash",
+            source: "https://unsplash.com/photos/black-and-red-speaker-with-blue-light-YZmbiNkvpBM",
+            img: msi_cpu_cooler2,
          },
          heading_video: {
             video_author: "",
@@ -357,52 +364,26 @@ export const news_data = [
             video: ""
          },
          paragraphs: [
-            ``,
-            ``,
-            ``
-         ]
-      }, {
-         heading: "",
-         heading_img: {
-            img_author: "",
-            name: "",
-            source: "",
-            img: "",
-         },
-         heading_video: {
-            video_author: "",
-            name: "",
-            source: "",
-            video: ""
-         },
-         heading_yt_video: {
-            video_author: "",
-            name: "",
-            source: "",
-            video: ""
-         },
-         paragraphs: [
-            ``,
-            ``,
-            ``
+            `We wouldn’t recommend that, though, as we’re unsure how capable it is when it comes to the latest from Team Red, although the listing says it can dissipate up to 200W of heat from the CPU. At more than $5,000, that makes it more expensive than a decent gaming rig capable of playing games at 4K.`,
+            `We’re not exactly sure why this listing is still available, especially at the price it’s advertised for. It’s also unlikely to be from a scammer, as it’s sold by and ships directly from Amazon. Perhaps Amazon has forgotten to revise the CPU cooler's pricing. Maybe it costs so much because it’s expected to be displayed in a collector's house. The Core Frozr L is far from being a piece of computer history, though.`,
+            `Still, it would be interesting to see how a nearly 10-year-old cooler design performs compared to a modern gaming CPU, such as the Ryzen 7 9800X3D. If you have the cash, this is your chance to find out and acquire an antique PC component at the same time. We’ve already seen plenty of PC parts going for a crazy sum, like the Asus ROG Astral RTX 5090 Gold Edition, which costs nearly half a million dollars — let’s not give MSI any ideas.`,
          ]
       },],
       source: {
-         name: "",
-         url: ""
+         name: "Tom's Hardware",
+         url: "https://www.tomshardware.com/pc-components/air-cooling/amazon-sells-a-legacy-msi-cpu-air-cooler-for-usd5-340-the-core-frozr-l-launched-in-2016-with-a-usd50-msrp"
       }
    }, {
       id: 6,
-      url: "",
-      category: "",
-      title: "",
-      subtitle: "",
+      category: "PC Peripherals",
+      title: "BLUR Basecamp 75+ keyboard with potato-mode façade announced",
+      subtitle: "The greasy-lens aesthetic is designed as ‘tribute to PS1-era motion and texture,’ explains maker Higround.",
       promoTitle: "",
       article_img: {
          img_author: "",
          name: "",
          source: "",
-         img: "",
+         img: blur_keyboard1,
       },
       article_video: {
          video_author: "",
@@ -422,6 +403,7 @@ export const news_data = [
       },
       date: "",
       text: [{
+         id_par: 1,
          heading: "",
          heading_img: {
             img_author: "",
@@ -442,17 +424,18 @@ export const news_data = [
             video: ""
          },
          paragraphs: [
-            ``,
-            ``,
-            ``
+            `Lifestyle computer peripheral brand, Higround, has launched what it describes as its “most unconventional design” yet. The new BLUR Basecamp 75+ keyboard seeks to recreate a highly stylized retro video game artifact, made real, for your desk (h/t PC Gamer). Don’t be fooled by the potato-mode graphics, though; underneath the hazy and distorted keycap legends, this is a hot-swappable, pre-lubed, dampened, thocky, enthusiast keyboard with customizable RGB.`,
+            `Coming from a brand which was set up by enthusiasts “unsatisfied with the plain keyboards marketed to us,” Higround is no stranger to strange. The majority of the firm’s prior keyboard designs feature undulating or other abstract etchings atop the keycaps, with the meaningful legends visible on the front face. It looks like there is no such luxury on the BLUR Basecamp 75+, but the character blurring seems to be at the precise level where the glyphs remain distinguishable without too much squinting.`,
+            `Of course, touch typists and even seasoned hunt-and-peckers only need the occasional glance at their hands, assuming there are finger nubs on the usual F and J home row keys. The keycaps are made from 1.5mm thick PBT with 5-sided dye-sub printing, making them relatively durable.`
          ]
       }, {
+         id_par: 2,
          heading: "",
          heading_img: {
-            img_author: "",
-            name: "",
-            source: "",
-            img: "",
+            iimg_author: "Evgeniy Bezkorovayniy",
+            name: "Unsplash",
+            source: "https://unsplash.com/photos/a-glowing-keyboard-lights-up-the-dark-nChUss0P6oE",
+            img: blur_keyboard2,
          },
          heading_video: {
             video_author: "",
@@ -467,17 +450,17 @@ export const news_data = [
             video: ""
          },
          paragraphs: [
-            ``,
-            ``,
-            ``
+            `While the makers mention that the look of this product is inspired by the graphics rendered by Sony’s revolutionary PS1 console, I can also vividly imagine one of the white-coated scientists in Golden Eye on N64 typing on something like this. PC Gamer thought the BLUR Basecamp 75+ looks like something out of Half-Life 1, naturally.`,
+            `Enough about this input device’s appearance. What do you get under the blurriness? As we mentioned in the introduction, the BLUR Basecamp 75+ build appears to have significant appeal to keyboard aficionados.`,
          ]
       }, {
+         id_par: 3,
          heading: "",
          heading_img: {
-            img_author: "",
-            name: "",
-            source: "",
-            img: "",
+            img_author: "Clovis Kurower",
+            name: "Unsplash",
+            source: "https://unsplash.com/photos/a-black-keyboard-on-a-desk-NDmlviPUOIw",
+            img: blur_keyboard3,
          },
          heading_video: {
             video_author: "",
@@ -492,18 +475,16 @@ export const news_data = [
             video: ""
          },
          paragraphs: [
-            ``,
-            ``,
-            ``
+            `This is a 75% design, reportedly the first of its kind in this form factor from Higround – featuring a full complement of F-Row keys. The keyswitches chosen to drive this design are TTC’s HG Blitz models. We’ve never heard of these, but they are said to be “the ultimate gaming switch” with linear rail-guided travel for smooth actuation at 1.4mm and a bottom-out distance of 3.5mm. If you don’t like these pre-lubed 45g actuation force switches, at least you can quite easily swap them out.`,
+            `Elsewhere in the specs, we see that the BLUR Basecamp 75+ is built on an aluminum plate, with five layers of ‘Dampening Plus’ materials like poly foam, silicone, and others. This is a wired (USB Type-C) keyboard with a US layout that features customizable RGB lighting, macro programming, and compatibility with macOS.`,
          ]
       },],
       source: {
-         name: "",
-         url: ""
+         name: "Tom's Hardware",
+         url: "https://www.tomshardware.com/peripherals/mechanical-keyboards/blur-basecamp-75-keyboard-with-potato-mode-facade-announced-the-appeal-is-literally-difficult-to-see"
       }
    }, {
       id: 5,
-      url: "",
       category: "",
       title: "",
       subtitle: "",
@@ -532,6 +513,7 @@ export const news_data = [
       },
       date: "",
       text: [{
+         id_par: 1,
          heading: "",
          heading_img: {
             img_author: "",
@@ -557,6 +539,7 @@ export const news_data = [
             ``
          ]
       }, {
+         id_par: 2,
          heading: "",
          heading_img: {
             img_author: "",
@@ -582,6 +565,7 @@ export const news_data = [
             ``
          ]
       }, {
+         id_par: 3,
          heading: "",
          heading_img: {
             img_author: "",
@@ -613,7 +597,6 @@ export const news_data = [
       }
    }, {
       id: 4,
-      url: "",
       category: "",
       title: "",
       subtitle: "",
@@ -642,6 +625,7 @@ export const news_data = [
       },
       date: "",
       text: [{
+         id_par: 1,
          heading: "",
          heading_img: {
             img_author: "",
@@ -667,6 +651,7 @@ export const news_data = [
             ``
          ]
       }, {
+         id_par: 2,
          heading: "",
          heading_img: {
             img_author: "",
@@ -692,6 +677,7 @@ export const news_data = [
             ``
          ]
       }, {
+         id_par: 3,
          heading: "",
          heading_img: {
             img_author: "",
@@ -723,7 +709,7 @@ export const news_data = [
       }
    }, {
       id: 3,
-      url: "",
+
       category: "",
       title: "",
       subtitle: "",
@@ -752,6 +738,7 @@ export const news_data = [
       },
       date: "",
       text: [{
+         id_par: 1,
          heading: "",
          heading_img: {
             img_author: "",
@@ -777,6 +764,7 @@ export const news_data = [
             ``
          ]
       }, {
+         id_par: 2,
          heading: "",
          heading_img: {
             img_author: "",
@@ -802,6 +790,7 @@ export const news_data = [
             ``
          ]
       }, {
+         id_par: 3,
          heading: "",
          heading_img: {
             img_author: "",
@@ -833,7 +822,6 @@ export const news_data = [
       }
    }, {
       id: 2,
-      url: "",
       category: "",
       title: "",
       subtitle: "",
@@ -862,6 +850,7 @@ export const news_data = [
       },
       date: "",
       text: [{
+         id_par: 1,
          heading: "",
          heading_img: {
             img_author: "",
@@ -887,6 +876,7 @@ export const news_data = [
             ``
          ]
       }, {
+         id_par: 2,
          heading: "",
          heading_img: {
             img_author: "",
@@ -912,6 +902,7 @@ export const news_data = [
             ``
          ]
       }, {
+         id_par: 3,
          heading: "",
          heading_img: {
             img_author: "",
@@ -943,7 +934,6 @@ export const news_data = [
       }
    }, {
       id: 1,
-      url: "",
       category: "",
       title: "",
       subtitle: "",
@@ -972,6 +962,7 @@ export const news_data = [
       },
       date: "",
       text: [{
+         id_par: 1,
          heading: "",
          heading_img: {
             img_author: "",
@@ -997,6 +988,7 @@ export const news_data = [
             ``
          ]
       }, {
+         id_par: 2,
          heading: "",
          heading_img: {
             img_author: "",
@@ -1022,6 +1014,7 @@ export const news_data = [
             ``
          ]
       }, {
+         id_par: 3,
          heading: "",
          heading_img: {
             img_author: "",
@@ -1053,7 +1046,6 @@ export const news_data = [
       }
    }, {
       id: 0,
-      url: "",
       category: "",
       title: "",
       subtitle: "",
@@ -1082,6 +1074,7 @@ export const news_data = [
       },
       date: "",
       text: [{
+         id_par: 1,
          heading: "",
          heading_img: {
             img_author: "",
@@ -1107,6 +1100,7 @@ export const news_data = [
             ``
          ]
       }, {
+         id_par: 2,
          heading: "",
          heading_img: {
             img_author: "",
@@ -1132,6 +1126,7 @@ export const news_data = [
             ``
          ]
       }, {
+         id_par: 3,
          heading: "",
          heading_img: {
             img_author: "",

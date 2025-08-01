@@ -27,7 +27,6 @@ export interface Heading {
 
 export interface Article {
    id: number;
-   url: string;
    category: string;
    title: string;
    subtitle: string;
