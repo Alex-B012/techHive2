@@ -18,8 +18,8 @@ export const newsPage_intro = {
 export const newsCategories_info = {
    digital: { name: "Digital", url: "/digital" },
    gaming: { name: "Gaming", url: "/gaming" },
-   tech_hardware: { name: "Tech Hardware", url: "/techhardware" },
-   pc_peripherals: { name: "PC Peripherals", url: "/pcperiherals" },
+   tech_hardware: { name: "Tech Hardware", url: "/tech-hardware" },
+   pc_peripherals: { name: "PC Peripherals", url: "/pc-periherals" },
 }
 
 export const news_data = [
@@ -31,7 +31,7 @@ export const news_data = [
       promoTitle: "Microsoft Copilot now offers a friendlier, more engaging face for consumers, bringing a fresh, approachable feel to assistance.",
       article_img: {
          img_author: "Windows",
-         name: "Unsplash",
+         name: "MS Copilot Image",
          source: "https://unsplash.com/photos/female-on-her-microsoft-laptop-at-work-drinking-coffee-KXIWqtmvfxg",
          img: ms_copilot_11,
       },
@@ -414,7 +414,7 @@ export const news_data = [
          name: ``,
          img: "",
       },
-      date: "",
+      date: " July 26, 2025",
       text: [{
          id_par: 1,
          heading: "",

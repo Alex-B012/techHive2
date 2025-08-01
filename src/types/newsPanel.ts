@@ -1,14 +1,14 @@
 type ImageData = {
-   img_author: string;
+   img_author?: string;
    name: string;
-   source: string;
+   source?: string;
    img: string;
 };
 
 type VideoData = {
-   video_author: string;
+   video_author?: string;
    name: string;
-   source: string;
+   source?: string;
    video: string;
 };
 
@@ -18,13 +18,13 @@ type ArticleAuthor = {
 };
 
 type ArticleSource = {
-   name: string;
-   url: string;
+   name?: string;
+   url?: string;
 };
 
 type ArticleParagraph = {
    id_par: number;
-   heading: string;
+   heading?: string;
    heading_img?: ImageData;
    heading_video?: VideoData;
    heading_yt_video?: VideoData;
@@ -37,7 +37,7 @@ export type NewsItem = {
    title: string;
    subtitle?: string;
    promoTitle?: string;
-   article_img?: ImageData;
+   article_img: ImageData;
    article_video?: VideoData;
    article_yt_video?: VideoData;
    article_author: ArticleAuthor;

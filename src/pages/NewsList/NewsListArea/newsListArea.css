@@ -1,5 +1,17 @@
 .newsListArea__container {
    display: grid;
-   width: 100%;
-   background-color: goldenrod;
+   padding-top: 3vh;
+   background-color: chocolate;
+}
+
+@media screen and (max-width: 1200px) {
+   .newsListArea__container {
+      padding-top: 2vh;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .newsListArea__container {
+      padding-top: 1vh;
+   }
 }

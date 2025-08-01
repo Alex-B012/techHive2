@@ -22,7 +22,53 @@ export function prepareNewsArray<T extends { promoTitle?: string }>(array: T[]):
    return shuffledArray.slice(0, 4);
 }
 
-// Filter pageLink objects by name 
+// Remove empty News array objects and sort the array by date
+export function prepareNewsCards<T extends { title?: string; date?: string }>(array: T[]): T[] {
+   const filteredArray = array.filter(item =>
+      item.title &&
+      item.title.trim().length > 0 &&
+      item.date &&
+      isValidDateString(item.date)
+   );
+
+   console.log("filteredArray", filteredArray);
+
+   return filteredArray.sort((a, b) => {
+      if (!a.date || !b.date) return 0;
+
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+
+      if (isNaN(dateA.getTime()) || isNaN(dateB.getTime())) return 0;
+      return dateB.getTime() - dateA.getTime();
+   });
+
+   function isValidDateString(dateString: string): boolean {
+      const dateParts = dateString.trim().split(/\s+/);
+      if (dateParts.length !== 3) return false;
+
+      const monthNames = [
+         "January", "February", "March", "April", "May", "June",
+         "July", "August", "September", "October", "November", "December"
+      ];
+
+      const monthIndex = monthNames.indexOf(dateParts[0]);
+      const day = parseInt(dateParts[1], 10);
+      const year = parseInt(dateParts[2], 10);
+
+      if (monthIndex === -1 || isNaN(day) || isNaN(year)) return false;
+
+      const date = new Date(year, monthIndex, day);
+      return (
+         date.getFullYear() === year &&
+         date.getMonth() === monthIndex &&
+         date.getDate() === day
+      );
+   }
+}
+
+
+// Filter and sort pageLink objects by name 
 export function filterPageLinksByNames(array: PageLinkInterface[], pageNames: string[]): PageLinkInterface[] {
    const filteredPages = array.filter(item => pageNames.includes(item.name));
 

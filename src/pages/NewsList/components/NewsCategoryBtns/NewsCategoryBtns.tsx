@@ -7,20 +7,16 @@ interface NewsCategoryBtnsProp {
    existing_categories: NewsCategoriesInfo;
 }
 
-function chooseNewsCategory(name: string) {
-   console.log("chooseNewsCategory - start")
-}
-
 function NewsCategoryBtns({ title, existing_categories }: NewsCategoryBtnsProp) {
-
    return (
       <div className="newsCategoryBtns__container">
          <h2 className="newsCategoryBtns__title">{title}</h2>
-         {existing_categories && (<div className="newsListCategotyBtns__btnsList">
-            {Object.entries(existing_categories).map(([key, category]) => (
-               <NewsCategoryBtn key={key} name={category.name} />
-            ))}
-         </div>)}
+         {existing_categories && (
+            <div className="newsListCategotyBtns__btnsList">
+               {Object.entries(existing_categories).map(([key, category]) => (
+                  <NewsCategoryBtn key={key} newsCat_data={category} />
+               ))}
+            </div>)}
       </div>
    )
 }

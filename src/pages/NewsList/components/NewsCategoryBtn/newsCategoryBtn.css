@@ -1,24 +1,39 @@
-.newsCategoryBtn__btn {
-   max-width: 130px;
-   display: flex;
-   flex: 0 0 130px;
-   padding: 10px;
-   margin-right: 10px;
-   text-align: left;
-   border: none;
-   /* background-color: cyan; */
+.newsCategoryBtn__link {
+   max-width: auto;
+   display: grid;
+   text-decoration: none;
+   transition: all 2s;
+}
+
+.newsCategoryBtn__link:hover {
+   cursor: pointer;
+   color: var(--link-color-hover);
+   transition: all 0.5s;
 }
 
 .newsCategoryBtn__btn {
-   width: 130px;
-   min-width: 130px;
-   /* Use min-width instead of max-width */
-   padding: 10px;
-   margin-right: 10px;
-   text-align: left;
+   background-color: transparent;
    border: none;
-   /* background-color: cyan; */
-   white-space: nowrap;
-   /* Prevent text wrapping inside buttons */
-   /* Remove flex properties as they are not needed here */
+   font-weight: 700;
+   color: var(--link-color);
+   transition: all 2s;
+}
+
+.newsCategoryBtn__link:hover .newsCategoryBtn__btn {
+   cursor: pointer;
+   color: var(--link-color-hover);
+   transition: all 0.5s;
+}
+
+
+@media screen and (max-width: 1200px) {
+   .newsCategoryBtn__btn {
+      font-size: 0.9em
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .newsCategoryBtn__btn {
+      font-size: 0.8em
+   }
 }

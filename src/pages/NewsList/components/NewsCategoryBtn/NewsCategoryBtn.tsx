@@ -1,18 +1,19 @@
+import { Link } from 'react-router-dom';
 import './newsCategoryBtn.css'
+import { NewsCategory } from '../../../../types/news';
 
 interface NewsCategoryBtnProp {
-   name: string;
+   newsCat_data: NewsCategory;
 }
 
-function NewsCategoryBtn({ name }: NewsCategoryBtnProp) {
-   function chooseNewsCategory(name: string) {
-      console.log("cat chosen:", name)
-   }
-
+function NewsCategoryBtn({ newsCat_data }: NewsCategoryBtnProp) {
    return (
-      <button onClick={() => chooseNewsCategory(name)} className='newsCategoryBtn__btn'>
-         {name}
-      </button>)
+      <Link className='newsCategoryBtn__link' to={`/news/${newsCat_data.url}`}>
+         <button className='newsCategoryBtn__btn'>
+            {newsCat_data.name}
+         </button>
+      </Link>
+   )
 }
 
 export default NewsCategoryBtn

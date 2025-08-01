@@ -1,27 +1,23 @@
 .welcomeParagraph__container {
    width: 100%;
+   height: 100%;
    display: grid;
-   grid-template-rows: 44px 1fr;
-   background-color: brown;
+   grid-template-rows: 1fr minmax(0px 300px);
 }
 
 .welcomeParagraph__title {
+   max-height: 1fr;
    display: grid;
    text-align: center;
    font-size: 1.6em;
    font-weight: 700;
-   background-color: darkolivegreen;
 }
 
 .welcomeParagraph__text {
-   background-color: deeppink;
+   display: grid;
 }
 
 @media screen and (max-width: 1200px) {
-   .welcomeParagraph__container {
-      grid-template-rows: 38px 1fr;
-   }
-
    .welcomeParagraph__title {
       font-size: 1.4rem;
    }
@@ -41,17 +37,9 @@
    }
 }
 
-@media screen and (max-width: 800px) {
-   .welcomeParagraph__container {
-      grid-template-rows: 35px 1fr;
-   }
-}
+@media screen and (max-width: 800px) {}
 
 @media screen and (max-width: 500px) {
-   .welcomeParagraph__container {
-      grid-template-rows: 31px 1fr;
-   }
-
    .welcomeParagraph__title {
       font-size: 1.1rem;
    }

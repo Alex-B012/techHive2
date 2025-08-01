@@ -1,0 +1,15 @@
+.newCategoryCards__container {
+   padding: 70px 0 0;
+}
+
+@media screen and (max-width: 1200px) {
+   .newCategoryCards__container {
+      padding: 60px 0 0;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .newCategoryCards__container {
+      padding: 50px 0 0;
+   }
+}

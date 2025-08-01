@@ -10,11 +10,8 @@ function NewsList() {
     <div className="newsListPage">
       <div className="newsListPage__empty"></div>
       <div className="newsListPage__container">
-        <WelcomeParagraph
-          title={newsPage_intro.title}
-        />
+        <WelcomeParagraph title={newsPage_intro.title} />
         <NewsListArea intro={newsPage_intro} />
-
       </div>
     </div>
   );

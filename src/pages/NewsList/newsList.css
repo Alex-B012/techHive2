@@ -12,9 +12,9 @@
    height: 100%;
    display: grid;
    grid-template-rows: 0.2fr, 1fr;
-   row-gap: 7vh;
-   justify-items: center;
+   align-content: start;
    padding: 40px 2% 90px 0;
+   background-color: rgb(12, 39, 39);
 }
 
 @media screen and (max-width: 1200px) {
@@ -23,14 +23,14 @@
    }
 
    .newsListPage__container {
-      row-gap: 3vh;
+      row-gap: 1vh;
       padding: 30px 2% 90px 0;
    }
 }
 
 @media screen and (max-width: 1000px) {
    .newsListPage__container {
-      row-gap: 5vh;
+      row-gap: 2vh;
       padding: 30px 2% 90px;
    }
 }
@@ -42,8 +42,4 @@
    }
 }
 
-@media screen and (max-width: 400px) {
-   .newsListPage__container {
-      row-gap: 7vh;
-   }
-}
+@media screen and (max-width: 400px) {}
