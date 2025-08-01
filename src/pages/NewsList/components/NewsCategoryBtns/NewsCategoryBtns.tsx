@@ -1,5 +1,5 @@
-import { NewsCategoriesInfo, NewsCategoryBtnInfo } from "../../../types/news";
-import NewsCategoryBtn from "../components/NewsCategoryBtn/NewsCategoryBtn";
+import { NewsCategoriesInfo, NewsCategoryBtnInfo } from "../../../../types/news";
+import NewsCategoryBtn from "../NewsCategoryBtn/NewsCategoryBtn";
 import "./newsCategoryBtns.css"
 
 interface NewsCategoryBtnsProp {
@@ -16,11 +16,11 @@ function NewsCategoryBtns({ title, existing_categories }: NewsCategoryBtnsProp) 
    return (
       <div className="newsCategoryBtns__container">
          <h2 className="newsCategoryBtns__title">{title}</h2>
-         {existing_categories && (<ul className="newsListCategotyBtns__btnsList">
+         {existing_categories && (<div className="newsListCategotyBtns__btnsList">
             {Object.entries(existing_categories).map(([key, category]) => (
                <NewsCategoryBtn key={key} name={category.name} />
             ))}
-         </ul>)}
+         </div>)}
       </div>
    )
 }

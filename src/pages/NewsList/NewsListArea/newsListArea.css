@@ -1,0 +1,5 @@
+.newsListArea__container {
+   display: grid;
+   width: 100%;
+   background-color: goldenrod;
+}

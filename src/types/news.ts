@@ -1,3 +1,13 @@
+export interface NewsPageIntroText {
+   text: string;
+}
+
+export interface NewsPageIntro {
+   categoryBtnTitle: string,
+   title: string,
+   text?: NewsPageIntroText[],
+}
+
 export interface NewsCategoryBtnInfo {
    id: number;
    cat_name: string;

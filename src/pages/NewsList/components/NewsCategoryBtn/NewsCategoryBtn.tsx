@@ -5,9 +5,14 @@ interface NewsCategoryBtnProp {
 }
 
 function NewsCategoryBtn({ name }: NewsCategoryBtnProp) {
-   function chooseNewsCategory() { }
+   function chooseNewsCategory(name: string) {
+      console.log("cat chosen:", name)
+   }
 
-   return (<div onClick={chooseNewsCategory}> {name} </div>)
+   return (
+      <button onClick={() => chooseNewsCategory(name)} className='newsCategoryBtn__btn'>
+         {name}
+      </button>)
 }
 
 export default NewsCategoryBtn

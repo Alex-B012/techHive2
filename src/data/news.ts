@@ -10,6 +10,7 @@ import blur_keyboard2 from "../assets/images_news/6_blur_keyboard2.webp"
 import blur_keyboard3 from "../assets/images_news/6_blur_keyboard3.webp"
 
 export const newsPage_intro = {
+   categoryBtnTitle: "SEE LATEST NEWS BY CATEGORY",
    title: "Latest News",
    // text: [""]
 }

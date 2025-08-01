@@ -1,0 +1,24 @@
+.newsCategoryBtn__btn {
+   max-width: 130px;
+   display: flex;
+   flex: 0 0 130px;
+   padding: 10px;
+   margin-right: 10px;
+   text-align: left;
+   border: none;
+   /* background-color: cyan; */
+}
+
+.newsCategoryBtn__btn {
+   width: 130px;
+   min-width: 130px;
+   /* Use min-width instead of max-width */
+   padding: 10px;
+   margin-right: 10px;
+   text-align: left;
+   border: none;
+   /* background-color: cyan; */
+   white-space: nowrap;
+   /* Prevent text wrapping inside buttons */
+   /* Remove flex properties as they are not needed here */
+}
