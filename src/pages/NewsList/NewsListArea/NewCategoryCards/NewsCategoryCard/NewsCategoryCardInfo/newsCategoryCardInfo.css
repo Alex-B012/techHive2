@@ -1,7 +1,128 @@
-.newsCategoryCard__title {
+.newsCategoryCardInfo__container {
    display: grid;
+   grid-template-rows: 90px repeat(2, 30px);
+   row-gap: 0;
+   padding: 10px;
+   padding-left: 20px;
 }
 
-.newsCategoryCard__info {
-   display: grid;
+.newsCategoryCardInfo__title {
+   font-size: 1.1em;
+}
+
+.newCategoryCardInfo__info {
+   display: flex;
+   flex-direction: row;
+   font-size: 1em;
+   color: var(--link-color);
+}
+
+.newCategoryCardInfo__info span {
+   white-space: nowrap;
+}
+
+.newCategoryCardInfo__info span:nth-child(2) {
+   padding-right: 0.5vw;
+}
+
+.newsCategoryCardInfo__category {
+   font-style: italic;
+   font-size: 0.95em;
+   color: var(--link-color);
+}
+
+@media screen and (max-width: 1200px) {
+   .newsCategoryCardInfo__container {
+      grid-template-rows: 75px repeat(2, 25px);
+   }
+
+   .newsCategoryCardInfo__title {
+      font-size: 0.95em;
+   }
+
+   .newCategoryCardInfo__info {
+      font-size: 0.9em;
+   }
+
+   .newsCategoryCardInfo__category {
+      font-size: 0.85em;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .newsCategoryCardInfo__container {
+      grid-template-rows: 62px repeat(2, 20px);
+   }
+
+   .newsCategoryCardInfo__title {
+      font-size: 0.85em;
+   }
+
+   .newCategoryCardInfo__info {
+      font-size: 0.8em;
+   }
+
+   .newsCategoryCardInfo__category {
+      font-size: 0.75em;
+   }
+}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 500px) {
+   .newsCategoryCardInfo__container {
+      grid-template-rows: 52px repeat(2, 20px);
+      padding: 5px;
+      padding-left: 10px;
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .newsCategoryCardInfo__container {
+      grid-template-rows: 57px repeat(2, 17px);
+   }
+
+   .newsCategoryCardInfo__title {
+      font-size: 0.80em;
+   }
+
+   .newCategoryCardInfo__info {
+      font-size: 0.75em;
+   }
+
+   .newsCategoryCardInfo__category {
+      font-size: 0.70em;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .newsCategoryCardInfo__container {
+      grid-template-rows: 62px 35px 17px;
+   }
+
+   .newCategoryCardInfo__info {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .newCategoryCardInfo__info span:nth-child(2) {
+      display: none;
+   }
+}
+
+
+@media screen and (max-width: 350px) {
+   .newCategoryCardInfo__info {
+      padding: 3px 0;
+      font-size: 0.70em;
+   }
+
+   .newCategoryCardInfo__info span {
+      max-height: 17px;
+   }
+
+   .newsCategoryCardInfo__category {
+      padding-top: 2px;
+      font-size: 0.60em;
+   }
 }

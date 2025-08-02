@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --bg-color: #181872;
+  --bg-color: rgb(24, 24, 114);
   --text-color: aquamarine;
   --link-color: rgb(224, 224, 224);
   --link-color-hover: #ce0000;
@@ -10,6 +10,10 @@
   --video-text-color: aquamarine;
   --video-bg-color: #000a3067;
   --video-text-shadow: rgb(6, 77, 53);
+  --newsCard-bg-color: rgba(0, 47, 117, 0.5);
+  --newsCard-bg-color2: rgba(0, 47, 117);
+  --newsCard-bg-color-hover: rgba(24, 24, 114, 0.3);
+  --newsCard-bg-color-hover2: rgba(24, 24, 114);
 }
 
 html, body {

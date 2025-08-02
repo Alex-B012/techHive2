@@ -1,7 +1,6 @@
 .newsListArea__container {
    display: grid;
    padding-top: 3vh;
-   background-color: chocolate;
 }
 
 @media screen and (max-width: 1200px) {

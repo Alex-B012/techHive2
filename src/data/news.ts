@@ -411,7 +411,7 @@ export const news_data = [
          video: "",
       },
       article_author: {
-         name: ``,
+         name: `Mark Tyson`,
          img: "",
       },
       date: " July 26, 2025",
