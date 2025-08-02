@@ -36,25 +36,25 @@ export const news_data = [
       title: "Microsoft Copilot now has a face",
       subtitle: "We don't get it either.",
       promoTitle: "Microsoft Copilot now offers a friendlier, more engaging face for consumers, bringing a fresh, approachable feel to assistance.",
-      article_img: {
+      article_imgObj: {
          img_author: "Windows",
          name: "MS Copilot Image",
          source: "https://unsplash.com/photos/female-on-her-microsoft-laptop-at-work-drinking-coffee-KXIWqtmvfxg",
          img: ms_copilot_11,
       },
-      article_video: {
+      article_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: ""
       },
-      article_yt_video: {
+      article_yt_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: "",
       },
-      article_author: {
+      article_authorObj: {
          name: "Mark Hachman",
          img: mark_hachman_img,
       },
@@ -62,19 +62,19 @@ export const news_data = [
       text: [{
          id_par: 1,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -102,25 +102,25 @@ export const news_data = [
       title: `Microsoft claims Windows 11 24H2 is the ‘most reliable’ Windows version ever`,
       subtitle: `But given the source and Windows 11 24H2's track record, it's hard not to be skeptical of the claim.`,
       promoTitle: "Windows 11 24H2 offers unprecedented reliability, making your system more stable with fewer unexpected restarts and improved performance.",
-      article_img: {
+      article_imgObj: {
          img_author: "Philip Oroni",
          name: "Unsplash",
          source: "https://unsplash.com/photos/icon-NBQH9hYvCwY",
          img: ms_win11_10,
       },
-      article_video: {
+      article_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: ""
       },
-      article_yt_video: {
+      article_yt_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: "",
       },
-      article_author: {
+      article_authorObj: {
          name: `Hans-Christian Dirscherl`,
          img: hans_christian_dirscherl_img,
       },
@@ -128,19 +128,19 @@ export const news_data = [
       text: [{
          id_par: 1,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -165,25 +165,25 @@ export const news_data = [
       title: "LEGO’s delightful Nintendo Game Boy tribute doesn’t need batteries",
       subtitle: "The perfectly-proportioned set includes swappable cartridges and lenticular screens. It'll release in October for $60.",
       promoTitle: "LEGO’s Nintendo Game Boy tribute set features swappable cartridges and lenticular screens, offering a nostalgic, battery-free experience for $60.",
-      article_img: {
+      article_imgObj: {
          img_author: "Marlon Medau",
          name: "Unsplash",
          source: "https://unsplash.com/photos/a-nintendo-game-boy-with-a-card-and-a-case-I9D0KESaDR8",
          img: nintendo_9,
       },
-      article_video: {
+      article_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: ""
       },
-      article_yt_video: {
+      article_yt_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: "",
       },
-      article_author: {
+      article_authorObj: {
          name: `Michael Crider`,
          img: marlon_medau_img,
       },
@@ -191,19 +191,19 @@ export const news_data = [
       text: [{
          id_par: 1,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -227,25 +227,25 @@ export const news_data = [
       title: "Update your printer! Over 700 models actively being attacked by hackers",
       subtitle: "Printers by Brother, Toshiba, Fujifilm, Konica Minolta, and Ricoh are susceptible to attacks, thanks to dangerous security flaws.",
       promoTitle: "Over 700 printer models from Brother, Toshiba, Fujifilm, Konica Minolta, and Ricoh are vulnerable to hacker attacks. Update now!",
-      article_img: {
+      article_imgObj: {
          img_author: "Jakub Żerdzicki",
          name: "Unsplash",
          source: "https://unsplash.com/photos/a-close-up-of-a-printer-on-a-table-Da9qsu-0a00",
          img: printer_8,
       },
-      article_video: {
+      article_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: ""
       },
-      article_yt_video: {
+      article_yt_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: "",
       },
-      article_author: {
+      article_authorObj: {
          name: `Laura Pippig`,
          img: laura_pippig_img,
       },
@@ -253,19 +253,19 @@ export const news_data = [
       text: [{
          id_par: 1,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -285,13 +285,13 @@ export const news_data = [
             source: "https://unsplash.com/photos/a-person-holding-a-device-bvxXJZnx24o",
             img: samsung_memory_8,
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -313,25 +313,25 @@ export const news_data = [
       title: "Amazon sells a legacy MSI CPU air cooler for $5,340",
       subtitle: "Are you willing to spend a fortune on old PC hardware?",
       promoTitle: "The mythical MSI Core Frozr L, an iconic piece of history, priced at $5,340.25 for PC nostalgia enthusiasts.",
-      article_img: {
+      article_imgObj: {
          img_author: "Andrey Matveev",
          name: "Unsplash",
          source: "https://unsplash.com/photos/a-couple-of-coolers-sitting-on-top-of-a-table-e3w0E3od6xQ",
          img: msi_cpu_cooler1,
       },
-      article_video: {
+      article_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: ""
       },
-      article_yt_video: {
+      article_yt_videoObj: {
          video_author: "Matt's Paddock",
          name: "",
          source: "https://youtu.be/74G7ZxTmIIc?si=VPJda6WcU7GWouiU",
          video: "",
       },
-      article_author: {
+      article_authorObj: {
          name: `Julie Morales`,
          img: julie_morales_img,
       },
@@ -339,19 +339,19 @@ export const news_data = [
       text: [{
          id_par: 1,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -371,13 +371,13 @@ export const news_data = [
             source: "https://unsplash.com/photos/black-and-red-speaker-with-blue-light-YZmbiNkvpBM",
             img: msi_cpu_cooler2,
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -399,25 +399,25 @@ export const news_data = [
       title: "BLUR Basecamp 75+ keyboard with potato-mode façade announced",
       subtitle: "The greasy-lens aesthetic is designed as ‘tribute to PS1-era motion and texture,’ explains maker Higround.",
       promoTitle: `Higround’s BLUR Basecamp 75+ keyboard combines retro gaming aesthetics with premium features: hot-swappable switches, dampening tech, RGB lighting.`,
-      article_img: {
+      article_imgObj: {
          img_author: "Adrien",
          name: "Unsplash",
          source: "https://unsplash.com/photos/a-close-up-of-a-computer-keyboard-with-colorful-lights-D5kDcF1JvEM",
          img: blur_keyboard1,
       },
-      article_video: {
+      article_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: ""
       },
-      article_yt_video: {
+      article_yt_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: "",
       },
-      article_author: {
+      article_authorObj: {
          name: `Mark Tyson`,
          img: mark_tyson_img,
       },
@@ -425,19 +425,19 @@ export const news_data = [
       text: [{
          id_par: 1,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -457,13 +457,13 @@ export const news_data = [
             source: "https://unsplash.com/photos/a-glowing-keyboard-lights-up-the-dark-nChUss0P6oE",
             img: blur_keyboard2,
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -482,13 +482,13 @@ export const news_data = [
             source: "https://unsplash.com/photos/a-black-keyboard-on-a-desk-NDmlviPUOIw",
             img: blur_keyboard3,
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -509,25 +509,25 @@ export const news_data = [
       title: "",
       subtitle: "",
       promoTitle: "",
-      article_img: {
+      article_imgObj: {
          img_author: "",
          name: "",
          source: "",
          img: "",
       },
-      article_video: {
+      article_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: ""
       },
-      article_yt_video: {
+      article_yt_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: "",
       },
-      article_author: {
+      article_authorObj: {
          name: ``,
          img: "",
       },
@@ -535,19 +535,19 @@ export const news_data = [
       text: [{
          id_par: 1,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -561,19 +561,19 @@ export const news_data = [
       }, {
          id_par: 2,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -587,19 +587,19 @@ export const news_data = [
       }, {
          id_par: 3,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -621,25 +621,25 @@ export const news_data = [
       title: "",
       subtitle: "",
       promoTitle: "",
-      article_img: {
+      article_imgObj: {
          img_author: "",
          name: "",
          source: "",
          img: "",
       },
-      article_video: {
+      article_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: ""
       },
-      article_yt_video: {
+      article_yt_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: "",
       },
-      article_author: {
+      article_authorObj: {
          name: ``,
          img: "",
       },
@@ -647,19 +647,19 @@ export const news_data = [
       text: [{
          id_par: 1,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -673,19 +673,19 @@ export const news_data = [
       }, {
          id_par: 2,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -699,19 +699,19 @@ export const news_data = [
       }, {
          id_par: 3,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -734,25 +734,25 @@ export const news_data = [
       title: "",
       subtitle: "",
       promoTitle: "",
-      article_img: {
+      article_imgObj: {
          img_author: "",
          name: "",
          source: "",
          img: "",
       },
-      article_video: {
+      article_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: ""
       },
-      article_yt_video: {
+      article_yt_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: "",
       },
-      article_author: {
+      article_authorObj: {
          name: ``,
          img: "",
       },
@@ -760,19 +760,19 @@ export const news_data = [
       text: [{
          id_par: 1,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -786,19 +786,19 @@ export const news_data = [
       }, {
          id_par: 2,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -812,19 +812,19 @@ export const news_data = [
       }, {
          id_par: 3,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -846,25 +846,25 @@ export const news_data = [
       title: "",
       subtitle: "",
       promoTitle: "",
-      article_img: {
+      article_imgObj: {
          img_author: "",
          name: "",
          source: "",
          img: "",
       },
-      article_video: {
+      article_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: ""
       },
-      article_yt_video: {
+      article_yt_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: "",
       },
-      article_author: {
+      article_authorObj: {
          name: ``,
          img: "",
       },
@@ -872,19 +872,19 @@ export const news_data = [
       text: [{
          id_par: 1,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -898,19 +898,19 @@ export const news_data = [
       }, {
          id_par: 2,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -924,19 +924,19 @@ export const news_data = [
       }, {
          id_par: 3,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -958,25 +958,25 @@ export const news_data = [
       title: "",
       subtitle: "",
       promoTitle: "",
-      article_img: {
+      article_imgObj: {
          img_author: "",
          name: "",
          source: "",
          img: "",
       },
-      article_video: {
+      article_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: ""
       },
-      article_yt_video: {
+      article_yt_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: "",
       },
-      article_author: {
+      article_authorObj: {
          name: ``,
          img: "",
       },
@@ -984,19 +984,19 @@ export const news_data = [
       text: [{
          id_par: 1,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -1010,19 +1010,19 @@ export const news_data = [
       }, {
          id_par: 2,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -1036,19 +1036,19 @@ export const news_data = [
       }, {
          id_par: 3,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -1070,25 +1070,25 @@ export const news_data = [
       title: "",
       subtitle: "",
       promoTitle: "",
-      article_img: {
+      article_imgObj: {
          img_author: "",
          name: "",
          source: "",
          img: "",
       },
-      article_video: {
+      article_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: ""
       },
-      article_yt_video: {
+      article_yt_videoObj: {
          video_author: "",
          name: "",
          source: "",
          video: "",
       },
-      article_author: {
+      article_authorObj: {
          name: ``,
          img: "",
       },
@@ -1096,19 +1096,19 @@ export const news_data = [
       text: [{
          id_par: 1,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -1122,19 +1122,19 @@ export const news_data = [
       }, {
          id_par: 2,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",
@@ -1148,19 +1148,19 @@ export const news_data = [
       }, {
          id_par: 3,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "",
             name: "",
             source: "",
             img: "",
          },
-         heading_video: {
+         heading_videoObj: {
             video_author: "",
             name: "",
             source: "",
             video: ""
          },
-         heading_yt_video: {
+         heading_yt_videoObj: {
             video_author: "",
             name: "",
             source: "",

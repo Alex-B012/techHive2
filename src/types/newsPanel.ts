@@ -22,12 +22,12 @@ type ArticleSource = {
    url?: string;
 };
 
-type ArticleParagraph = {
+export type ArticleParagraphInterface = {
    id_par: number;
    heading?: string;
-   heading_img?: ImageData;
-   heading_video?: VideoData;
-   heading_yt_video?: VideoData;
+   heading_imgObj?: ImageData;
+   heading_videoObj?: VideoData;
+   heading_yt_videoObj?: VideoData;
    paragraphs: string[];
 }
 
@@ -37,11 +37,11 @@ export type NewsItem = {
    title: string;
    subtitle?: string;
    promoTitle?: string;
-   article_img: ImageData;
-   article_video?: VideoData;
-   article_yt_video?: VideoData;
-   article_author: ArticleAuthor;
+   article_imgObj: ImageData;
+   article_videoObj?: VideoData;
+   article_yt_videoObj?: VideoData;
+   article_authorObj: ArticleAuthor;
    date: string;
-   text: ArticleParagraph[];
+   text: ArticleParagraphInterface[];
    source?: ArticleSource;
 };

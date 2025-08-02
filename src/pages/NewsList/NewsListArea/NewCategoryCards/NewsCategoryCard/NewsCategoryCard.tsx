@@ -18,8 +18,8 @@ function NewsCategoryCard({ data, }: NewsCategoryCardProp) {
 
    return (
       <Link className='newsCategoryCard__container' to={`/news${newsCat_url}/${data.id}`}>
-         <img className='newsCategoryCard__img' src={data.article_img.img} alt={data.article_img.name} />
-         < NewsCategoryCardInfo title={data.title} author={data.article_author.name} date={data.date} category={data.category} />
+         <img className='newsCategoryCard__img' src={data.article_imgObj.img} alt={data.article_imgObj.name} />
+         < NewsCategoryCardInfo title={data.title} author={data.article_authorObj.name} date={data.date} category={data.category} />
       </Link >
    )
 }
