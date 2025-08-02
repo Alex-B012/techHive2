@@ -20,6 +20,7 @@ import { videoSources } from "./data/videos";
 
 import Banner from "./layouts/Banner/banner";
 import { banner_info } from "./data/pricing/pr_pricing"
+import NewsPage from "./pages/NewsPage/NewsPage";
 
 function App() {
   const location = useLocation();
@@ -40,7 +41,7 @@ function App() {
         {/* <Route path="/pricing/:categoryId/:productId" element={<Product />} /> */}
 
         <Route path="/news" element={<NewsList />} />
-        {/* <Route path="/news/:newsId" element={<NewsPage />} /> */}
+        <Route path="/news/:newsCategory/:newsId" element={<NewsPage />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/team" element={<Team />} />

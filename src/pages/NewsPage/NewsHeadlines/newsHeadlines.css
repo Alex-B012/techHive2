@@ -1,0 +1,5 @@
+.newsHeadlines__container {
+   display: grid;
+   grid-template-rows: 1fr 2fr;
+   background-color: crimson;
+}

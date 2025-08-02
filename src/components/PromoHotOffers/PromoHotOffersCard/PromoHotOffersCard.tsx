@@ -9,7 +9,7 @@ interface PromoHotOffersCardProps {
 function PromoHotOffersCard({ data }: PromoHotOffersCardProps) {
    return (
       <div className='promoHotOffersCard__container'>
-         <Link to={`/pricing/:${data.id}`} className="promoHotOffersCard__link">
+         <Link to={`/pricing/${data.id}`} className="promoHotOffersCard__link">
             <img src={data.promo.pricing_cat.img} alt={data.name} className="promoHotOfferCard__img" />
             <h3 className="promoHotOfferCard__heading">{data.promo.pricing_cat.text}</h3>
             <div className="promoHotOfferCard__btn">Shop now <span className="promoHotOfferCard__span">{" >"}</span>

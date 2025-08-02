@@ -56,6 +56,7 @@ export const pages_links = [
   { id: 3, name: "Category", link: "/pricing/:categoryId" },
   { id: 4, name: "Product", link: "/pricing/:categoryId/:productId" },
   { id: 5, name: "NewsList", link: "/news" },
+  { id: 6, name: "NewsCategoriesPage", link: "/news/:newcategory/:newsId" },
   { id: 6, name: "NewsPage", link: "/news/:newsId" },
   { id: 7, name: "Contacts", link: "/contacts" },
   { id: 8, name: "Careers", link: "/careers" },

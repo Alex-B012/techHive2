@@ -24,3 +24,5 @@ export interface NewsCategoriesInfo {
    tech_hardware: NewsCategory;
    pc_peripherals: NewsCategory;
 }
+
+

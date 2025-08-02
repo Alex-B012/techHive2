@@ -9,7 +9,6 @@ interface NewCategoryCardsProp {
 
 function NewCategoryCards({ data }: NewCategoryCardsProp) {
    const newsForDisplay = prepareNewsCards(data);
-   console.log("newsForDisplay", newsForDisplay)
 
    return (
       <div className='newCategoryCards__container'>
