@@ -4,7 +4,7 @@
    display: grid;
    grid-template-columns: minmax(120px, 200px) minmax(250px, 600px);
    grid-template-rows: minmax(120px, 160px);
-   background: linear-gradient(270deg, var(--newsCard-bg-color) 0%, var(--newsCard-bg-color2)100%);
+   /* background: linear-gradient(270deg, var(--newsCard-bg-color) 0%, var(--newsCard-bg-color2)100%); */
    color: var(--link-color);
    text-decoration: none;
    transition: all 2s;
@@ -23,6 +23,11 @@
    height: 100%;
    display: grid;
    object-fit: cover;
+   filter: grayscale(0.5);
+}
+
+.newsCategoryCard__container:hover .newsCategoryCard__img {
+   filter: grayscale(0);
 }
 
 @media screen and (max-width: 1200px) {
