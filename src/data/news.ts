@@ -3,11 +3,18 @@ import ms_win11_10 from "../assets/images_news/10_win11.webp";
 import nintendo_9 from "../assets/images_news/9_nintendo.webp";
 import printer_8 from "../assets/images_news/8_printer.webp";
 import samsung_memory_8 from "../assets/images_news/8_samsung-memory.webp";
-import msi_cpu_cooler1 from "../assets/images_news/7_MSI_cpu_cooler1.webp"
-import msi_cpu_cooler2 from "../assets/images_news/7_MSI_cpu_cooler2.webp"
-import blur_keyboard1 from "../assets/images_news/6_blur_keyboard1.webp"
-import blur_keyboard2 from "../assets/images_news/6_blur_keyboard2.webp"
-import blur_keyboard3 from "../assets/images_news/6_blur_keyboard3.webp"
+import msi_cpu_cooler1 from "../assets/images_news/7_MSI_cpu_cooler1.webp";
+import msi_cpu_cooler2 from "../assets/images_news/7_MSI_cpu_cooler2.webp";
+import blur_keyboard1 from "../assets/images_news/6_blur_keyboard1.webp";
+import blur_keyboard2 from "../assets/images_news/6_blur_keyboard2.webp";
+import blur_keyboard3 from "../assets/images_news/6_blur_keyboard3.webp";
+
+import mark_hachman_img from "../assets/images_news/authors/person_8.webp";
+import hans_christian_dirscherl_img from "../assets/images_news/authors/person_5.webp";
+import mark_tyson_img from "../assets/images_news/authors/person_13.webp";
+import marlon_medau_img from "../assets/images_news/authors/person_16.webp";
+import laura_pippig_img from "../assets/images_news/authors/person_14.webp";
+import julie_morales_img from "../assets/images_news/authors/person_17.webp";
 
 export const newsPage_intro = {
    categoryBtnTitle: "SEE LATEST NEWS BY CATEGORY",
@@ -49,7 +56,7 @@ export const news_data = [
       },
       article_author: {
          name: "Mark Hachman",
-         img: "",
+         img: mark_hachman_img,
       },
       date: "July 25, 2025",
       text: [{
@@ -115,7 +122,7 @@ export const news_data = [
       },
       article_author: {
          name: `Hans-Christian Dirscherl`,
-         img: "",
+         img: hans_christian_dirscherl_img,
       },
       date: "July 25, 2025",
       text: [{
@@ -178,7 +185,7 @@ export const news_data = [
       },
       article_author: {
          name: `Michael Crider`,
-         img: "",
+         img: marlon_medau_img,
       },
       date: "July 24, 2025",
       text: [{
@@ -240,7 +247,7 @@ export const news_data = [
       },
       article_author: {
          name: `Laura Pippig`,
-         img: "",
+         img: laura_pippig_img,
       },
       date: "July 24, 2025",
       text: [{
@@ -325,8 +332,8 @@ export const news_data = [
          video: "",
       },
       article_author: {
-         name: `Jowi Morales`,
-         img: "",
+         name: `Julie Morales`,
+         img: julie_morales_img,
       },
       date: "July 26, 2025",
       text: [{
@@ -412,7 +419,7 @@ export const news_data = [
       },
       article_author: {
          name: `Mark Tyson`,
-         img: "",
+         img: mark_tyson_img,
       },
       date: " July 26, 2025",
       text: [{

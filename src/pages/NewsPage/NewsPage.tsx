@@ -1,9 +1,13 @@
-import { useParams } from 'react-router-dom';
-import NewsHeadlines from './NewsHeadlines/NewsHeadlines'
-import './newsPage.css'
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import './newsPage.css'
+import NewsHeadlines from './NewsHeadlines/NewsHeadlines'
+import NewArticleImgVideo from './NewArticleImgVideo/NewArticleImgVideo';
 import { news_data } from '../../data/news';
 import { getNewsDataFromArray } from '../../utils/newsFuncs';
+import NewArticleAuthor from './NewArticleAuthor/NewArticleAuthor';
+import NewArticleTextArea from './NewArticleTextArea/NewArticleTextArea';
+
 
 function NewsPage() {
    const { newsCategory, newsId } = useParams();
@@ -58,10 +62,15 @@ function NewsPage() {
                </div>
             )}
             {!loading && !error && newsData && (
-               <NewsHeadlines
-                  title={newsData.title}
-                  subtitle={newsData.subtitle}
-               />
+               <div className='newsPage__content'>
+                  <NewsHeadlines
+                     title={newsData.title}
+                     subtitle={newsData.subtitle}
+                  />
+                  <NewArticleAuthor author_data={newsData.article_author} date={newsData.date} />
+                  <NewArticleImgVideo img={newsData.article_img} />
+                  <NewArticleTextArea data={newsData} />
+               </div>
             )}
             {!loading && !error && !newsData && (
                <div className="no-data">

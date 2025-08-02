@@ -1,11 +1,11 @@
-type ImageData = {
+export type ImageData = {
    img_author?: string;
    name: string;
    source?: string;
    img: string;
 };
 
-type VideoData = {
+export type VideoData = {
    video_author?: string;
    name: string;
    source?: string;

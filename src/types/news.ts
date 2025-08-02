@@ -25,4 +25,7 @@ export interface NewsCategoriesInfo {
    pc_peripherals: NewsCategory;
 }
 
-
+export interface ArticleAuthor {
+   name: string,
+   img?: string,
+}

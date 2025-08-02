@@ -1,0 +1,32 @@
+.newArticleImg__container {
+   display: grid;
+   justify-items: center;
+}
+
+.newArticleImg__img {
+   width: 100%;
+   max-width: 500px;
+   object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+   .newArticleImg__img {
+      max-width: 450px;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .newArticleImg__img {
+      max-width: 400px;
+   }
+}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 400px) {
+   .newArticleImg__container {
+      margin: 0 -2vw;
+   }
+}
