@@ -6,7 +6,6 @@ interface WelcomeParagraphProp {
 }
 
 function WelcomeParagraph({ title, text_data }: WelcomeParagraphProp) {
-   console.log("text_data:", text_data)
    return (
       <div className='welcomeParagraph__container'>
          {title && (<h1 className='welcomeParagraph__title'>{title}</h1>)}

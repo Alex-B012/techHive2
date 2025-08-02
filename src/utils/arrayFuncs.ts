@@ -31,8 +31,6 @@ export function prepareNewsCards<T extends { title?: string; date?: string }>(ar
       isValidDateString(item.date)
    );
 
-   console.log("filteredArray", filteredArray);
-
    return filteredArray.sort((a, b) => {
       if (!a.date || !b.date) return 0;
 

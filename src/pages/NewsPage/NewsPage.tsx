@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './newsPage.css'
-import NewsHeadlines from './NewsHeadlines/NewsHeadlines'
+import NewsHeadlines from './components/NewsHeadlines/NewsHeadlines'
 import { news_data } from '../../data/news';
 import { getNewsDataFromArray } from '../../utils/newsFuncs';
-import NewArticleTextArea from './NewArticleTextArea/NewArticleTextArea';
 import NewsNavigation from './components/NewsNavigation/NewsNavigation';
 import NewsArticleAuthor from './components/NewsArticleAuthor/NewsArticleAuthor';
 import NewsArticleImgVideo from './components/NewsArticleImgVideo/NewsArticleImgVideo';
+import NewsArticleTextArea from './components/NewsArticleTextArea/NewsArticleTextArea';
 
 function NewsPage() {
    const { newsCategory, newsId } = useParams();
@@ -18,7 +18,6 @@ function NewsPage() {
    const fetchNews = async () => {
       try {
          setLoading(true);
-
 
          if (!newsCategory || !newsId) throw new Error('Invalid parameters');
          const news_id = parseInt(newsId, 10);
@@ -70,7 +69,7 @@ function NewsPage() {
                   />
                   <NewsArticleAuthor author_data={newsData.article_authorObj} date={newsData.date} />
                   <NewsArticleImgVideo img={newsData.article_imgObj} />
-                  <NewArticleTextArea data={newsData} />
+                  <NewsArticleTextArea data={newsData} />
                </div>
             )}
             {!loading && !error && !newsData && (

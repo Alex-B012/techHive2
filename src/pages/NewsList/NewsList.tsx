@@ -4,8 +4,6 @@ import { newsPage_intro } from "../../data/news";
 import NewsListArea from "./NewsListArea/NewsListArea";
 
 function NewsList() {
-  console.log("newsPage_intro", newsPage_intro);
-
   return (
     <div className="newsListPage">
       <div className="newsListPage__empty"></div>
