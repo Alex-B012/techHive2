@@ -152,7 +152,7 @@ export const news_data = [
             `However, according to Microsoft, Windows 11 24H2 is much more than all of this, claiming that Windows 11 24H2 is “[the] most reliable version of Windows yet” while taking a subtle jab at Windows 10, surely hoping to convince Windows 10 holdouts to make the upgrade. Here’s what Microsoft has to say about it: "We’re also proud to share that Windows 11 24H2 is our most reliable version of Windows yet. Compared to Windows 10 22H2, failure rates for unexpected restarts have dropped by 24%."`,
             `The above statement cites “reliability telemetry collected by Microsoft,” which calls its veracity into question. Microsoft collects a lot of telemetry data, but it doesn’t know everything—especially when it comes to older versions of Windows prior to aggressive telemetry. For example, a comparison of Windows 11 to Windows 2000, NT, or XP isn’t possible.`,
             `It’s easy to see why Microsoft is only comparing Windows 11 with Windows 10. Microsoft has been pushing Windows 11 for a while now, and even though Windows 11 market share is increasing, Windows 10 users are either reluctant to make the switch or simply can’t upgrade due to Windows 11’s strict requirements.`,
-            `So, sure, maybe Windows 11 24H2 actually is the “most reliable” Windows version of all time. Or maybe it isn’t. Who can really say? Given that Windows 11 24H2 has broken all kinds of stuff—including USB printers, audio output, Bluetooth connections, Windows Update, and Windows Firewall as recently as this month—we can’t fault anyone for being skeptical of Microsoft’s claim here.`,
+            `So, sure, maybe Windows 11 24H2 actually is the “most reliable” Windows version of all time. Or maybe it isn’t. Who can really say? Given that Windows 11 24H2 has broken all kinds of stuff—including USB printers, audio output, Bluetooth connections, Windows Update, and Windows Firewall as recently as this month — we can’t fault anyone for being skeptical of Microsoft’s claim here.`,
          ]
       },],
       source: {
@@ -272,14 +272,14 @@ export const news_data = [
             video: ""
          },
          paragraphs: [
-            `Back in June, security researchers from Rapid7 discovered several security vulnerabilities in over 700 different printer models that pose a risk to users. Printers from well-known brands—mostly Brother but also Fujifilm, Ricoh, Toshiba, and Konica Minolta—were named as affected.`,
+            `Back in June, security researchers from Rapid7 discovered several security vulnerabilities in over 700 different printer models that pose a risk to users. Printers from well-known brands — mostly Brother but also Fujifilm, Ricoh, Toshiba, and Konica Minolta — were named as affected.`,
             `Now things are getting serious as hackers are exploiting these security vulnerabilities to carry out real-world attacks. Among other things, they can find out the default password of a printer by reading out the serial number and thus gain admin access. This makes it possible to, for example, integrate printers into botnets, which are then exploited and used for further attacks.`,
             `The attacks appear to be both random and widespread. Any printer that’s affected by security vulnerabilities CVE-2024-51977 and CVE-2024-51978 is a perfect target for hackers.`
          ]
       }, {
          id_par: 2,
          heading: "Be sure to update your printers!",
-         heading_img: {
+         heading_imgObj: {
             img_author: "Samsung Memory",
             name: "Unsplash",
             source: "https://unsplash.com/photos/a-person-holding-a-device-bvxXJZnx24o",
@@ -329,7 +329,7 @@ export const news_data = [
          video_author: "Matt's Paddock",
          name: "",
          source: "https://youtu.be/74G7ZxTmIIc?si=VPJda6WcU7GWouiU",
-         video: "",
+         video: "https://www.youtube.com/embed/74G7ZxTmIIc?si=Tucj0iMtcOBQvJY9",
       },
       article_authorObj: {
          name: `Julie Morales`,
@@ -365,7 +365,7 @@ export const news_data = [
       }, {
          id_par: 2,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "Nassim Allia",
             name: "Unsplash",
             source: "https://unsplash.com/photos/black-and-red-speaker-with-blue-light-YZmbiNkvpBM",
@@ -451,7 +451,7 @@ export const news_data = [
       }, {
          id_par: 2,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "Evgeniy Bezkorovayniy",
             name: "Unsplash",
             source: "https://unsplash.com/photos/a-glowing-keyboard-lights-up-the-dark-nChUss0P6oE",
@@ -476,7 +476,7 @@ export const news_data = [
       }, {
          id_par: 3,
          heading: "",
-         heading_img: {
+         heading_imgObj: {
             img_author: "Clovis Kurower",
             name: "Unsplash",
             source: "https://unsplash.com/photos/a-black-keyboard-on-a-desk-NDmlviPUOIw",

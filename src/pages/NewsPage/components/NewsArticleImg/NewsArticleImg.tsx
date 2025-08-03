@@ -8,7 +8,7 @@ interface NewsArticleImgProp {
 function NewsArticleImg({ imgObj }: NewsArticleImgProp) {
    return (
       <div className='newsArticleImg__container'>
-         <img className='newsArticleImg__img' src={imgObj.img} />
+         <img className='newsArticleImg__img' src={imgObj.img} alt={`${imgObj.name}`} />
       </div>
    )
 }

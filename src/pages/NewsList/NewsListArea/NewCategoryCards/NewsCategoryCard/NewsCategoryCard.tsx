@@ -3,7 +3,7 @@ import { NewsItem } from '../../../../../types/newsPanel'
 import './newsCategoryCard.css'
 import NewsCategoryCardInfo from './NewsCategoryCardInfo/NewsCategoryCardInfo'
 import { newsCategories_info } from '../../../../../data/news';
-import { getCategoryUrl } from '../../../../../utils/newsFuncs';
+import { getNewsCategoryUrl } from '../../../../../utils/newsFuncs';
 
 interface NewsCategoryCardProp {
    data: NewsItem;
@@ -14,7 +14,7 @@ function NewsCategoryCard({ data, }: NewsCategoryCardProp) {
       categoryName: data.category,
       categoriesArr: newsCategories_info,
    }
-   const newsCat_url = getCategoryUrl(obj);
+   const newsCat_url = getNewsCategoryUrl(obj);
 
    return (
       <Link className='newsCategoryCard__container' to={`/news${newsCat_url}/${data.id}`}>

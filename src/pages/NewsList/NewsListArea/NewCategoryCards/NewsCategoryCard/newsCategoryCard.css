@@ -4,7 +4,6 @@
    display: grid;
    grid-template-columns: minmax(120px, 200px) minmax(250px, 600px);
    grid-template-rows: minmax(120px, 160px);
-   /* background: linear-gradient(270deg, var(--newsCard-bg-color) 0%, var(--newsCard-bg-color2)100%); */
    color: var(--link-color);
    text-decoration: none;
    transition: all 2s;
@@ -65,7 +64,6 @@
    }
 }
 
-
 @media screen and (max-width: 400px) {
    .newsCategoryCard__container {
       grid-template-columns: 160px minmax(130px, 200px);
@@ -76,6 +74,5 @@
 @media screen and (max-width: 350px) {
    .newsCategoryCard__container {
       grid-template-columns: 138px minmax(130px, 200px);
-      /* grid-template-rows: 120px; */
    }
 }

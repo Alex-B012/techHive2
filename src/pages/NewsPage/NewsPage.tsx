@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './newsPage.css'
 import NewsHeadlines from './components/NewsHeadlines/NewsHeadlines'
-import { news_data } from '../../data/news';
+import { news_data, newsCategories_info } from '../../data/news';
 import { getNewsDataFromArray } from '../../utils/newsFuncs';
 import NewsNavigation from './components/NewsNavigation/NewsNavigation';
 import NewsArticleAuthor from './components/NewsArticleAuthor/NewsArticleAuthor';
@@ -10,12 +10,15 @@ import NewsArticleImgVideo from './components/NewsArticleImgVideo/NewsArticleImg
 import NewsArticleTextArea from './components/NewsArticleTextArea/NewsArticleTextArea';
 
 function NewsPage() {
-   const { newsCategory, newsId } = useParams();
+   const { newsCategory, newsId } = useParams<{
+      newsCategory: string;
+      newsId: string;
+   }>();
    const [newsData, setNewsData] = useState<any>(null);
    const [loading, setLoading] = useState(true);
    const [error, setError] = useState<string | null>(null);
 
-   const fetchNews = async () => {
+   const fetchNews = useCallback(async () => {
       try {
          setLoading(true);
 
@@ -23,7 +26,7 @@ function NewsPage() {
          const news_id = parseInt(newsId, 10);
          if (isNaN(news_id) || news_id <= 0) throw new Error('Invalid news ID');
 
-         const obj = { newsId: news_id, news_data: news_data }
+         const obj = { newsId: news_id, news_data: news_data };
          const data = await getNewsDataFromArray(obj);
          if (!data) throw new Error('Data not found');
 
@@ -38,13 +41,12 @@ function NewsPage() {
          setLoading(false);
          console.error('Error fetching news:', error);
       }
-   };
-
+   }, [newsId, newsCategory]);
    useEffect(() => {
       if (newsId && newsCategory) {
          fetchNews();
       }
-   }, [newsId, newsCategory]);
+   }, [newsId, newsCategory, fetchNews]);
 
    return (
       <div className="newsPage">
@@ -62,13 +64,15 @@ function NewsPage() {
             )}
             {!loading && !error && newsData && (
                <div className='newsPage__content'>
-                  <NewsNavigation />
+                  <NewsNavigation news_url={newsCategory || ''} categoriesArr={newsCategories_info} />
                   <NewsHeadlines
                      title={newsData.title}
                      subtitle={newsData.subtitle}
                   />
                   <NewsArticleAuthor author_data={newsData.article_authorObj} date={newsData.date} />
-                  <NewsArticleImgVideo img={newsData.article_imgObj} />
+                  {newsData.article_yt_videoObj.video &&
+                     <NewsArticleImgVideo video={newsData.article_yt_videoObj} />}
+                  {!newsData.article_yt_videoObj.video && <NewsArticleImgVideo img={newsData.article_imgObj} />}
                   <NewsArticleTextArea data={newsData} />
                </div>
             )}

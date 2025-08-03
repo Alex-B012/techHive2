@@ -11,8 +11,8 @@ interface NewsArticleImgVideoProp {
 function NewsArticleImgVideo({ img, video }: NewsArticleImgVideoProp) {
    return (
       <div className='newsArticleImgVideo__container'>
-         {img && (<NewsArticleImg imgObj={img} />)}
-         {!img && video && <NewsArticleVideo videoObj={video} />}
+         {video && <NewsArticleVideo videoObj={video} />}
+         {!video && img && (<NewsArticleImg imgObj={img} />)}
       </div>
    )
 }
