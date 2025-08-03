@@ -17,7 +17,7 @@ function NewsCategoryCard({ data, }: NewsCategoryCardProp) {
    const newsCat_url = getNewsCategoryUrl(obj);
 
    return (
-      <Link className='newsCategoryCard__container' to={`/news${newsCat_url}/${data.id}`}>
+      <Link className='newsCategoryCard__container' to={`/news/${newsCat_url}/${data.id}`}>
          <img className='newsCategoryCard__img' src={data.article_imgObj.img} alt={data.article_imgObj.name} />
          < NewsCategoryCardInfo title={data.title} author={data.article_authorObj.name} date={data.date} category={data.category} />
       </Link >

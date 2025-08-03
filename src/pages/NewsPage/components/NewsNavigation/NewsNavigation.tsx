@@ -19,7 +19,7 @@ function NewsNavigation({ news_url, categoriesArr }: NewsNavigationProp) {
          <span className="newsNavigation__span"> / </span>
          <Link className="newsNavigation__link" to={`/news`}>News</Link>
          <span className="newsNavigation__span"> / </span>
-         <Link className="newsNavigation__link" to={`/${news_url}`}>{newsCategoryName}</Link>
+         <Link className="newsNavigation__link" to={`/news/${news_url}`}>{newsCategoryName}</Link>
       </div>
    )
 }

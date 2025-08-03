@@ -23,10 +23,10 @@ export const newsPage_intro = {
 }
 
 export const newsCategories_info = {
-   digital: { name: "Digital", url: "/digital" },
-   gaming: { name: "Gaming", url: "/gaming" },
-   tech_hardware: { name: "Tech Hardware", url: "/tech-hardware" },
-   pc_peripherals: { name: "PC Peripherals", url: "/pc-periherals" },
+   digital: { name: "Digital", url: "digital" },
+   gaming: { name: "Gaming", url: "gaming" },
+   tech_hardware: { name: "Tech Hardware", url: "tech-hardware" },
+   pc_peripherals: { name: "PC Peripherals", url: "pc-periherals" },
 }
 
 export const news_data = [
