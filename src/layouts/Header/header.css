@@ -16,6 +16,7 @@ header {
    align-items: center;
    justify-content: center;
    z-index: 100;
+
 }
 
 .header__row1 {
@@ -28,6 +29,8 @@ header {
    justify-content: center;
    position: fixed;
    top: 0;
+   /* Стекло эффекты */
+
 }
 
 .header__row2 {
@@ -35,7 +38,9 @@ header {
    grid-template-columns: 1fr;
    grid-template-rows: 100px;
    justify-content: center;
-   background-color: var(--header-bg-cover);
+   background-color: var(--glass-effect-bg-color);
+   transition: backdrop-filter 0.3s, box-shadow 0.3s;
+   backdrop-filter: blur(2px);
 }
 
 .header__mobileMenu {
