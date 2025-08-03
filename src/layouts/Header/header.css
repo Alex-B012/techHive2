@@ -16,7 +16,6 @@ header {
    align-items: center;
    justify-content: center;
    z-index: 100;
-
 }
 
 .header__row1 {
@@ -29,8 +28,6 @@ header {
    justify-content: center;
    position: fixed;
    top: 0;
-   /* Стекло эффекты */
-
 }
 
 .header__row2 {
