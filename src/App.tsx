@@ -22,12 +22,13 @@ import Banner from "./layouts/Banner/banner";
 import { banner_info } from "./data/pricing/pr_pricing"
 import NewsPage from "./pages/NewsPage/NewsPage";
 import NewsCategoryPage from "./pages/NewsCategoryPage/NewsCategoryPage";
+import PricingCategory from "./pages/PricingCategory/PricingCategory";
 
 function App() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const isPricingPage = location.pathname === "/pricing";
-  const isNewsPage = location.pathname === "/news";
+  // const isNewsPage = location.pathname === "/news";
 
   return (
     <div className="App">
@@ -38,7 +39,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />
-        {/* <Route path="/pricing/:categoryId" element={<Category />} /> */}
+        <Route path="/pricing/:categoryId" element={<PricingCategory />} />
         {/* <Route path="/pricing/:categoryId/:productId" element={<Product />} /> */}
 
         <Route path="/news" element={<NewsList />} />

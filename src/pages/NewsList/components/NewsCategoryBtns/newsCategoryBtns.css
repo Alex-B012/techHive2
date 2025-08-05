@@ -18,35 +18,20 @@
    .newsCategoryBtns__title {
       font-size: 1.2em;
    }
-
-   .newsListCategotyBtns__btnsList {
-      grid-template-columns: 49px 60px 115px 110px;
-   }
 }
 
 @media screen and (max-width: 1000px) {
    .newsCategoryBtns__title {
       font-size: 1.1em;
    }
-
-   .newsListCategotyBtns__btnsList {
-      grid-template-columns: 44px 53px 103px 100px;
-   }
 }
 
 @media screen and (max-width: 400px) {
    .newsCategoryBtns__container {
-      padding-bottom: 35px;
+      padding-bottom: 15px;
    }
 
    .newsCategoryBtns__title {
       font-size: 1.1em;
-   }
-
-   .newsListCategotyBtns__btnsList {
-      grid-template-columns: 103px 100px;
-      grid-template-rows: 1fr 1fr;
-      justify-items: start;
-      gap: 1vh 10vw;
    }
 }
