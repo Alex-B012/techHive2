@@ -1,8 +1,10 @@
 .newsCategoryBtn__link {
    max-width: auto;
-   display: grid;
+   display: flex;
+   flex-basis: calc(100%/5.1);
    text-decoration: none;
    transition: all 2s;
+   white-space: nowrap;
 }
 
 .newsCategoryBtn__link:hover {

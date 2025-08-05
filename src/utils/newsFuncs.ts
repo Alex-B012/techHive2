@@ -34,8 +34,6 @@ export function getNewsCategoryUrl({ categoryName, categoriesArr }: getNewsCateg
 export function getNewsCategoryName({ categoryUrl, categoriesArr }: getNewsCategoryNameProp): string | null {
    for (const key in categoriesArr) {
       const category = categoriesArr[key];
-      console.log("categoryUrl", categoryUrl)
-      console.log("categoriesArr", categoriesArr)
       if (category.url === categoryUrl) return category.name;
    }
    return null;

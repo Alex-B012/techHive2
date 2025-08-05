@@ -12,16 +12,14 @@ interface NewsListAreaProp {
    intro: NewsPageIntro;
 }
 
-function chooseNewsCategory(name: string) {
-   console.log("chooseNewsCategory - start")
-}
-
 function NewsListArea({ intro }: NewsListAreaProp) {
    return (
       <div className="newsListArea__container">
          <NewsCategoryBtns
             title={newsPage_intro.categoryBtnTitle}
             existing_categories={newsCategories_info}
+            allCategories={false}
+            showAll={false}
          />
          <NewCategoryCards data={news_data} />
       </div>

@@ -54,7 +54,6 @@ function NewsCategoryPage() {
       if (newsCategory) {
          fetchNews();
          let result = getNewsCategoryName({ categoryUrl: newsCategory, categoriesArr: newsCategories_info })
-         console.log("result", result)
          setNewsCategoryName(result)
 
       }
@@ -68,6 +67,8 @@ function NewsCategoryPage() {
             {newsCategoryName && <NewsCategoryBtns
                title={newsCategoryName || ''}
                existing_categories={newsCategories_info}
+               allCategories={true}
+               showAll={true}
             />}
 
             {loading && <div>Loading...</div>}

@@ -23,6 +23,7 @@ export const newsPage_intro = {
 }
 
 export const newsCategories_info = {
+   all: { name: "All", url: "news" },
    digital: { name: "Digital", url: "digital" },
    gaming: { name: "Gaming", url: "gaming" },
    tech_hardware: { name: "Tech Hardware", url: "tech-hardware" },

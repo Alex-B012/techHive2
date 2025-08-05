@@ -16,6 +16,13 @@
    column-gap: 2vw;
 }
 
+.newsListCategotyBtns__btnsList {
+   max-width: 500px;
+   display: flex;
+   flex-direction: row;
+}
+
+
 
 @media screen and (max-width: 1200px) {
    .newsCategoryBtns__title {
