@@ -8,21 +8,11 @@
 }
 
 .newsListCategotyBtns__btnsList {
-   max-width: 400px;
-   display: grid;
-   grid-template-columns: 54px 66px 126px 123px;
-   grid-template-rows: 24px;
-   align-items: start;
-   column-gap: 2vw;
-}
-
-.newsListCategotyBtns__btnsList {
    max-width: 500px;
    display: flex;
    flex-direction: row;
+   flex-flow: row wrap;
 }
-
-
 
 @media screen and (max-width: 1200px) {
    .newsCategoryBtns__title {
@@ -45,6 +35,10 @@
 }
 
 @media screen and (max-width: 400px) {
+   .newsCategoryBtns__container {
+      padding-bottom: 35px;
+   }
+
    .newsCategoryBtns__title {
       font-size: 1.1em;
    }

@@ -13,7 +13,6 @@ interface NewsCategoryBtnsProp {
 function NewsCategoryBtns({
    title,
    existing_categories,
-   allCategories = false,
    showAll = false,
 }: NewsCategoryBtnsProp) {
 

@@ -1,10 +1,14 @@
 .newsCategoryBtn__link {
    max-width: auto;
    display: flex;
-   flex-basis: calc(100%/5.1);
    text-decoration: none;
    transition: all 2s;
    white-space: nowrap;
+   margin-right: 2vw;
+}
+
+.newsCategoryBtn__link:last-child {
+   margin-right: 0;
 }
 
 .newsCategoryBtn__link:hover {
@@ -37,5 +41,17 @@
 @media screen and (max-width: 1000px) {
    .newsCategoryBtn__btn {
       font-size: 0.8em
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .newsCategoryBtn__link {
+      margin-right: 4vw;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .newsCategoryBtn__link {
+      margin-right: 1vw;
    }
 }

@@ -42,6 +42,7 @@ function NewsPage() {
          console.error('Error fetching news:', error);
       }
    }, [newsId, newsCategory]);
+
    useEffect(() => {
       if (newsId && newsCategory) {
          fetchNews();

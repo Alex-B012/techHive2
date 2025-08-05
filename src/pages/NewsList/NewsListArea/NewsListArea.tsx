@@ -6,7 +6,7 @@ import {
 } from "../../../data/news";
 import NewsCategoryBtns from "../components/NewsCategoryBtns/NewsCategoryBtns";
 import { NewsPageIntro } from "../../../types/news";
-import NewCategoryCards from "./NewCategoryCards/NewCategoryCards";
+import NewCategoryCards from "./NewCategoryCards/NewsCategoryCards";
 
 interface NewsListAreaProp {
    intro: NewsPageIntro;

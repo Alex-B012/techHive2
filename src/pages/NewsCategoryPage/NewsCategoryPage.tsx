@@ -1,4 +1,4 @@
-import NewCategoryCards from '../NewsList/NewsListArea/NewCategoryCards/NewCategoryCards'
+import NewCategoryCards from '../NewsList/NewsListArea/NewCategoryCards/NewsCategoryCards'
 import './newsCategoryPage.css'
 import { news_data, newsCategories_info } from "../../data/news"
 import { useCallback, useEffect, useState } from 'react';
