@@ -3,7 +3,7 @@ import lg_gram_business from "../../assets/images_pricing/pr01_laptops/LG_Gram_B
 import Panasonic_ToughBook_FZ_55 from "../../assets/images_pricing/pr01_laptops/Panasonic_ToughBook_FZ-55.webp"
 import dell_alienware_x14 from "../../assets/images_pricing/pr01_laptops/dell_alienware_x14.webp"
 
-export const pc_data = [
+export const laptops_data = [
    {
       id: 1,
       name: `ThinkPad P16v Gen 2 16"`,

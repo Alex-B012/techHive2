@@ -8,7 +8,7 @@
 }
 
 .newsListCategotyBtns__btnsList {
-   max-width: 500px;
+   max-width: 550px;
    display: flex;
    flex-direction: row;
    flex-flow: row wrap;

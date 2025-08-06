@@ -16,6 +16,20 @@ import cat_vr_img from "../../assets/images_pricing/pr00_cat_imgs/cat_vr_img.web
 import lenovo_p16v from "../../assets/images_pricing/pr01_laptops/Lenovo_P16v.webp"
 import asus_tog_g700 from "../../assets/images_pricing/pr02_pc/ASUS_ROG_ G700.webp"
 
+
+
+export const navigationLinksArr = [
+   { name: "All", url: "pricing", section: "Pricing" },
+   { name: "Laptops", url: "laptops", section: "Pricing" },
+   { name: "Computers", url: "computers", section: "Pricing" },
+   { name: "Gaming Controller", url: "gamingcontroller", section: "Pricing" },
+   { name: "VR", url: "vr", section: "Pricing" },
+   { name: "Graphics Cards", url: "graphicscards", section: "Pricing" },
+   { name: "Processors", url: "processors", section: "Pricing" },
+   { name: "Input Devices", url: "inputdevices", section: "Pricing" },
+   { name: "Displays", url: "displays", section: "Pricing" },
+]
+
 export const productCategories_data = [{
    id: 1,
    name: "Laptops",

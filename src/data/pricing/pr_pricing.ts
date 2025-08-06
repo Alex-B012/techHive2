@@ -2,6 +2,7 @@ import banner_connect from "../../assets/images_pricing/banner_connect.webp"
 import banner_together from "../../assets/images_pricing/banner_together.webp"
 import banner_evening from "../../assets/images_pricing/banner_evening.webp"
 
+import { laptops_data } from "./pr01_laptops"
 import { pc_data } from "./pr02_pc"
 
 export const banner_info = [
@@ -30,7 +31,10 @@ export const banner_info = [
       }
    },]
 
-export const products_data = [pc_data]
+export const products_data = [{
+   laptops: laptops_data,
+   computers: pc_data,
+}]
 
 // Our hottest offers
 // Popular picks for Back to School

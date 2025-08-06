@@ -1,0 +1,51 @@
+.pricingCategoryPage {
+   display: grid;
+   grid-area: page;
+   grid-template-columns: 10vw 1fr;
+   align-items: start;
+   font-family: "Tomorrow", Arial, Helvetica, sans-serif;
+   background: linear-gradient(90deg, var(--mobileMenu-bg-color) 0%, var(--header-bg-color)100%);
+   padding: 3vh 0;
+}
+
+.pricingCategoryPage__container {
+   width: 100%;
+   height: 100%;
+   display: grid;
+   row-gap: 7vh;
+   justify-items: center;
+   align-items: start;
+   padding: 40px 2% 90px 0;
+}
+
+
+@media screen and (max-width: 1200px) {
+   .pricingCategoryPage {
+      grid-template-columns: 5vw 1fr;
+   }
+
+   .pricingCategoryPage__container {
+      row-gap: 3vh;
+      padding: 30px 2% 90px 0;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .pricingCategoryPage__container {
+      padding: 20px 0 60px;
+      row-gap: 5vh;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .pricingCategoryPage {
+      grid-template-columns: 1fr;
+      background: linear-gradient(90deg, var(--mobileMenu-bg-color) 0%, var(--header-bg-color2)100%);
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .pricingCategoryPage__container {
+      row-gap: 7vh;
+   }
+}

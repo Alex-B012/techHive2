@@ -7,9 +7,11 @@ interface PromoCatOffersCardProps {
 }
 
 function PromoCatOffersCard({ data }: PromoCatOffersCardProps) {
+   const categoryUrl = data.name.toLowerCase();
+
    return (
       <div className='promoCatOffersCard__container'>
-         <Link to={`/pricing/:${data.id}`} className="promoCatOffersCard__link">
+         <Link to={`/pricing/${categoryUrl}`} className="promoCatOffersCard__link">
             <img src={data.promo.pricing_cat.img} alt={data.name} className="promoCatOffersCard__img" />
             <h4 className="promoCatOffersCard__heading">{data.name}</h4>
          </Link >
