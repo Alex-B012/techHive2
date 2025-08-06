@@ -12,6 +12,7 @@
    display: flex;
    flex-direction: row;
    margin-bottom: 20px;
+   background: linear-gradient(270deg, var(--newsCard-bg-color) 0%, var(--newsCard-bg-color2)100%);
    color: var(--link-color);
    text-decoration: none;
    transition: all 2s;
@@ -35,10 +36,13 @@
 }
 
 .pricingCategoryCard__info {
+   width: 100%;
    padding-left: 20px;
 }
 
-.pricingCategoryCard__brand, .pricingCategoryCard__price {
+.pricingCategoryCard__brand,
+.pricingCategoryCard__price,
+.pricingCategoryCard__discount {
    font-size: 1em;
    color: var(--link-color);
 }
@@ -49,6 +53,15 @@
    color: var(--link-color2)
 }
 
+.pricingCategoryCard__priceContainer {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 0 10px 10px 0;
+
+}
+
 .pricingCategoryCard__title {
    font-size: 1.1em;
    font-weight: 700;
@@ -56,11 +69,10 @@
 }
 
 .pricingCategoryCard__price {
-   padding-bottom: 10px;
    color: var(--text-color)
 }
 
-@media screen and (max-width: 1200px) {
+.pricingCategoryCard__discount @media screen and (max-width: 1200px) {
    .pricingCategoryCard__link {
       max-height: var(--height135);
    }
@@ -70,7 +82,13 @@
       max-height: var(--height135);
    }
 
-   .pricingCategoryCard__brand, .pricingCategoryCard__price {
+   .pricingCategoryCard__info {
+      padding-left: 18px;
+   }
+
+   .pricingCategoryCard__brand,
+   .pricingCategoryCard__price,
+   .pricingCategoryCard__discount {
       font-size: 0.9em;
    }
 
@@ -90,7 +108,13 @@
       max-height: var(--height120);
    }
 
-   .pricingCategoryCard__brand, .pricingCategoryCard__price {
+   .pricingCategoryCard__info {
+      padding-left: 16px;
+   }
+
+   .pricingCategoryCard__brand,
+   .pricingCategoryCard__price,
+   .pricingCategoryCard__discount {
       font-size: 0.8em;
    }
 
@@ -110,7 +134,13 @@
       max-height: var(--height135);
    }
 
-   .pricingCategoryCard__brand, .pricingCategoryCard__price {
+   .pricingCategoryCard__info {
+      padding-left: 10px;
+   }
+
+   .pricingCategoryCard__brand,
+   .pricingCategoryCard__price,
+   .pricingCategoryCard__discount {
       font-size: 0.7em;
    }
 

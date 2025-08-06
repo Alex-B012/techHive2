@@ -21,9 +21,10 @@ function SelectPricingCategory({ data }: SelectPricingCategoryProp) {
 
    return (
       <div className='selectPricingCategory__container'>
-         {currentUrlObj && currentUrlObj.name !== "All" &&
+         {currentUrlObj &&
             <h2 className='selectPricingCategory__title'>{currentUrlObj.name}</h2>
          }
+
          <div className='selectPricingCategory__linkContainer'>
             {linksArrToDisplay.map((item) =>
                <Link className="selectPricingCategory__link" to={`/pricing/${item.url}`} key={item.url} >

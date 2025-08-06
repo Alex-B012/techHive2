@@ -19,7 +19,7 @@ import asus_tog_g700 from "../../assets/images_pricing/pr02_pc/ASUS_ROG_ G700.we
 
 
 export const navigationLinksArr = [
-   { name: "All", url: "pricing", section: "Pricing" },
+   { name: "All Products", url: "pricing", section: "Pricing" },
    { name: "Laptops", url: "laptops", section: "Pricing" },
    { name: "Computers", url: "computers", section: "Pricing" },
    { name: "Gaming Controller", url: "gamingcontroller", section: "Pricing" },
