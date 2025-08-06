@@ -7,6 +7,7 @@ import acer_nitro_60 from "./../../assets/images_pricing/pr02_pc/Acer_Nitro_60.w
 export const pc_data = [
    {
       id: 20000001,
+      category: "Computers",
       name: "OMEN 16L Gaming PC - White Metal",
       brand: "HP",
       model: "TG03-0009",
@@ -67,6 +68,7 @@ export const pc_data = [
    },
    {
       id: 20000002,
+      category: "Computers",
       name: "OMEN 40L GT21-0334",
       brand: "HP",
       model: "Omen 40L",
@@ -122,6 +124,7 @@ export const pc_data = [
    },
    {
       id: 20000003,
+      category: "Computers",
       name: "ROG G700 Gaming PC",
       brand: "ASUS",
       model: "G700TF-BSU75070-CB",
@@ -184,6 +187,7 @@ export const pc_data = [
    },
    {
       id: 20000004,
+      category: "Computers",
       name: "Nitro 60 Gaming PC",
       brand: "Acer",
       model: "N60-640-UR13",

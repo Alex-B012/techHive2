@@ -1,0 +1,123 @@
+:root {
+   --height150: 150px;
+   --height135: 135px;
+   --height120: 120px;
+}
+
+.pricingCategoryCard__link {
+   width: 100%;
+   max-width: 600px;
+   height: 100%;
+   max-height: var(--height150);
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 20px;
+   color: var(--link-color);
+   text-decoration: none;
+   transition: all 2s;
+}
+
+.pricingCategoryCard__link:last-child {
+   margin-bottom: 0;
+}
+
+.pricingCategoryCard__link:hover {
+   background: linear-gradient(270deg, var(--newsCard-bg-color-hover) 0%, var(--newsCard-bg-color-hover2)100%);
+   color: var(--link-color-hover);
+   transition: all 0.5s;
+}
+
+.pricingCategoryCard__img {
+   width: 100%;
+   max-width: var(--height150);
+   height: 100%;
+   max-height: var(--height150);
+}
+
+.pricingCategoryCard__info {
+   padding-left: 20px;
+}
+
+.pricingCategoryCard__brand, .pricingCategoryCard__price {
+   font-size: 1em;
+   color: var(--link-color);
+}
+
+.pricingCategoryCard__brand {
+   text-transform: uppercase;
+   padding-top: 10px;
+   color: var(--link-color2)
+}
+
+.pricingCategoryCard__title {
+   font-size: 1.1em;
+   font-weight: 700;
+   padding: 2vh 0 4vh;
+}
+
+.pricingCategoryCard__price {
+   padding-bottom: 10px;
+   color: var(--text-color)
+}
+
+@media screen and (max-width: 1200px) {
+   .pricingCategoryCard__link {
+      max-height: var(--height135);
+   }
+
+   .pricingCategoryCard__img {
+      max-width: var(--height135);
+      max-height: var(--height135);
+   }
+
+   .pricingCategoryCard__brand, .pricingCategoryCard__price {
+      font-size: 0.9em;
+   }
+
+   .pricingCategoryCard__title {
+      font-size: 1.0em;
+      padding: 2vh 0 3vh;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .pricingCategoryCard__link {
+      max-height: var(--height120);
+   }
+
+   .pricingCategoryCard__img {
+      max-width: var(--height120);
+      max-height: var(--height120);
+   }
+
+   .pricingCategoryCard__brand, .pricingCategoryCard__price {
+      font-size: 0.8em;
+   }
+
+   .pricingCategoryCard__title {
+      font-size: 0.9em;
+      padding: 1.5vh 0 2.5vh;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .pricingCategoryCard__link {
+      max-height: var(--height135);
+   }
+
+   .pricingCategoryCard__img {
+      max-width: var(--height135);
+      max-height: var(--height135);
+   }
+
+   .pricingCategoryCard__brand, .pricingCategoryCard__price {
+      font-size: 0.7em;
+   }
+
+   .pricingCategoryCard__title {
+      font-size: 0.8em;
+      padding: 1vh 0 2vh;
+   }
+}
+
+@media screen and (max-width: 400px) {}

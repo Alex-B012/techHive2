@@ -6,3 +6,19 @@ export interface ProductsData {
    computers: Computer[];
 }
 
+export interface PricingCategoryCardInterface {
+   id: number,
+   category: string,
+   name: string,
+   brand: string,
+   model: string,
+   price: {
+      current: number,
+      discount:
+      {
+         price: number,
+         ends_days: number,
+      },
+   },
+   img: string
+}

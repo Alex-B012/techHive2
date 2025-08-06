@@ -1,5 +1,6 @@
 export interface Computer {
    id: number;
+   category: string;
    name: string;
    brand: string;
    model: string;

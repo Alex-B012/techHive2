@@ -31,10 +31,10 @@ export const banner_info = [
       }
    },]
 
-export const products_data = [{
+export const products_data = {
    laptops: laptops_data,
    computers: pc_data,
-}]
+}
 
 // Our hottest offers
 // Popular picks for Back to School

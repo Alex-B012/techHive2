@@ -1,20 +1,26 @@
 import { Link } from 'react-router-dom';
-import { ProductCategory } from '../../../../types/productCategories';
 import './pricingCategoryCard.css'
+import { displayPrice } from '../../../../utils/misc';
+import { PricingCategoryCardInterface } from '../../../../types/products/products';
 
 interface PricingCategoryCardProp {
-   data: ProductCategory;
+   item_data: PricingCategoryCardInterface;
 }
 
-function PricingCategoryCard({ data }: PricingCategoryCardProp) {
-   return (
-      <div className='pricingCategoryCard__container'>
-         <Link className='pricingCategoryCard__link' to={`/pricing/${data.name.toLowerCase()}`}>
-            <img className='pricingCategoryCard__img' src={data.promo.pricing_cat.img} alt={data.name} />
-            <h4 className="promoCatOffersCard__heading">{data.name}</h4>
-         </Link>
+function PricingCategoryCard({ item_data }: PricingCategoryCardProp) {
+   const { id, category, name, brand, model, price, img } = item_data;
 
-      </div>
+   let priceDisplay = price.discount.price ? price.discount.price : price.current;
+
+   return (
+      <Link className='pricingCategoryCard__link' to={`pricing/${category}/${id}`} >
+         <img className='pricingCategoryCard__img' src={img} alt={model} />
+         <div className='pricingCategoryCard__info'>
+            <h4 className='pricingCategoryCard__brand'>{brand}</h4>
+            <h3 className='pricingCategoryCard__title'>{name}</h3>
+            <span className='pricingCategoryCard__price'>{displayPrice(priceDisplay)}</span>
+         </div>
+      </Link>
    )
 }
 

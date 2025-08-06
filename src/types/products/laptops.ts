@@ -1,6 +1,7 @@
 // Основной интерфейс для ноутбука
 export interface Laptop {
    id: number;
+   category: string,
    name: string;
    brand: string;
    model: string;

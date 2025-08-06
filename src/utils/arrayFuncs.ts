@@ -1,6 +1,10 @@
 import { NewsCategoryBtnInfo } from "../types/news";
 import { NewsItem } from "../types/newsPanel";
 import { PageLinkInterface } from "../types/pageLinks"
+import { Computer } from "../types/products/computers";
+import { Laptop } from "../types/products/laptops";
+import { ProductsData } from "../types/products/products"
+import { PricingCategoryCardInterface } from "../types/products/products";
 
 // Fisher-Yates (or Knuth) shuffle algorithm
 export function shuffleArray<T>(array: T[]): T[] {
@@ -95,3 +99,62 @@ export const getUniqueCategories = (inputArray: NewsItem[]): NewsCategoryBtnInfo
       cat_name: category
    }));
 };
+
+// Prepare an array of PricingCategoryCard objects for PricingCategoryCards with the provided conditions
+export const prepareCategoryCardsArr = ({
+   productsObj,
+   category,
+}: {
+   productsObj: ProductsData;
+   category: string;
+}): PricingCategoryCardInterface[] => {
+   const mapProduct = (product: Laptop | Computer): PricingCategoryCardInterface => ({
+      id: product.id,
+      category: product.category,
+      name: product.name,
+      brand: product.brand,
+      model: product.model,
+      price: {
+         current: product.price.current,
+         discount: product.price.discount
+            ? {
+               price: product.price.discount.price ?? -1,
+               ends_days: product.price.discount.ends_days ?? -1,
+            }
+            : {
+               price: -1,
+               ends_days: -1,
+            },
+      },
+      img: product.img,
+   });
+
+   let resultArr: PricingCategoryCardInterface[] = [];
+
+   switch (category) {
+      case 'pricing': {
+         resultArr = [
+            ...productsObj.laptops.map(mapProduct),
+            ...productsObj.computers.map(mapProduct),
+         ];
+         break;
+      }
+      case 'laptops': {
+         resultArr = productsObj.laptops.map(mapProduct);
+         break;
+      }
+      case 'computers': {
+         resultArr = productsObj.computers.map(mapProduct);
+         break;
+      }
+      default: {
+         resultArr = [];
+         break;
+      }
+   }
+
+   return resultArr;
+};
+
+
+

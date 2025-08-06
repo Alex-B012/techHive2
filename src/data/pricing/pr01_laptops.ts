@@ -6,6 +6,7 @@ import dell_alienware_x14 from "../../assets/images_pricing/pr01_laptops/dell_al
 export const laptops_data = [
    {
       id: 1,
+      category: "Laptops",
       name: `ThinkPad P16v Gen 2 16"`,
       brand: "Lenovo",
       model: "21KX0021US",
@@ -121,6 +122,7 @@ export const laptops_data = [
    },
    {
       id: 2,
+      category: "Laptops",
       name: `Gram Business Laptop, 17"`,
       brand: "LG",
       model: "Gram 17Zxxx019",
@@ -207,6 +209,7 @@ export const laptops_data = [
    },
    {
       id: 3,
+      category: "Laptops",
       name: `ToughBook FZ-55 MK1 14"`,
       brand: "Panasonic",
       model: "ToughBook FZ-55 MK1",
@@ -307,6 +310,7 @@ export const laptops_data = [
       warrenty: "1 year"
    }, {
       id: 4,
+      category: "Laptops",
       name: `Alienware X14 R1 14"`,
       brand: "Dell",
       model: "MNAOX14_H1200M2E",
