@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useLoadProductData, useGetProductObj } from '../../utils/productUtils';
-import './Product.css';
+import './product.css';
 import { Laptop } from '../../types/products/laptops';
 import { Computer } from '../../types/products/computers';
 
@@ -34,41 +34,24 @@ function Product() {
             }
 
             const data = await loadProductData();
-
             if (Array.isArray(data)) {
                switch (categoryUrl) {
-                  case 'laptops': {
-                     const laptops = data as Laptop[];
-
-                     if (laptops.every(item =>
-                        'brand' in item &&
-                        'name' in item
-                     )) {
-                        setLaptopsDataArr(laptops);
-                     }
+                  case 'laptops':
+                     setLaptopsDataArr(data as Laptop[]);
                      break;
-                  }
-                  case 'computers': {
-                     const computers = data as Computer[];
-                     if (computers.every(item =>
-                        'brand' in item &&
-                        'name' in item
-                     )) {
-                        setPcDataArr(computers);
-                     }
+                  case 'computers':
+                     setPcDataArr(data as Computer[]);
                      break;
-                  }
                   default:
                      console.error('Unknown category');
                }
             }
 
             const product = getProductObj();
-
-            if (categoryUrl === 'laptops') {
-               setLaptop(product);
-            } else if (categoryUrl === 'computers') {
-               setComputer(product);
+            if (categoryUrl === 'laptops' && product) {
+               setLaptop(product as Laptop);
+            } else if (categoryUrl === 'computers' && product) {
+               setComputer(product as Computer);
             }
          } catch (error) {
             console.error('Error loading data:', error);
@@ -76,14 +59,7 @@ function Product() {
       };
 
       fetchData();
-   }, [
-      loadProductData,
-      getProductObj,
-      categoryUrl,
-      laptopsDataArr,
-      pcDataArr,
-      productIdInt
-   ]);
+   }, [loadProductData, getProductObj, categoryUrl]);
 
    return (
       <div className="productPage">
