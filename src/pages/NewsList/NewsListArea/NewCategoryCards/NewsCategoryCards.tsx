@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { NewsItem } from '../../../../types/newsPanel';
-import { prepareNewsCards } from '../../../../utils/arrayFuncs';
+import { prepareNewsCards } from '../../../../utils/arrayUtils';
 import './newsCategoryCards.css'
 import NewsCategoryCard from './NewsCategoryCard/NewsCategoryCard';
 

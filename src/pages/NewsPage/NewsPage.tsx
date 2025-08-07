@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import './newsPage.css'
 import NewsHeadlines from './components/NewsHeadlines/NewsHeadlines'
 import { news_data, newsCategories_info } from '../../data/news';
-import { getNewsDataFromArray } from '../../utils/newsFuncs';
+import { getNewsDataFromArray } from '../../utils/newsUtils';
 import NewsNavigation from './components/NewsNavigation/NewsNavigation';
 import NewsArticleAuthor from './components/NewsArticleAuthor/NewsArticleAuthor';
 import NewsArticleImgVideo from './components/NewsArticleImgVideo/NewsArticleImgVideo';

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './pricingCategoryCard.css'
-import { displayPrice } from '../../../../utils/misc';
+import { displayPrice } from '../../../../utils/miscUtils';
 import { PricingCategoryCardInterface } from '../../../../types/products/products';
 
 interface PricingCategoryCardProp {
@@ -15,7 +15,7 @@ function PricingCategoryCard({ item_data }: PricingCategoryCardProp) {
 
 
    return (
-      <Link className='pricingCategoryCard__link' to={`pricing/${category}/${id}`} >
+      <Link className='pricingCategoryCard__link' to={`/pricing/${category.toLowerCase()}/${id}`} >
          <img className='pricingCategoryCard__img' src={img} alt={model} />
          <div className='pricingCategoryCard__info'>
             <h4 className='pricingCategoryCard__brand'>{brand}</h4>

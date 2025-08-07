@@ -7,6 +7,19 @@
    min-height: 200px;
 }
 
+@media screen and (max-width: 1200px) {
+   .pricingCategoryNoData__container {
+      font-size: 0.9em;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .pricingCategoryNoData__container {
+      font-size: 0.8em;
+   }
+}
+
+
 @media screen and (max-width: 800px) {
    .pricingCategoryNoData__container {
       padding: 0 2%;

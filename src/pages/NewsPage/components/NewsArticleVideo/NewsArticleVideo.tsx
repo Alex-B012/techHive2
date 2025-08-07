@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { VideoData } from '../../../../types/newsPanel';
 import './newsArticleVideo.css';
-import { changeIframeHeight } from '../../../../utils/newsFuncs';
+import { changeIframeHeight } from '../../../../utils/newsUtils';
 
 interface NewsArticleVideoProp {
    videoObj: VideoData;

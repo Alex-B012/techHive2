@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom'
 import './pricingCategoryList.css'
 import { products_data } from '../../../data/pricing/pr_pricing';
-import { removeAllWhitespace } from '../../../utils/misc';
-import { prepareCategoryCardsArr } from '../../../utils/arrayFuncs';
+import { removeAllWhitespace } from '../../../utils/miscUtils';
+import { prepareCategoryCardsArr } from '../../../utils/arrayUtils';
 
 import { ProductCategory } from '../../../types/productCategories'
 import { PricingCategoryCardInterface, ProductsData } from '../../../types/products/products';
@@ -28,14 +28,12 @@ function PricingCategoryList({ data }: PricingCategoryListProp) {
    let categoryUrl_prepared = "";
    if (categoryUrl) categoryUrl_prepared = removeAllWhitespace(categoryUrl);
 
-   // Move the array preparation inside useEffect
    useEffect(() => {
       let allArray: PricingCategoryCardInterface[] = prepareCategoryCardsArr({
          productsObj: products_data as ProductsData,
          category: categoryUrl_prepared
       });
 
-      // Initial sorting based on default values
       const sorted = [...allArray].sort((a, b) => {
          if (selectedValue === 'price') {
             const priceA = a.price.discount.price || a.price.current;
@@ -56,7 +54,7 @@ function PricingCategoryList({ data }: PricingCategoryListProp) {
    return (
       <div className="pricingCategoryList__container">
          <SelectPricingCategory data={data} />
-         <SortPricingCategory
+         {sortedArray.length > 0 && <SortPricingCategory
             value={{
                value: selectedValue,
                valueFunc: setSelectedValue
@@ -65,7 +63,8 @@ function PricingCategoryList({ data }: PricingCategoryListProp) {
                sortOrder: sortOrder,
                sortOrderFunc: setSortOrder
             }}
-         />
+         />}
+
          {sortedArray.map((item) =>
             <PricingCategoryCard item_data={item} key={item.id} />
          )}

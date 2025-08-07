@@ -1,6 +1,6 @@
 import "./promoHotOffers.css"
 import { ProductCategory } from "../../types/productCategories";
-import { prepareArrayWithLimit } from "../../utils/arrayFuncs";
+import { prepareArrayWithLimit } from "../../utils/arrayUtils";
 import PromoHotOffersCard from "./PromoHotOffersCard/PromoHotOffersCard"
 
 interface PromoHotOffersProps {

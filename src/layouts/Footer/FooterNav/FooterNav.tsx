@@ -1,6 +1,6 @@
 import './footerNav.css'
 import { pages_links } from "../../../data/data"
-import { filterPageLinksByNames } from '../../../utils/arrayFuncs';
+import { filterPageLinksByNames } from '../../../utils/arrayUtils';
 import { Link } from 'react-router-dom';
 
 function FooterNav() {

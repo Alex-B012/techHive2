@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './newsNavigation.css'
-import { getNewsCategoryName, NewsCategoriesObjInfo } from '../../../../utils/newsFuncs';
+import { getNewsCategoryName, NewsCategoriesObjInfo } from '../../../../utils/newsUtils';
 
 interface NewsNavigationProp {
    news_url: string;

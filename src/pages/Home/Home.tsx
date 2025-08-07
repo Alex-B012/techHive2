@@ -2,7 +2,7 @@ import "./home.css"
 import HomeSlider from './HomeSlider/HomeSlider'
 import { productCategories_data } from '../../data/pricing/pr_productCategories'
 import { pages_links } from "../../data/data"
-import { filterPageLinksByNames } from "../../utils/arrayFuncs"
+import { filterPageLinksByNames } from "../../utils/arrayUtils"
 
 import HomeBtn from './HomeBtn/HomeBtn'
 import HomeHelp from './HomeHelp/HomeHelp'

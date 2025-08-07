@@ -1,6 +1,6 @@
 import "./newspanel.css";
 import NewsPanelCard from "./NewsPanelCard/NewsPanelCard";
-import { prepareNewsArray } from "../../utils/arrayFuncs";
+import { prepareNewsArray } from "../../utils/arrayUtils";
 import { NewsItem } from "../../types/newsPanel";
 
 interface NewsPanelProps {

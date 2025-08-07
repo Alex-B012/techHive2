@@ -23,25 +23,23 @@ import { banner_info } from "./data/pricing/pr_pricing"
 import NewsPage from "./pages/NewsPage/NewsPage";
 import NewsCategoryPage from "./pages/NewsCategoryPage/NewsCategoryPage";
 import PricingCategory from "./pages/PricingCategory/PricingCategory";
+import Product from "./pages/Product/Product";
 
 function App() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const isPricingPage = location.pathname === "/pricing";
-  // const isNewsPage = location.pathname === "/news";
 
   return (
     <div className="App">
       <Header />
       {isHomePage && <Video data={videoSources} />}
       {isPricingPage && <Banner data={banner_info} />}
-      {/* {isNewsPage && <Banner data={""} />} */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/pricing/:categoryUrl" element={<PricingCategory />} />
-        {/* <Route path="/pricing/:categoryId/:productId" element={<Product />} /> */}
-
+        <Route path="/pricing/:categoryUrl/:productId" element={<Product />} />
         <Route path="/news" element={<NewsList />} />
         <Route path="/news/:newsCategory" element={<NewsCategoryPage />} />
         <Route path="/news/:newsCategory/:newsId" element={<NewsPage />} />

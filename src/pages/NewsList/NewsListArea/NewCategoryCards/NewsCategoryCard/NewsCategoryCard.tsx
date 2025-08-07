@@ -3,7 +3,7 @@ import { NewsItem } from '../../../../../types/newsPanel'
 import './newsCategoryCard.css'
 import NewsCategoryCardInfo from './NewsCategoryCardInfo/NewsCategoryCardInfo'
 import { newsCategories_info } from '../../../../../data/news';
-import { getNewsCategoryUrl } from '../../../../../utils/newsFuncs';
+import { getNewsCategoryUrl } from '../../../../../utils/newsUtils';
 
 interface NewsCategoryCardProp {
    data: NewsItem;

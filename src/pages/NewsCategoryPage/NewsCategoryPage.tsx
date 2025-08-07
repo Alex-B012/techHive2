@@ -3,7 +3,7 @@ import './newsCategoryPage.css'
 import { news_data, newsCategories_info } from "../../data/news"
 import { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getNewsCategoryDataFromArray, getNewsCategoryName } from '../../utils/newsFuncs';
+import { getNewsCategoryDataFromArray, getNewsCategoryName } from '../../utils/newsUtils';
 import { NewsItem } from '../../types/newsPanel';
 import NewsCategoryBtns from '../NewsList/components/NewsCategoryBtns/NewsCategoryBtns';
 

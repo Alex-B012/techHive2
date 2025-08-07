@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import { ProductCategory } from '../../../../types/productCategories'
 import { navigationLinksArr } from "../../../../data/pricing/pr_productCategories"
 import './selectPricingCategory.css'
-import { removeAllWhitespace } from '../../../../utils/misc';
+import { removeAllWhitespace } from '../../../../utils/miscUtils';
 
 interface SelectPricingCategoryProp {
    data: ProductCategory[],
