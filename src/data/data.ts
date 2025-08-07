@@ -5,6 +5,9 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faSquarePhone } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faSignal } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDownAZ } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDownZA } from '@fortawesome/free-solid-svg-icons';
 
 export const burgerBtns = [
   { id: 1, name: "Hamburger", icon: faBars },
@@ -25,6 +28,12 @@ export const headerOuterLinks = [
   { id: 2, name: "WhatsApp", url: "/pricing", icon: faWhatsapp },
   { id: 3, name: "YouTube", url: "/contacts", icon: faYoutube },
 ];
+
+export const sortingIcons = {
+  azIcon: faArrowDownAZ,
+  zaIcon: faArrowDownZA,
+  stepsIcon: faSignal,
+}
 
 export const contact_info = {
   company_name: "TechHive",
