@@ -5,26 +5,18 @@ import './Product.css';
 import { Laptop } from '../../types/products/laptops';
 import { Computer } from '../../types/products/computers';
 
-// Компонент для отображения информации о продукте
 function Product() {
-   // Инициализация состояний для хранения данных
    const [laptopsDataArr, setLaptopsDataArr] = useState<Laptop[]>([]);
    const [pcDataArr, setPcDataArr] = useState<Computer[]>([]);
-
-   // Состояния для хранения выбранного продукта
    const [laptop, setLaptop] = useState<Laptop | null>(null);
    const [computer, setComputer] = useState<Computer | null>(null);
-
-   // Получение параметров из URL
    const { categoryUrl = '', productId = '' } = useParams<{
       categoryUrl?: string;
       productId?: string;
    }>();
 
-   // Преобразование productId в число
    const productIdInt = Number(productId);
 
-   // Хуки для загрузки данных
    const loadProductData = useLoadProductData(categoryUrl || '');
    const getProductObj = useGetProductObj(
       categoryUrl || '',
@@ -33,11 +25,9 @@ function Product() {
       productIdInt
    );
 
-   // Эффект для загрузки данных
    useEffect(() => {
       const fetchData = async () => {
          try {
-            // Проверка наличия категории
             if (!categoryUrl) {
                console.error('Category is not specified');
                return;
@@ -45,33 +35,36 @@ function Product() {
 
             const data = await loadProductData();
 
-            // Проверка типа данных перед установкой состояния
             if (Array.isArray(data)) {
-               // Проверка структуры данных с явным указанием типов
-               if (categoryUrl === 'laptops') {
-                  if (data.every((item: any) =>
-                     'brand' in item &&
-                     'name' in item &&
-                     typeof item.brand === 'string' &&
-                     typeof item.name === 'string'
-                  )) {
-                     setLaptopsDataArr(data as Laptop[]);
+               switch (categoryUrl) {
+                  case 'laptops': {
+                     const laptops = data as Laptop[];
+
+                     if (laptops.every(item =>
+                        'brand' in item &&
+                        'name' in item
+                     )) {
+                        setLaptopsDataArr(laptops);
+                     }
+                     break;
                   }
-               } else if (categoryUrl === 'computers') {
-                  if (data.every((item: any) =>
-                     'brand' in item &&
-                     'name' in item &&
-                     typeof item.brand === 'string' &&
-                     typeof item.name === 'string'
-                  )) {
-                     setPcDataArr(data as Computer[]);
+                  case 'computers': {
+                     const computers = data as Computer[];
+                     if (computers.every(item =>
+                        'brand' in item &&
+                        'name' in item
+                     )) {
+                        setPcDataArr(computers);
+                     }
+                     break;
                   }
+                  default:
+                     console.error('Unknown category');
                }
             }
 
             const product = getProductObj();
 
-            // Установка выбранного продукта
             if (categoryUrl === 'laptops') {
                setLaptop(product);
             } else if (categoryUrl === 'computers') {
@@ -110,5 +103,4 @@ function Product() {
    );
 }
 
-// Экспорт компонента
 export default Product;
