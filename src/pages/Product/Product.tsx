@@ -1,50 +1,84 @@
-// Product.tsx
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { useLoadProductData, useGetProductObj } from '../../utils/productUtils';
+import './Product.css';
 import { Laptop } from '../../types/products/laptops';
 import { Computer } from '../../types/products/computers';
-import { useLoadProductData, useGetProductObj } from './utils/productUtils';
-import ProductDetails from './ProductDetails'; // Предположим, что есть компонент для отображения деталей
-import ProductImages from './ProductImages'; // Компонент для отображения изображений
-import ProductReviews from './ProductReviews'; // Компонент для отзывов
-import './Product.css'; // Стили для страницы
 
+// Компонент для отображения информации о продукте
 function Product() {
-   const [laptops_dataArr, setLaptops_dataArr] = useState<Laptop[]>([]);
-   const [pc_dataArr, setPc_dataArr] = useState<Computer[]>([]);
+   // Инициализация состояний для хранения данных
+   const [laptopsDataArr, setLaptopsDataArr] = useState<Laptop[]>([]);
+   const [pcDataArr, setPcDataArr] = useState<Computer[]>([]);
+
+   // Состояния для хранения выбранного продукта
    const [laptop, setLaptop] = useState<Laptop | null>(null);
    const [computer, setComputer] = useState<Computer | null>(null);
-   const { categoryUrl, productId } = useParams<{
-      categoryUrl: string;
-      productId: string;
-   }>();
-   const productId_int = Number(productId);
 
-   const loadProductData = useLoadProductData(categoryUrl);
+   // Получение параметров из URL
+   const { categoryUrl = '', productId = '' } = useParams<{
+      categoryUrl?: string;
+      productId?: string;
+   }>();
+
+   // Преобразование productId в число
+   const productIdInt = Number(productId);
+
+   // Хуки для загрузки данных
+   const loadProductData = useLoadProductData(categoryUrl || '');
    const getProductObj = useGetProductObj(
-      categoryUrl,
-      laptops_dataArr,
-      pc_dataArr,
-      productId_int
+      categoryUrl || '',
+      laptopsDataArr,
+      pcDataArr,
+      productIdInt
    );
 
+   // Эффект для загрузки данных
    useEffect(() => {
       const fetchData = async () => {
          try {
-            const data = await loadProductData();
-            if (categoryUrl === 'laptops') {
-               setLaptops_dataArr(data);
-            } else if (categoryUrl === 'computers') {
-               setPc_dataArr(data);
+            // Проверка наличия категории
+            if (!categoryUrl) {
+               console.error('Category is not specified');
+               return;
             }
+
+            const data = await loadProductData();
+
+            // Проверка типа данных перед установкой состояния
+            if (Array.isArray(data)) {
+               // Проверка структуры данных с явным указанием типов
+               if (categoryUrl === 'laptops') {
+                  if (data.every((item: any) =>
+                     'brand' in item &&
+                     'name' in item &&
+                     typeof item.brand === 'string' &&
+                     typeof item.name === 'string'
+                  )) {
+                     setLaptopsDataArr(data as Laptop[]);
+                  }
+               } else if (categoryUrl === 'computers') {
+                  if (data.every((item: any) =>
+                     'brand' in item &&
+                     'name' in item &&
+                     typeof item.brand === 'string' &&
+                     typeof item.name === 'string'
+                  )) {
+                     setPcDataArr(data as Computer[]);
+                  }
+               }
+            }
+
             const product = getProductObj();
+
+            // Установка выбранного продукта
             if (categoryUrl === 'laptops') {
                setLaptop(product);
             } else if (categoryUrl === 'computers') {
                setComputer(product);
             }
          } catch (error) {
-            console.error('Ошибка при загрузке данных:', error);
+            console.error('Error loading data:', error);
          }
       };
 
@@ -53,52 +87,28 @@ function Product() {
       loadProductData,
       getProductObj,
       categoryUrl,
-      laptops_dataArr,
-      pc_dataArr,
-      productId_int,
+      laptopsDataArr,
+      pcDataArr,
+      productIdInt
    ]);
 
    return (
       <div className="productPage">
          <div className="productPage__empty"></div>
          <div className="productPage__container">
-            {/* Заголовок страницы */}
             <div className="productPage__header">
                <h1 className="productPage__title">
-                  {laptop ? laptop.name : computer ? computer.name : 'Загрузка...'}
+                  {laptop
+                     ? laptop.name
+                     : computer
+                        ? computer.name
+                        : 'Loading data...'}
                </h1>
-            </div>
-
-            {/* Изображения продукта */}
-            <div className="productPage__images">
-               <ProductImages
-                  images={laptop ? laptop.images : computer?.images || []}
-               />
-            </div>
-
-            {/* Детали продукта */}
-            <div className="productPage__details">
-               <ProductDetails
-                  product={laptop || computer}
-                  category={categoryUrl}
-               />
-            </div>
-
-            {/* Отзывы */}
-            <div className="productPage__reviews">
-               <ProductReviews
-                  productId={productId_int}
-                  category={categoryUrl}
-               />
-            </div>
-
-            {/* Дополнительные элементы */}
-            <div className="productPage__actions">
-               {/* Здесь можно добавить кнопки покупки, сравнения и т.д. */}
             </div>
          </div>
       </div>
    );
 }
 
+// Экспорт компонента
 export default Product;

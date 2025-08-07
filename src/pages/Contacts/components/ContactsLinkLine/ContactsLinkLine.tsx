@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./contactsLinkLine.css"
-import { formatPhoneNumber } from "../../../../utils/contacts";
+import { formatPhoneNumber } from "../../../../utils/contactsUtils";
 
 interface ContactsLinkLineInterface {
    data: string;
