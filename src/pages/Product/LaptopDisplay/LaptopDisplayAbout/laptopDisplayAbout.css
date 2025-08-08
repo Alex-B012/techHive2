@@ -1,0 +1,27 @@
+.laptopDisplay__aboutTitle {
+   font-size: 1.5rem;
+   color: var(--text-color);
+}
+
+.laptopDisplay__about {
+   padding: 20px 0;
+   padding-left: 0;
+}
+
+.laptopDisplay__aboutArea {
+   list-style: none;
+   padding-left: 0;
+}
+
+.laptopDisplay__aboutPapagraph {
+   padding: 5px 0;
+}
+
+.laptopDisplay__aboutHeading {
+   color: var(--link-color2);
+}
+
+.laptopDisplay__aboutText {
+   line-height: 150%;
+   font-size: 1rem;
+}

@@ -1,0 +1,61 @@
+.laptopDisplay__mainInfo {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   padding-bottom: 50px;
+}
+
+.laptopDisplay__img {
+   width: 100%;
+   height: 100%;
+   max-width: 200px;
+}
+
+.laptopDisplay__info {
+   width: 100%;
+   max-width: 500px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.laptopDisplay__title {
+   font-size: 1.5rem;
+   color: var(--text-color)
+}
+
+.laptopDisplay__brand {
+   padding-right: 0.3em;
+}
+
+.laptopDisplay__model {
+   font-size: 0.8rem;
+}
+
+.laptopDisplay__priceArea {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding-bottom: 5px;
+}
+
+.laptopDisplay__price {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.laptopDisplay__price div {
+   display: flex;
+   font-size: 1.5rem;
+   color: var(--text-color);
+}
+
+.laptopDisplay__price div:last-child {
+   display: flex;
+   font-size: 1.3rem;
+   color: var(--link-color)
+}

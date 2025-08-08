@@ -1,0 +1,23 @@
+.laptopDisplay__specificationsMaintTitle {
+   font-size: 1.5rem;
+   color: var(--text-color);
+}
+
+.laptopDisplay__specificationsArea {
+   padding: 20px 0;
+}
+
+.laptopDisplay__specSection {
+   padding: 15px 0;
+}
+
+.laptopDisplay__specTitle {
+   color: var(--link-color2);
+   font-size: 1.3rem;
+}
+
+.laptopDisplay__specText {
+   font-size: 1rem;
+   line-height: 130%;
+   padding: 5px 0;
+}

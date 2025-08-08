@@ -4,6 +4,7 @@ import { useLoadProductData, useGetProductObj } from '../../utils/productUtils';
 import './product.css';
 import { Laptop } from '../../types/products/laptops';
 import { Computer } from '../../types/products/computers';
+import LaptopDisplay from './LaptopDisplay/LaptopDisplay';
 
 function Product() {
    const [laptopsDataArr, setLaptopsDataArr] = useState<Laptop[]>([]);
@@ -68,10 +69,12 @@ function Product() {
             <div className="productPage__header">
                <h1 className="productPage__title">
                   {laptop
-                     ? laptop.name
+                     ? <LaptopDisplay product={laptop} />
                      : computer
                         ? computer.name
                         : 'Loading data...'}
+
+                  {/* {computer && <ComputerDisplay product={computer} />} */}
                </h1>
             </div>
          </div>

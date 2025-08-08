@@ -12,10 +12,10 @@ export const laptops_data = [
       model: "21KX0021US",
       rating: 0,
       price: {
-         current: 295999,
+         current: 344399,
          discount:
          {
-            price: 344399,
+            price: 295999,
             ends_days: 12,
          },
       },
@@ -218,8 +218,8 @@ export const laptops_data = [
          current: 139900,
          discount:
          {
-            price: 199900,
-            ends_days: 2,
+            price: -1,
+            ends_days: 0,
          },
       },
       overview: [`PANASONIC ToughBook FZ-55 MK1 Rugged Laptop 14" Non-Touch Screen i5 i5-8365U 4-Core Processor 1.6GHz (4.1GHz With Turbo Boost) 1TB (1TB (1000GB)) SSD & 32GB RAM Memory HD 1366x768 resolution Non-Touch with an integrated Webcam. The graphics chip is integrated on the computer's processor. Win 10 Pro comes preinstalled`],

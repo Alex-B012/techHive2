@@ -47,3 +47,9 @@ export const useGetProductObj = (
       productId_int,
    ]);
 };
+
+// Convert integer values to decimal and display price
+export function displayPrice(num: number, currency: string = 'USD', toFixed: number = 2): string {
+   const formattedNumber = (num / 100).toFixed(toFixed);
+   return `${currency} ${formattedNumber.replace(/\d(?=(\d{3})+\.)/g, '$&,')}`;
+}

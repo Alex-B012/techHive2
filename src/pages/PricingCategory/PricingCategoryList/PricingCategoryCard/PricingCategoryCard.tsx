@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './pricingCategoryCard.css'
-import { displayPrice } from '../../../../utils/miscUtils';
+import { displayPrice } from '../../../../utils/productUtils';
 import { PricingCategoryCardInterface } from '../../../../types/products/products';
 
 interface PricingCategoryCardProp {
