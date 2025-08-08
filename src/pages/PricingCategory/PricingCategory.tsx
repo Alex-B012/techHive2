@@ -1,4 +1,5 @@
 import { productCategories_data } from '../../data/pricing/pr_productCategories'
+import ProductNavigation from '../Product/components/ProductNavigation/ProductNavigation'
 import './pricingCategory.css'
 import PricingCategoryList from './PricingCategoryList/PricingCategoryList'
 
@@ -7,6 +8,7 @@ function PricingCategory() {
       <div className='pricingCategoryPage'>
          <div className="pricingCategoryPage__empty"></div>
          <div className="pricingCategoryPage__container">
+            <ProductNavigation />
             <PricingCategoryList data={productCategories_data} />
          </div>
       </div>

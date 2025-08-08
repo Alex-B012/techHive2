@@ -6,6 +6,7 @@ import { Laptop } from '../../types/products/laptops';
 import { Computer } from '../../types/products/computers';
 import LaptopDisplay from './LaptopDisplay/LaptopDisplay';
 import ComputerDisplay from './ComputerDisplay/ComputerDisplay';
+import ProductNavigation from './components/ProductNavigation/ProductNavigation';
 
 function Product() {
    const [laptopsDataArr, setLaptopsDataArr] = useState<Laptop[]>([]);
@@ -67,6 +68,7 @@ function Product() {
       <div className="productPage">
          <div className="productPage__empty"></div>
          <div className="productPage__container">
+            <ProductNavigation />
             {laptop
                ? <LaptopDisplay product={laptop} />
                : computer
