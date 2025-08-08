@@ -33,6 +33,7 @@ function SortPricingCategory({ value, sortOrder }: SortPricingCategoryProp) {
             >
                <option value="price">by price</option>
                <option value="name">by name</option>
+               <option value="brand">by brand</option>
             </select>
          </div>
          <button

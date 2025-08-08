@@ -15,7 +15,8 @@ function LaptopDisplay({ product }: LaptopDisplayProp) {
          <LaptopDisplayMainInfo product={product} />
          <LaptopDisplayOverview product={product} />
          <LaptopDisplayAbout product={product} />
-         <LaptopDisplaySpecifications product={product} />
+         <LaptopDisplaySpecifications spec={product.specifications} />
+
       </div >
    )
 }

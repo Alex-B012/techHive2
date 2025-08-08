@@ -1,6 +1,6 @@
 import { Laptop } from '../../../../types/products/laptops'
-import { displayPrice } from '../../../../utils/productUtils';
 import './laptopDisplayMainInfo.css'
+import LaptopDisplayPriceArea from './LaptopDisplayPriceArea/LaptopDisplayPriceArea';
 
 interface LaptopDisplayMainInfoProp {
    product: Laptop;
@@ -15,24 +15,11 @@ function LaptopDisplayMainInfo({ product }: LaptopDisplayMainInfoProp) {
                {`${product.brand} ${product.name}`}
             </h2>
             <p className="laptopDisplay__model">Model: {product.model}</p>
+            {product.rating > 0 && (
+               <p className="laptopDisplay__rating">Rating: {product.rating}</p>
+            )}
+            <LaptopDisplayPriceArea price={product.price} />
 
-            <div className="laptopDisplay__priceArea">
-               {(product.price.discount?.price
-                  && product.price.discount.price > 0
-                  && product.price.discount.price < product.price.current)
-                  && (
-                     <div className="laptopDisplay__price">
-                        <div>{displayPrice(product.price.discount.price, "$")}</div>
-                        <div>Save: {displayPrice(product.price.current - product.price.discount.price, "$", 0)}</div>
-                     </div>
-                  )
-               }
-               {(!product.price.discount?.price || product.price.discount?.price <= 0) && (
-                  <div className="laptopDisplay__price">
-                     <div>{displayPrice(product.price.current, "$")}</div>
-                  </div>)
-               }
-            </div>
          </div>
       </div >
    )

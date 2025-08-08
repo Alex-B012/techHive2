@@ -8,7 +8,7 @@ export interface Computer {
    price: Price;
    overview: string[];
    about: string[];
-   specifications: Specifications;
+   specifications: SpecificationsPC;
    img: string;
    warrenty: string;
 }
@@ -47,7 +47,7 @@ export interface GPU {
    memory: number;
 }
 
-export interface Specifications {
+export interface SpecificationsPC {
    os: OS;
    cpu: CPU;
    ram: RAM;

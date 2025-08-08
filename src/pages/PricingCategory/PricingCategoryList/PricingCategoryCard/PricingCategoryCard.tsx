@@ -10,8 +10,8 @@ interface PricingCategoryCardProp {
 function PricingCategoryCard({ item_data }: PricingCategoryCardProp) {
    const { id, category, name, brand, model, price, img } = item_data;
 
-   const priceDisplay = price.discount.price ? price.discount.price : price.current;
-   let discountDisplay = price.discount.price ? price.current - price.discount.price : -100
+   const priceDisplay = price.discount.price > 0 ? price.discount.price : price.current;
+   let discountDisplay = price.discount.price > 0 ? price.current - price.discount.price : -100
 
 
    return (

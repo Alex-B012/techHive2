@@ -45,6 +45,12 @@ function PricingCategoryList({ data }: PricingCategoryListProp) {
                ? a.name.localeCompare(b.name)
                : b.name.localeCompare(a.name);
          }
+
+         if (selectedValue === 'brand') {
+            return sortOrder
+               ? a.brand.localeCompare(b.brand)
+               : b.brand.localeCompare(a.brand);
+         }
          return 0;
       });
 

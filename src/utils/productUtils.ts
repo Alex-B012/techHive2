@@ -53,3 +53,20 @@ export function displayPrice(num: number, currency: string = 'USD', toFixed: num
    const formattedNumber = (num / 100).toFixed(toFixed);
    return `${currency} ${formattedNumber.replace(/\d(?=(\d{3})+\.)/g, '$&,')}`;
 }
+
+export function getDiscountDate(num: number): string {
+   const months = [
+      'January', 'February', 'March',
+      'April', 'May', 'June',
+      'July', 'August', 'September',
+      'October', 'November', 'December'
+   ];
+
+   const currentDate = new Date();
+   const newDate = new Date(currentDate);
+   newDate.setDate(currentDate.getDate() + num);
+
+   const monthName = months[newDate.getMonth()];
+   const day = String(newDate.getDate()).padStart(2, '0');
+   return `${monthName} ${day}`;
+}

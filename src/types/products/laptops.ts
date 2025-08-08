@@ -6,15 +6,15 @@ export interface Laptop {
    brand: string;
    model: string;
    rating: number;
-   price: Price;
+   price: PriceLaptop;
    overview: string[];
    about: Feature[];
-   specifications: Specifications;
+   specifications: SpecificationsLaptop;
    img: string;
    warrenty: string;
 }
 
-export interface Price {
+export interface PriceLaptop {
    current: number;
    discount?: Discount;
 }
@@ -85,7 +85,7 @@ export interface Weight {
    lbs: number;
 }
 
-export interface Specifications {
+export interface SpecificationsLaptop {
    os: OS;
    display: Display;
    cpu: CPU;
