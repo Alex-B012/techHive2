@@ -1,5 +1,6 @@
-import { Computer } from '../../../types/products/computers';
-import { Laptop } from '../../../types/products/laptops'
+
+import { Computer } from '../../../../types/products/computers';
+import { Laptop } from '../../../../types/products/laptops';
 import './productDisplayOverview.css'
 
 interface ProductDisplayOverviewProp {

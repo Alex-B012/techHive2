@@ -1,4 +1,5 @@
-import { SpecificationsLaptop } from '../../../../../types/products/laptops'
+
+import { SpecificationsLaptop } from '../../../../../types/products/laptops';
 import { displayPrice } from '../../../../../utils/productUtils';
 import './laptopDisplaySpecFeatures.css'
 
@@ -8,20 +9,20 @@ interface LaptopDisplaySpecFeaturesProp {
 
 function LaptopDisplaySpecFeatures({ spec }: LaptopDisplaySpecFeaturesProp) {
    return (
-      <div className="laptopDisplay__specSection">
-         <h4 className="laptopDisplay__specTitle">Product Features</h4>
+      <div className="productDisplay__specSection">
+         <h4 className="productDisplay__specTitle">Product Features</h4>
 
          {spec.os.name.length > 0 && (
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">Pre-loaded Operating System: </span>
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">Pre-loaded Operating System: </span>
                {spec.os.name}
                {spec.os.lang.length > 0 && ` (${spec.os.lang})`}
             </div>
          )}
 
          {spec.loaded_software[0].length > 0 && (
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">{`Pre-loaded Software: `}</span>
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">{`Pre-loaded Software: `}</span>
                {spec.loaded_software.map((item, index) => (
                   <span key={index}>
                      {String(item)}
@@ -32,61 +33,61 @@ function LaptopDisplaySpecFeatures({ spec }: LaptopDisplaySpecFeaturesProp) {
          )}
 
          {spec.frame_color.length > 0 &&
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">Colour:</span> {spec.frame_color}
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">Colour:</span> {spec.frame_color}
             </div>
          }
 
          {spec.webcam === "y" &&
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">Webcam:</span> Yes
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">Webcam:</span> Yes
             </div>
          }
 
          {spec.keyboard.lang.length > 0 && (
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">Keyboard Language:</span>
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">Keyboard Language:</span>
                {` ${spec.keyboard.lang}`}
             </div>)
          }
 
          {spec.keyboard.backlit === "y" && (
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">Backlit keyboard:</span> Yes
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">Backlit keyboard:</span> Yes
             </div>)
          }
 
 
          {spec.demensions.cm.w > 0 && (
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">Dimensions (cm):</span> {displayPrice(spec.demensions.cm.w, "")} (W) x {displayPrice(spec.demensions.cm.h, "")} (H) x {displayPrice(spec.demensions.cm.d, "")} (D) cm
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">Dimensions (cm):</span> {displayPrice(spec.demensions.cm.w, "")} (W) x {displayPrice(spec.demensions.cm.h, "")} (H) x {displayPrice(spec.demensions.cm.d, "")} (D) cm
             </div>)
          }
 
          {spec.demensions.in.w > 0 && (
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">Dimensions (in):</span> {displayPrice(spec.demensions.in.w, "")} (W) x {displayPrice(spec.demensions.in.h, "")} (H) x {displayPrice(spec.demensions.in.d, "")} (D) in
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">Dimensions (in):</span> {displayPrice(spec.demensions.in.w, "")} (W) x {displayPrice(spec.demensions.in.h, "")} (H) x {displayPrice(spec.demensions.in.d, "")} (D) in
             </div>)
          }
 
          {spec.weight.kg > 0 && (
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">Weight:</span> {displayPrice(spec.weight.kg, "")} kg
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">Weight:</span> {displayPrice(spec.weight.kg, "")} kg
             </div>)
          }
 
          {spec.weight.lbs > 0 && (
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">Weight (lbs):</span> {displayPrice(spec.weight.lbs, "")} lbs
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">Weight (lbs):</span> {displayPrice(spec.weight.lbs, "")} lbs
             </div>)
          }
          {spec.cooling_system.length > 0 &&
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">Cooling System:</span> {spec.cooling_system}
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">Cooling System:</span> {spec.cooling_system}
             </div>
          }{spec.power_supply.length > 0 &&
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">Power Supply:</span> {spec.power_supply}
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">Power Supply:</span> {spec.power_supply}
             </div>
          }
       </div>

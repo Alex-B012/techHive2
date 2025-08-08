@@ -1,13 +1,13 @@
-.computerDisplay__overview {
+.productDisplay__overview {
    font-size: 1rem;
    padding: 20px 0;
 }
 
-.computerDisplalaptopDisplay__overviewTitle {
+.productDisplalaptopDisplay__overviewTitle {
    font-size: 1.5rem;
    color: var(--text-color);
 }
 
-.computerDisplay__overviewText {
+.productDisplay__overviewText {
    line-height: 175%;
 }

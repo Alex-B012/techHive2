@@ -2,48 +2,48 @@ import './laptopDisplaySpecDisplay.css'
 import { SpecificationsLaptop } from '../../../../../types/products/laptops'
 import { displayPrice } from '../../../../../utils/productUtils'
 
-interface LaptopDisplaySpecDisplayProp {
+interface ProductDisplaySpecDisplayProp {
    spec: SpecificationsLaptop;
 }
 
-function LaptopDisplaySpecDisplay({ spec }: LaptopDisplaySpecDisplayProp) {
+function ProductDisplaySpecDisplay({ spec }: ProductDisplaySpecDisplayProp) {
    return (
-      <div className="laptopDisplay__specSection">
-         <h4 className="laptopDisplay__specTitle">Display</h4>
+      <div className="productDisplay__specSection">
+         <h4 className="productDisplay__specTitle">Display</h4>
 
-         <div className='laptopDisplay__specText'>
-            <span className="laptopDisplay__featureName">
+         <div className='productDisplay__specText'>
+            <span className="productDisplay__featureName">
                Screen Size:
             </span>
             {displayPrice(spec.display.size, "", 0)} in
          </div>
 
-         <div className='laptopDisplay__specText'>
-            <span className="laptopDisplay__featureName">
+         <div className='productDisplay__specText'>
+            <span className="productDisplay__featureName">
                Screen Resolution:
             </span>
             {spec.display.resolution}
          </div>
 
          {spec.display.touchscreen === "y" &&
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">
                   Touchscreen Display:
                </span>
                Yes
             </div>
          }
          {spec.display.hybrid_display === "y" &&
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">
                   Convertible/Hybrid Display:
                </span>
                Yes
             </div>
          }
          {spec.display.display_features[0].length > 0 && (
-            <div className='laptopDisplay__specText'>
-               <span className="laptopDisplay__featureName">
+            <div className='productDisplay__specText'>
+               <span className="productDisplay__featureName">
                   Display features:
                </span>
                {spec.display.display_features.map((item, index) => (
@@ -60,4 +60,4 @@ function LaptopDisplaySpecDisplay({ spec }: LaptopDisplaySpecDisplayProp) {
    )
 }
 
-export default LaptopDisplaySpecDisplay
+export default ProductDisplaySpecDisplay

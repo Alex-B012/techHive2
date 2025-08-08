@@ -2,9 +2,10 @@
 import './computerDisplay.css'
 import { Computer } from '../../../types/products/computers';
 import ProductDisplayMainInfo from '../components/ProductDisplayMainInfo/ProductDisplayMainInfo';
-import ProductDisplayAbout from '../ProductDisplayAbout/ProductDisplayAbout';
-import ProductDisplayOverview from '../ProductDisplayOverview/ProductDisplayOverview';
+
 import ComputerDisplaySpecifications from './ComputerDisplaySpecifications/ComputerDisplaySpecifications';
+import ProductDisplayOverview from '../components/ProductDisplayOverview/ProductDisplayOverview';
+import ProductDisplayAbout from '../components/ProductDisplayAbout/ProductDisplayAbout';
 
 interface ComputerDisplayProp {
    product: Computer;

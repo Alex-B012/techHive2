@@ -1,8 +1,8 @@
 import { Laptop } from '../../../types/products/laptops'
 import LaptopDisplaySpecifications from './LaptopDisplaySpecifications/LaptopDisplaySpecifications';
 import ProductDisplayMainInfo from '../components/ProductDisplayMainInfo/ProductDisplayMainInfo';
-import ProductDisplayAbout from '../ProductDisplayAbout/ProductDisplayAbout';
-import ProductDisplayOverview from '../ProductDisplayOverview/ProductDisplayOverview';
+import ProductDisplayOverview from '../components/ProductDisplayOverview/ProductDisplayOverview';
+import ProductDisplayAbout from '../components/ProductDisplayAbout/ProductDisplayAbout';
 
 interface LaptopDisplayProp {
    product: Laptop;

@@ -18,6 +18,37 @@
    padding: 40px 2% 90px 0;
 }
 
+.productDisplay__specificationsMaintTitle {
+   font-weight: 700;
+   font-size: 1.5rem;
+   color: var(--text-color);
+}
+
+.productDisplay__specificationsArea {
+   padding: 20px 0;
+}
+
+.productDisplay__specSection {
+   padding: 15px 0;
+}
+
+.productDisplay__specTitle {
+   color: var(--link-color2);
+   font-weight: 700;
+   font-size: 1.2rem;
+}
+
+.productDisplay__specText {
+   font-size: 1rem;
+   line-height: 130%;
+   padding: 5px 0;
+}
+
+.productDisplay__featureName {
+   font-weight: 700;
+   padding-right: 15px;
+}
+
 @media screen and (max-width: 1200px) {
    .productPage {
       grid-template-columns: 5vw 1fr;

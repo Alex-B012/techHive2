@@ -71,7 +71,7 @@ export const pc_data = [
       specifications: {
          os: {
             name: "Windows 11 Home",
-            lang: "Bilingual (English, French)",
+            lang: "Bilingual - English, French",
          },
          cpu: {
             brand: "AMD",
@@ -354,7 +354,7 @@ export const pc_data = [
       specifications: {
          os: {
             name: "Windows 11",
-            lang: "Bilingual (English, French)",
+            lang: "Bilingual - English, French",
          },
          cpu: {
             brand: "Intel",
