@@ -8,7 +8,7 @@ export interface Laptop {
    rating: number;
    price: PriceLaptop;
    overview: string[];
-   about: Feature[];
+   about: AboutFeature[];
    specifications: SpecificationsLaptop;
    img: string;
    warrenty: string;
@@ -29,7 +29,7 @@ export interface OS {
    lang: string;
 }
 
-export interface Feature {
+export interface AboutFeature {
    id: number;
    heading: string;
    text: string;

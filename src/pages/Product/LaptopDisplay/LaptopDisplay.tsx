@@ -1,9 +1,8 @@
 import { Laptop } from '../../../types/products/laptops'
-import LaptopDisplayAbout from './LaptopDisplayAbout/LaptopDisplayAbout';
-import './laptopDisplay.css'
-import LaptopDisplayMainInfo from './LaptopDisplayMainInfo/LaptopDisplayMainInfo';
-import LaptopDisplayOverview from './LaptopDisplayOverview/LaptopDisplayOverview';
 import LaptopDisplaySpecifications from './LaptopDisplaySpecifications/LaptopDisplaySpecifications';
+import ProductDisplayMainInfo from '../components/ProductDisplayMainInfo/ProductDisplayMainInfo';
+import ProductDisplayAbout from '../ProductDisplayAbout/ProductDisplayAbout';
+import ProductDisplayOverview from '../ProductDisplayOverview/ProductDisplayOverview';
 
 interface LaptopDisplayProp {
    product: Laptop;
@@ -12,11 +11,10 @@ interface LaptopDisplayProp {
 function LaptopDisplay({ product }: LaptopDisplayProp) {
    return (
       <div className='laptopDisplay__container'>
-         <LaptopDisplayMainInfo product={product} />
-         <LaptopDisplayOverview product={product} />
-         <LaptopDisplayAbout product={product} />
+         <ProductDisplayMainInfo product={product} />
+         <ProductDisplayOverview product={product} />
+         <ProductDisplayAbout product={product} />
          <LaptopDisplaySpecifications spec={product.specifications} />
-
       </div >
    )
 }

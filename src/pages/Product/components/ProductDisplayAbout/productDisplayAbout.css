@@ -1,27 +1,27 @@
-.laptopDisplay__aboutTitle {
+.productDisplay__aboutTitle {
    font-size: 1.5rem;
    color: var(--text-color);
 }
 
-.laptopDisplay__about {
+.productDisplay__about {
    padding: 20px 0;
    padding-left: 0;
 }
 
-.laptopDisplay__aboutArea {
+.productDisplay__aboutArea {
    list-style: none;
    padding-left: 0;
 }
 
-.laptopDisplay__aboutPapagraph {
+.productDisplay__aboutPapagraph {
    padding: 5px 0;
 }
 
-.laptopDisplay__aboutHeading {
+.productDisplay__aboutHeading {
    color: var(--link-color2);
 }
 
-.laptopDisplay__aboutText {
+.productDisplay__aboutText {
    line-height: 150%;
    font-size: 1rem;
 }

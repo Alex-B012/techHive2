@@ -54,6 +54,7 @@ export function displayPrice(num: number, currency: string = 'USD', toFixed: num
    return `${currency} ${formattedNumber.replace(/\d(?=(\d{3})+\.)/g, '$&,')}`;
 }
 
+// Provide the date when a discount expires 
 export function getDiscountDate(num: number): string {
    const months = [
       'January', 'February', 'March',

@@ -5,15 +5,15 @@ export interface Computer {
    brand: string;
    model: string;
    rating: number;
-   price: Price;
+   price: PriceComputer;
    overview: string[];
-   about: string[];
-   specifications: SpecificationsPC;
+   about: AboutFeature[];
+   specifications: SpecificationsComputer;
    img: string;
    warrenty: string;
 }
 
-export interface Price {
+export interface PriceComputer {
    current: number;
    discount?: Discount;
 }
@@ -26,6 +26,12 @@ export interface Discount {
 export interface OS {
    name: string;
    lang: string;
+}
+
+export interface AboutFeature {
+   id: number;
+   heading: string;
+   text: string;
 }
 
 export interface CPU {
@@ -47,7 +53,7 @@ export interface GPU {
    memory: number;
 }
 
-export interface SpecificationsPC {
+export interface SpecificationsComputer {
    os: OS;
    cpu: CPU;
    ram: RAM;

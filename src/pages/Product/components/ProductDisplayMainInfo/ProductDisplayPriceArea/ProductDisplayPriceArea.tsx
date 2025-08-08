@@ -1,20 +1,22 @@
-import { PriceLaptop } from '../../../../../types/products/laptops'
-import { displayPrice, getDiscountDate } from '../../../../../utils/productUtils';
-import './laptopDisplayPriceArea.css'
 
-interface LaptopDisplayPriceAreaProp {
-   price: PriceLaptop;
+import { PriceComputer } from '../../../../../types/products/computers';
+import { PriceLaptop } from '../../../../../types/products/laptops';
+import { displayPrice, getDiscountDate } from '../../../../../utils/productUtils';
+import './productDisplayPriceArea.css'
+
+interface ProductDisplayPriceAreaProp {
+   price: PriceLaptop | PriceComputer;
 }
 
-function LaptopDisplayPriceArea({ price }: LaptopDisplayPriceAreaProp) {
+function ProductDisplayPriceArea({ price }: ProductDisplayPriceAreaProp) {
    return (
-      <div className="laptopDisplay__priceArea">
+      <div className="productDisplay__priceArea">
          {(price.discount?.price
             && price.discount.price > 0
             && price.discount.price < price.current)
             && (
-               <div className="laptopDisplay__price">
-                  <div className='laptopDisplay__discountAvailable'>
+               <div className="productDisplay__price">
+                  <div className='productDisplay__discountAvailable'>
                      <div >
                         <span>Available until</span>
                         {` ${getDiscountDate(price.discount.ends_days)}`}
@@ -23,7 +25,7 @@ function LaptopDisplayPriceArea({ price }: LaptopDisplayPriceAreaProp) {
                         {displayPrice(price.discount.price, "$")}
                      </div>
                   </div>
-                  <div className='laptopDisplay__priceDiscount'>
+                  <div className='productDisplay__priceDiscount'>
                      <div>
                         {displayPrice(price.current, "$")}
                      </div>
@@ -36,7 +38,7 @@ function LaptopDisplayPriceArea({ price }: LaptopDisplayPriceAreaProp) {
             )
          }
          {(!price.discount?.price || price.discount?.price <= 0) && (
-            <div className="laptopDisplay__price">
+            <div className="productDisplay__price">
                <div>{displayPrice(price.current, "$")}</div>
             </div>)
          }
@@ -44,4 +46,4 @@ function LaptopDisplayPriceArea({ price }: LaptopDisplayPriceAreaProp) {
    )
 }
 
-export default LaptopDisplayPriceArea
+export default ProductDisplayPriceArea

@@ -1,11 +1,11 @@
-.laptopDisplay__priceArea {
+.productDisplay__priceArea {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    padding-bottom: 5px;
 }
 
-.laptopDisplay__price {
+.productDisplay__price {
    width: 100%;
    display: flex;
    flex-direction: row;
@@ -13,7 +13,7 @@
    align-items: flex-end;
 }
 
-.laptopDisplay__price>div {
+.productDisplay__price>div {
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
@@ -21,43 +21,44 @@
    color: var(--text-color);
 }
 
-.laptopDisplay__price>div:first-child {
+.productDisplay__price>div:first-child {
    display: flex;
    font-size: 1.5rem;
    color: var(--text-color);
 }
 
-.laptopDisplay__discountAvailable {
+.productDisplay__discountAvailable {
    display: flex;
    flex-direction: column;
    gap: 0.3rem;
    color: var(--text-color);
 }
 
-.laptopDisplay__discountAvailable div:first-child {
+.productDisplay__discountAvailable div:first-child {
    font-size: 0.9rem;
    color: var(--link-color);
    color: var(--text-color);
 }
 
-.laptopDisplay__discountAvailable div:first-child span {
+.productDisplay__discountAvailable div:first-child span {
    color: var(--link-color);
 }
 
-.laptopDisplay__priceDiscount {
+.productDisplay__priceDiscount {
    display: flex;
    flex-direction: column;
    align-items: flex-end;
    gap: 0.3rem;
 }
 
-.laptopDisplay__priceDiscount>div {
+.productDisplay__priceDiscount>div {
    font-size: 1.0rem;
    text-align: center;
    color: var(--link-color)
 }
 
-.laptopDisplay__priceDiscount>div:first-child {
+.productDisplay__priceDiscount>div:first-child {
    color: var(--link-color-hover);
    text-decoration: line-through;
+   font-style: italic;
 }
