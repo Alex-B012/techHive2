@@ -22,8 +22,6 @@
 }
 
 .productDisplay__price>div:first-child {
-   display: flex;
-   font-size: 1.5rem;
    color: var(--text-color);
 }
 
@@ -36,12 +34,16 @@
 
 .productDisplay__discountAvailable div:first-child {
    font-size: 0.9rem;
-   color: var(--link-color);
    color: var(--text-color);
 }
 
 .productDisplay__discountAvailable div:first-child span {
    color: var(--link-color);
+}
+
+.productDisplay__discountAvailable div:first-child .productDisplay__discountDate {
+   color: var(--text-color);
+   white-space: nowrap;
 }
 
 .productDisplay__priceDiscount {
@@ -62,3 +64,35 @@
    text-decoration: line-through;
    font-style: italic;
 }
+
+@media screen and (max-width: 1200px) {
+   .productDisplay__price>div {
+      font-size: 1.35rem;
+   }
+
+   .productDisplay__discountAvailable div:first-child {
+      font-size: 0.8rem;
+   }
+
+   .productDisplay__priceDiscount>div {
+      font-size: 0.9rem;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .productDisplay__price>div {
+      font-size: 1.2rem;
+   }
+
+   .productDisplay__discountAvailable div:first-child {
+      font-size: 0.7rem;
+   }
+
+   .productDisplay__priceDiscount>div {
+      font-size: 0.8rem;
+   }
+}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 500px) {}

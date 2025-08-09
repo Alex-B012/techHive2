@@ -1,0 +1,17 @@
+.productDisplay__specificationsMaintTitle {
+   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+   .productDisplay__specificationsMaintTitle {
+      font-size: 1.35rem;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .productDisplay__specificationsMaintTitle {
+      font-size: 1.2rem;
+   }
+}
+
+@media screen and (max-width: 800px) {}

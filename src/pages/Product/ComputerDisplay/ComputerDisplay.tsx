@@ -2,7 +2,6 @@
 import './computerDisplay.css'
 import { Computer } from '../../../types/products/computers';
 import ProductDisplayMainInfo from '../components/ProductDisplayMainInfo/ProductDisplayMainInfo';
-
 import ComputerDisplaySpecifications from './ComputerDisplaySpecifications/ComputerDisplaySpecifications';
 import ProductDisplayOverview from '../components/ProductDisplayOverview/ProductDisplayOverview';
 import ProductDisplayAbout from '../components/ProductDisplayAbout/ProductDisplayAbout';

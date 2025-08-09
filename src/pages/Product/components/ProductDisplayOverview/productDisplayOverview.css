@@ -10,4 +10,32 @@
 
 .productDisplay__overviewText {
    line-height: 175%;
+   font-weight: 400;
 }
+
+@media screen and (max-width: 1200px) {
+   .productDisplay__overview {
+      font-size: 0.9rem;
+      padding: 18px 0;
+
+   }
+
+   .productDisplalaptopDisplay__overviewTitle {
+      font-size: 1.35rem;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .productDisplay__overview {
+      font-size: 0.8rem;
+      padding: 16px 0;
+   }
+
+   .productDisplalaptopDisplay__overviewTitle {
+      font-size: 1.2rem;
+   }
+}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 500px) {}

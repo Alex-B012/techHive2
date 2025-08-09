@@ -15,8 +15,11 @@ function LaptopDisplaySpecFeatures({ spec }: LaptopDisplaySpecFeaturesProp) {
          {spec.os.name.length > 0 && (
             <div className='productDisplay__specText'>
                <span className="productDisplay__featureName">Pre-loaded Operating System: </span>
-               {spec.os.name}
-               {spec.os.lang.length > 0 && ` (${spec.os.lang})`}
+               <span className='productDisplay__featureSpan'>
+                  {spec.os.name}
+                  {spec.os.lang.length > 0 && ` (${spec.os.lang})`}
+               </span>
+
             </div>
          )}
 
@@ -24,7 +27,7 @@ function LaptopDisplaySpecFeatures({ spec }: LaptopDisplaySpecFeaturesProp) {
             <div className='productDisplay__specText'>
                <span className="productDisplay__featureName">{`Pre-loaded Software: `}</span>
                {spec.loaded_software.map((item, index) => (
-                  <span key={index}>
+                  <span className='productDisplay__featureSpan' key={index}>
                      {String(item)}
                      {index < spec.display.display_features.length - 1 && ', '}
                   </span>

@@ -1,11 +1,10 @@
+.productDisplay__about {
+   padding: 20px 0;
+}
+
 .productDisplay__aboutTitle {
    font-size: 1.5rem;
    color: var(--text-color);
-}
-
-.productDisplay__about {
-   padding: 20px 0;
-   padding-left: 0;
 }
 
 .productDisplay__aboutArea {
@@ -24,4 +23,45 @@
 .productDisplay__aboutText {
    line-height: 150%;
    font-size: 1rem;
+   font-weight: 400;
 }
+
+@media screen and (max-width: 1200px) {
+   .productDisplay__aboutTitle {
+      font-size: 1.35rem;
+   }
+
+   .productDisplay__about {
+      padding: 18px 2% 0;
+   }
+
+   .productDisplay__aboutPapagraph {
+      padding: 4px 0;
+   }
+
+   .productDisplay__aboutText {
+      font-size: 0.9rem;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .productDisplay__aboutTitle {
+      font-size: 1.2rem;
+   }
+
+   .productDisplay__about {
+      padding: 16px 0;
+   }
+
+   .productDisplay__aboutPapagraph {
+      padding: 3px 0;
+   }
+
+   .productDisplay__aboutText {
+      font-size: 0.8rem;
+   }
+}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 500px) {}

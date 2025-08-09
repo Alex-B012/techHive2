@@ -1,6 +1,6 @@
 import './contactsBusinessHoursList.css'
 import ContactsBusinessHours from './ContactsBusinessHours/ContactsBusinessHours';
-import { BusinessHours, ContactsInfo } from '../../../../types/contactsInfo';
+import { BusinessHours } from '../../../../types/contactsInfo';
 
 interface ContactsBusinessHoursListProps {
    data: BusinessHours[];
@@ -9,9 +9,10 @@ interface ContactsBusinessHoursListProps {
 function ContactsBusinessHoursList({ data }: ContactsBusinessHoursListProps) {
    return (
       <ul className='contactsBusinessHoursList__container'>
-         {data.map((item) => (<li>
-            <ContactsBusinessHours data={item} />
-         </li>))}
+         {data.map((item) => (
+            <li>
+               <ContactsBusinessHours data={item} key={item.id} />
+            </li>))}
       </ul>
    )
 }

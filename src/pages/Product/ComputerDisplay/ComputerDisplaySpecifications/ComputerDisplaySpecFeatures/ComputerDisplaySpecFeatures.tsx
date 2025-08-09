@@ -14,18 +14,21 @@ function ComputerDisplaySpecFeatures({ spec }: ComputerDisplaySpecFeaturesProp) 
          {spec.os.name.length > 0 && (
             <div className='productDisplay__specText'>
                <span className="productDisplay__featureName">Pre-loaded Operating System: </span>
-               {spec.os.name}
-               {spec.os.lang.length > 0 && ` (${spec.os.lang})`}
+               <span className='productDisplay__featureSpan'>
+                  {spec.os.name}
+                  {spec.os.lang.length > 0 && ` (${spec.os.lang})`}
+               </span>
+
             </div>
          )}
 
          {spec.cooling_system.length > 0 &&
             <div className='productDisplay__specText'>
-               <span className="productDisplay__featureName">Cooling System:</span> {spec.cooling_system}
+               <span className="productDisplay__featureName">Cooling System:</span> <span className='productDisplay__featureSpan'>{spec.cooling_system}</span>
             </div>
          }{spec.power_supply.length > 0 &&
             <div className='productDisplay__specText'>
-               <span className="productDisplay__featureName">Power Supply:</span> {spec.power_supply}
+               <span className="productDisplay__featureName">Power Supply:</span> <span className='productDisplay__featureSpan'>{spec.power_supply}</span>
             </div>
          }
       </div>

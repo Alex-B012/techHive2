@@ -12,8 +12,8 @@ function Banner({ data }: BannerProps) {
       <section className="banner__section">
          <Carousel indicators={false} controls={false} interval={8000}>
             {data.map((item) => (
-               <Carousel.Item>
-                  <BannerImage img_data={item} key={item.id} />
+               <Carousel.Item key={item.id}>
+                  <BannerImage img_data={item} />
                </Carousel.Item>))}
          </Carousel>
       </section >

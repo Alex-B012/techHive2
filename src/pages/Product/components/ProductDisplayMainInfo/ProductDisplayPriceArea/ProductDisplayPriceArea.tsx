@@ -19,7 +19,7 @@ function ProductDisplayPriceArea({ price }: ProductDisplayPriceAreaProp) {
                   <div className='productDisplay__discountAvailable'>
                      <div >
                         <span>Available until</span>
-                        {` ${getDiscountDate(price.discount.ends_days)}`}
+                        <span className='productDisplay__discountDate'> {` ${getDiscountDate(price.discount.ends_days)}`}</span>
                      </div>
                      <div>
                         {displayPrice(price.discount.price, "$")}

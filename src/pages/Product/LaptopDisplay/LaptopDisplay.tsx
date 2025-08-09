@@ -3,6 +3,7 @@ import LaptopDisplaySpecifications from './LaptopDisplaySpecifications/LaptopDis
 import ProductDisplayMainInfo from '../components/ProductDisplayMainInfo/ProductDisplayMainInfo';
 import ProductDisplayOverview from '../components/ProductDisplayOverview/ProductDisplayOverview';
 import ProductDisplayAbout from '../components/ProductDisplayAbout/ProductDisplayAbout';
+import "./laptopDisplay.css"
 
 interface LaptopDisplayProp {
    product: Laptop;

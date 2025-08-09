@@ -25,7 +25,10 @@ function ProductDisplaySpecGraphics({ spec }: ProductDisplaySpecGraphicsProp) {
             <span className="productDisplay__featureName">
                Graphics Card:
             </span>
-            {`${spec.gpu.brand} ${spec.gpu.name}`}
+            <span>
+               {`${spec.gpu.brand} ${spec.gpu.name}`}
+            </span>
+
          </div>
 
          {spec.gpu.memory > 0 &&
@@ -33,7 +36,9 @@ function ProductDisplaySpecGraphics({ spec }: ProductDisplaySpecGraphicsProp) {
                <span className="productDisplay__featureName">
                   Video Memory:
                </span>
-               {spec.gpu.memory} GB
+               <span className='productDisplay__featureSpan'>
+                  {spec.gpu.memory} GB
+               </span>
             </div>}
       </div>
    )
