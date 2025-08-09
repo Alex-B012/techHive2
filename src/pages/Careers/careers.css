@@ -2,7 +2,47 @@
    display: grid;
    grid-area: page;
    grid-template-columns: 10vw 1fr;
-   place-items: center;
    font-family: "Tomorrow", Arial, Helvetica, sans-serif;
    background: linear-gradient(90deg, var(--mobileMenu-bg-color) 0%, var(--header-bg-color)100%);
+   padding: 50px 0;
+}
+
+.careersPage__container {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+   .careersPage {
+      grid-template-columns: 5vw 1fr;
+   }
+
+   .careersPage__container {
+      padding: 0;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .careersPage {
+      grid-template-columns: 1fr;
+      background: linear-gradient(90deg, var(--mobileMenu-bg-color) 0%, var(--header-bg-color2)100%);
+   }
+
+   .careersPage__container {
+      padding: 0 2% 0;
+   }
+}
+
+@media screen and (max-width: 350px) {
+   .careersPage {
+      padding: 50px 0 10px;
+   }
+
+
+   .careersPage__container {
+      padding: 0;
+   }
 }

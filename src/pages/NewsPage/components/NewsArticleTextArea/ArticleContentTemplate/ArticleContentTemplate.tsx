@@ -14,7 +14,8 @@ function ArticleContentTemplate({ content }: ArticleContentTemplateProp) {
          {content.heading && (
             <h4 className='articleContentTemplate__title'>
                {content.heading}
-            </h4>)}
+            </h4>)
+         }
 
          {content.heading_videoObj?.video && <NewArticleVideo videoObj={content.heading_videoObj} />}
          {content.heading_yt_videoObj?.video && <NewArticleVideo videoObj={content.heading_yt_videoObj} />}

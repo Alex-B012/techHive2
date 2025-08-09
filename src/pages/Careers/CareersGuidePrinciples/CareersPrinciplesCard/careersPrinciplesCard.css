@@ -1,0 +1,115 @@
+.careersPrinciplesCard__container {
+   width: 100%;
+   height: 100%;
+   max-width: 900px;
+   max-height: 300px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin: 25px 20px;
+}
+
+.careersPrinciplesCard__container:last-child {
+   margin-bottom: 0;
+}
+
+.careersPrinciplesCard__container-reverse {
+   flex-direction: row-reverse;
+}
+
+.careersPrinciplesCard__img {
+   max-width: 450px;
+   width: 100%;
+   object-fit: cover;
+}
+
+.careersPrinciplesCard__textArea {
+   display: flex;
+   flex-direction: column;
+   gap: 3vh;
+   padding: 10px 15px;
+}
+
+.careersPrinciplesCard__title {
+   font-size: 1.2rem;
+   text-align: center;
+}
+
+.careersPrinciplesCard__text {
+   font-size: 1rem;
+   text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+   .careersPrinciplesCard__container {
+      max-height: 240px;
+      max-width: 700px;
+   }
+
+   .careersPrinciplesCard__img {
+      max-width: 380px;
+   }
+
+   .careersPrinciplesCard__textArea {
+      gap: 4vh;
+      padding: 8px 13.5px;
+   }
+
+   .careersPrinciplesCard__title {
+      font-size: 1.1rem;
+   }
+
+   .careersPrinciplesCard__text {
+      font-size: 0.9rem;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .careersPrinciplesCard__container {
+      max-height: 200px;
+      max-width: 600px;
+   }
+
+   .careersPrinciplesCard__img {
+      max-width: 280px;
+   }
+
+   .careersPrinciplesCard__textArea {
+      gap: 2vh;
+      padding: 6px 12px;
+   }
+
+   .careersPrinciplesCard__title {
+      font-size: 1rem;
+   }
+
+   .careersPrinciplesCard__text {
+      font-size: 0.8rem;
+   }
+}
+
+@media screen and (max-width: 550px) {
+   .careersPrinciplesCard__container {
+      flex-direction: column;
+      align-items: center;
+      max-height: 100%;
+      max-width: 600px;
+      margin-bottom: 30px;
+   }
+
+   .careersPrinciplesCard__img {
+      max-width: 350px;
+      margin-bottom: 20px;
+   }
+
+   .careersPrinciplesCard__textArea {
+      gap: 2vh;
+      padding: 0;
+   }
+}
+
+@media screen and (max-width: 350px) {
+   .careersPrinciplesCard__textArea {
+      padding: 0 2%;
+   }
+}
