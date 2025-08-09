@@ -96,11 +96,11 @@ export const pc_data = [
             "1 month trial for new Microsoft 365 customers",
          ],
          cooling_system: "Air Cooling",
-         power_supply: "500 W"
-
+         power_supply: "500 W",
+         warrenty: "1 year",
       },
       img: hp_omen_16l,
-      warrenty: "1 year"
+
    },
    {
       id: 20000002,
@@ -173,9 +173,9 @@ export const pc_data = [
          ],
          cooling_system: "Air Cooling",
          power_supply: "",
+         warrenty: "90 days"
       },
       img: hp_omen_40l,
-      warrenty: "90 days"
    },
    {
       id: 20000003,
@@ -284,9 +284,9 @@ export const pc_data = [
          ],
          cooling_system: "Air Cooling",
          power_supply: "850W power supply (80+ Gold, peak 900W)",
+         warrenty: "1 year"
       },
       img: asus_rog_g6700,
-      warrenty: "1 year"
    },
    {
       id: 20000004,
@@ -380,8 +380,9 @@ export const pc_data = [
          ],
          cooling_system: "Air Cooling",
          power_supply: "650W",
+         warrenty: "1 year"
       },
       img: acer_nitro_60,
-      warrenty: "1 year"
+
    },
 ]

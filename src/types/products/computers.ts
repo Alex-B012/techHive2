@@ -10,7 +10,6 @@ export interface Computer {
    about: AboutFeature[];
    specifications: SpecificationsComputer;
    img: string;
-   warrenty: string;
 }
 
 export interface PriceComputer {
@@ -63,5 +62,6 @@ export interface SpecificationsComputer {
    loaded_software: string[];
    cooling_system: string;
    power_supply: string;
+   warrenty: string;
 }
 

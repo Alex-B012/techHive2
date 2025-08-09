@@ -46,6 +46,7 @@
 .productDisplay__featureName {
    font-weight: 600;
    padding-right: 15px;
+   white-space: initial;
 }
 
 .productDisplay__featureSpan {

@@ -9,7 +9,6 @@ interface ArticleContentTemplateProp {
 }
 
 function ArticleContentTemplate({ content }: ArticleContentTemplateProp) {
-   console.log("Img", content.heading_imgObj?.img)
    return (
       <div className='articleContentTemplate__container'>
          {content.heading && (

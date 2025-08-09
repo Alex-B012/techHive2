@@ -115,10 +115,9 @@ export const laptops_data = [
             kg: 222,
             lbs: 489
          },
-
+         warrenty: "1 year"
       },
       img: lenovo_p16v,
-      warrenty: "1 year"
    },
    {
       id: 2,
@@ -202,10 +201,9 @@ export const laptops_data = [
             kg: 0,
             lbs: 0,
          },
-
+         warrenty: "1 year",
       },
       img: lg_gram_business,
-      warrenty: "1 year"
    },
    {
       id: 3,
@@ -305,9 +303,9 @@ export const laptops_data = [
             kg: 900,
             lbs: 1984,
          },
+         warrenty: "1 year",
       },
       img: Panasonic_ToughBook_FZ_55,
-      warrenty: "1 year"
    }, {
       id: 4,
       category: "Laptops",
@@ -414,8 +412,8 @@ export const laptops_data = [
             kg: 0,
             lbs: 0,
          },
+         warrenty: "1 year"
       },
       img: dell_alienware_x14,
-      warrenty: "1 year"
    },
 ]

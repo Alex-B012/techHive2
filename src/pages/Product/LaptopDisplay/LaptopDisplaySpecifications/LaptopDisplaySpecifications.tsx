@@ -2,6 +2,7 @@ import { SpecificationsLaptop } from '../../../../types/products/laptops';
 import ProductDisplaySpecCPU from '../../components/ProductDisplaySpecCPU/ProductDisplaySpecCPU';
 import ProductDisplaySpecGraphics from '../../components/ProductDisplaySpecGraphics/ProductDisplaySpecGraphics';
 import ProductDisplaySpecStorageMemory from '../../components/ProductDisplaySpecStorageMemory/ProductDisplaySpecStorageMemory';
+import ProductDisplayWarranty from '../../components/ProductDisplayWarranty/ProductDisplayWarranty';
 import LaptopDisplaySpecDisplay from './LaptopDisplaySpecDisplay/LaptopDisplaySpecDisplay';
 import LaptopDisplaySpecFeatures from './LaptopDisplaySpecFeatures/LaptopDisplaySpecFeatures';
 import './laptopDisplaySpecifications.css'
@@ -30,6 +31,8 @@ function LaptopDisplaySpecifications({ spec }: LaptopDisplaySpecificationsProp) 
                   {spec.gpu.brand.length > 0 && <ProductDisplaySpecGraphics spec={spec} />
                   }
                   <LaptopDisplaySpecFeatures spec={spec} />
+
+                  {<ProductDisplayWarranty warranty={spec.warrenty} />}
 
                </div>)
          }

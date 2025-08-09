@@ -10,8 +10,8 @@ function ContactsBusinessHoursList({ data }: ContactsBusinessHoursListProps) {
    return (
       <ul className='contactsBusinessHoursList__container'>
          {data.map((item) => (
-            <li>
-               <ContactsBusinessHours data={item} key={item.id} />
+            <li key={item.id}>
+               <ContactsBusinessHours data={item} />
             </li>))}
       </ul>
    )

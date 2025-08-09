@@ -27,7 +27,7 @@ function LaptopDisplaySpecFeatures({ spec }: LaptopDisplaySpecFeaturesProp) {
             <div className='productDisplay__specText'>
                <span className="productDisplay__featureName">{`Pre-loaded Software: `}</span>
                {spec.loaded_software.map((item, index) => (
-                  <span className='productDisplay__featureSpan' key={index}>
+                  <span key={index}>
                      {String(item)}
                      {index < spec.display.display_features.length - 1 && ', '}
                   </span>

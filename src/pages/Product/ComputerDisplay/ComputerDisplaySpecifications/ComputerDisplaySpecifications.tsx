@@ -4,6 +4,7 @@ import ProductDisplaySpecStorageMemory from '../../components/ProductDisplaySpec
 import ProductDisplaySpecCPU from '../../components/ProductDisplaySpecCPU/ProductDisplaySpecCPU';
 import ComputerDisplaySpecFeatures from './ComputerDisplaySpecFeatures/ComputerDisplaySpecFeatures';
 import ProductDisplaySpecGraphics from '../../components/ProductDisplaySpecGraphics/ProductDisplaySpecGraphics';
+import ProductDisplayWarranty from '../../components/ProductDisplayWarranty/ProductDisplayWarranty';
 
 interface ComputerDisplaySpecificationsProp {
    spec: SpecificationsComputer;
@@ -26,6 +27,7 @@ function ComputerDisplaySpecifications({ spec }: ComputerDisplaySpecificationsPr
                   {spec.gpu.brand.length > 0 && <ProductDisplaySpecGraphics spec={spec} />
                   }
                   <ComputerDisplaySpecFeatures spec={spec} />
+                  {<ProductDisplayWarranty warranty={spec.warrenty} />}
                </div>)
          }
       </div>

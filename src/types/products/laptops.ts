@@ -11,7 +11,6 @@ export interface Laptop {
    about: AboutFeature[];
    specifications: SpecificationsLaptop;
    img: string;
-   warrenty: string;
 }
 
 export interface PriceLaptop {
@@ -101,6 +100,7 @@ export interface SpecificationsLaptop {
    keyboard: Keyboard;
    webcam: string;
    weight: Weight;
+   warrenty: string;
 }
 
 
