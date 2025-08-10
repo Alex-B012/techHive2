@@ -1,5 +1,7 @@
-.homeBtn {
+.btn {
    width: 140px;
+   width: 100%;
+   max-width: max-content;
    height: 40px;
    display: grid;
    align-items: center;
@@ -11,7 +13,7 @@
    transition: all 2s;
 }
 
-.homeBtn__link {
+.btn__link {
    display: grid;
    text-decoration: none;
    color: rgb(165, 193, 255);
@@ -19,13 +21,13 @@
    transition: all 2s;
 }
 
-.homeBtn:hover {
+.btn:hover {
    cursor: pointer;
    scale: 1.05;
    transition: all 0.5s;
 }
 
-.homeBtn:hover .homeBtn__link {
+.btn:hover .homeBtn__link {
    color: lightgray;
    transition: all 0.5s;
 }

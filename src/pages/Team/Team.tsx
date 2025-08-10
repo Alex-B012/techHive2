@@ -1,3 +1,4 @@
+import InProgressStatement from "../../components/InProgressStatement/InProgressStatement"
 import "./team.css"
 
 function Team() {
@@ -5,10 +6,7 @@ function Team() {
       <div className='teamPage'>
          <div className="teamPage__empty"></div>
          <div className="teamPage__container">
-            Our Team -
-
-
-            This is a team page
+            <InProgressStatement />
          </div>
       </div>
    )

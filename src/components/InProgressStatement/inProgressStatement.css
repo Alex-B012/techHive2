@@ -1,0 +1,15 @@
+.inProgressStatement__container {
+   padding: 70px 2%;
+}
+
+@media screen and (max-width: 1200px) {
+   .inProgressStatement__container {
+      font-size: 0.9rem;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .inProgressStatement__container {
+      font-size: 0.8rem;
+   }
+}

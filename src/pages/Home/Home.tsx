@@ -4,7 +4,7 @@ import { productCategories_data } from '../../data/pricing/pr_productCategories'
 import { pages_links } from "../../data/data"
 import { filterPageLinksByNames } from "../../utils/arrayUtils"
 
-import HomeBtn from './HomeBtn/HomeBtn'
+import Btn from '../../components/Buttons/Btn/Btn'
 import HomeHelp from './HomeHelp/HomeHelp'
 
 function Home() {
@@ -15,7 +15,7 @@ function Home() {
          <div className="homePage__empty"></div>
          <div className="homePage__container">
             <HomeSlider data={productCategories_data} />
-            <HomeBtn content="See More" link={link_obj[0].link} />
+            <Btn content="See More" link={link_obj[0].link} />
             <HomeHelp />
          </div>
       </div>
