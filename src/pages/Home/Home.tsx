@@ -6,10 +6,14 @@ import { filterPageLinksByNames } from "../../utils/arrayUtils"
 
 import Btn from '../../components/Buttons/Btn/Btn'
 import HomeHelp from './HomeHelp/HomeHelp'
+import { useEffect } from "react"
+import { scrollToTop } from "../../utils/miscUtils"
 
 function Home() {
    const link_obj = filterPageLinksByNames(pages_links, ["Pricing"]);
-
+   useEffect(() => {
+      scrollToTop();
+   }, []);
    return (
       <div className='homePage'>
          <div className="homePage__empty"></div>

@@ -8,6 +8,7 @@ import NewsNavigation from './components/NewsNavigation/NewsNavigation';
 import NewsArticleAuthor from './components/NewsArticleAuthor/NewsArticleAuthor';
 import NewsArticleImgVideo from './components/NewsArticleImgVideo/NewsArticleImgVideo';
 import NewsArticleTextArea from './components/NewsArticleTextArea/NewsArticleTextArea';
+import { scrollToTop } from '../../utils/miscUtils';
 
 function NewsPage() {
    const { newsCategory, newsId } = useParams<{
@@ -48,6 +49,11 @@ function NewsPage() {
          fetchNews();
       }
    }, [newsId, newsCategory, fetchNews]);
+
+
+   useEffect(() => {
+      scrollToTop();
+   }, []);
 
    return (
       <div className="newsPage">

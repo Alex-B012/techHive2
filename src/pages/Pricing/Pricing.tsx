@@ -2,8 +2,13 @@ import PromoHotOffers from "../../components/PromoHotOffers/PromoHotOffers"
 import "./pricing.css"
 import { productCategories_data } from "../../data/pricing/pr_productCategories"
 import PromoCatOffers from "../../components/PromoCatOffers/PromoCatOffers"
+import { useEffect } from "react";
+import { scrollToTop } from "../../utils/miscUtils";
 
 function Pricing() {
+   useEffect(() => {
+      scrollToTop();
+   }, []);
    return (
       <div className='pricingPage'>
          <div className="pricingPage__empty"></div>

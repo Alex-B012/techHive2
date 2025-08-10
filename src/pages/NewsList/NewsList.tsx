@@ -2,8 +2,14 @@ import WelcomeParagraph from "../../components/WelcomeParagraph/WelcomeParagraph
 import "./newsList.css";
 import { newsPage_intro } from "../../data/news";
 import NewsListArea from "./NewsListArea/NewsListArea";
+import { useEffect } from "react";
+import { scrollToTop } from "../../utils/miscUtils";
 
 function NewsList() {
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
   return (
     <div className="newsListPage">
       <div className="newsListPage__empty"></div>

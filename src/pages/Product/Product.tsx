@@ -7,6 +7,7 @@ import { Computer } from '../../types/products/computers';
 import LaptopDisplay from './LaptopDisplay/LaptopDisplay';
 import ComputerDisplay from './ComputerDisplay/ComputerDisplay';
 import ProductNavigation from './components/ProductNavigation/ProductNavigation';
+import { scrollToTop } from '../../utils/miscUtils';
 
 function Product() {
    const [laptopsDataArr, setLaptopsDataArr] = useState<Laptop[]>([]);
@@ -63,6 +64,10 @@ function Product() {
 
       fetchData();
    }, [loadProductData, getProductObj, categoryUrl]);
+
+   useEffect(() => {
+      scrollToTop();
+   }, []);
 
    return (
       <div className="productPage">

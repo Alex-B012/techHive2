@@ -4,9 +4,14 @@ import PageTitle from "../../components/PageTitle/PageTitle"
 import Logo from "../../components/Logo/Logo"
 import Map from "../../components/Map/Map"
 import ContactsSection from "./ContactsSection/ContactsSection"
+import { useEffect } from "react"
+import { scrollToTop } from "../../utils/miscUtils"
 
 
 function Contacts() {
+   useEffect(() => {
+      scrollToTop();
+   }, []);
    return (
       <div className='contactsPage'>
          <div className="contactsPage__empty"></div>

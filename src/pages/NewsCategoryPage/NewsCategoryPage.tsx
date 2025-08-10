@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import { getNewsCategoryDataFromArray, getNewsCategoryName } from '../../utils/newsUtils';
 import { NewsItem } from '../../types/newsPanel';
 import NewsCategoryBtns from '../NewsList/components/NewsCategoryBtns/NewsCategoryBtns';
+import { scrollToTop } from '../../utils/miscUtils';
 
 function NewsCategoryPage() {
    const { newsCategory } = useParams<{
@@ -58,6 +59,10 @@ function NewsCategoryPage() {
 
       }
    }, [newsCategory, fetchNews]);
+
+   useEffect(() => {
+      scrollToTop();
+   }, []);
 
    return (
       <div className="newsCategoryPage">
