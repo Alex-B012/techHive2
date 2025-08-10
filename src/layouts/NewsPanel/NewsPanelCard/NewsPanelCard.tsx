@@ -14,7 +14,7 @@ function NewsPanelCard({ item, order }: NewsPanelCardProps) {
          <p className="newsPanelCard__cardText">
             <span>{item.promoTitle}</span>
             <Link
-               to={`/news/${item.id}`}
+               to={`/news/${item.category}/${item.id}`}
                className={`newsPanelCard__cardLink ${order === 0 ? news__animation : order === 2 ? news__animation2 : ""}`}
             >
                {"Learn More >>>"}

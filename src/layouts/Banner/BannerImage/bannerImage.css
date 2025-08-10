@@ -20,7 +20,7 @@
    grid-template-rows: repeat(2, 60px);
    align-items: center;
    align-content: center;
-   row-gap: 30px;
+   row-gap: 50px;
    background-color: rgba(0, 0, 0, 0.3);
    width: 100%;
    height: 100%;
@@ -50,11 +50,6 @@
    text-align: right;
    white-space: nowrap;
 }
-
-/* .banner__subtitleSpan:last-child {
-   text-align: left;
-   padding-left: 0.5vw;
-} */
 
 .bannerImage__container .carousel-control-prev {
    display: none !important;
@@ -113,7 +108,7 @@
 
 @media screen and (max-width: 550px) {
    .banner__cover {
-      row-gap: 20px;
+      row-gap: 40px;
    }
 
    .banner__subtitle {
@@ -155,7 +150,7 @@
    }
 
    .banner__cover {
-      row-gap: 20px;
+      row-gap: 30px;
    }
 
    .banner__title {
