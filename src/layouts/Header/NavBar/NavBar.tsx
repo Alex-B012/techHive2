@@ -9,17 +9,18 @@ interface LinkItem {
 
 interface NavBarProps {
    links: LinkItem[];
+   closeMobileMenuOnclick?: () => void;
 }
 
 
 
-function NavBar({ links }: NavBarProps) {
+function NavBar({ links, closeMobileMenuOnclick }: NavBarProps) {
    return (
       <nav className={`header__navbar`}>
          {
             links.map((item) => {
                return (
-                  <Link key={item.id} to={item.url} className="header__link">
+                  <Link key={item.id} to={item.url} className="header__link" onClick={closeMobileMenuOnclick}>
                      {item.name}
                   </Link>
                );

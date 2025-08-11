@@ -19,6 +19,10 @@ function Header() {
       if (window.innerWidth > 700) setIsMenuOpen(false);
    };
 
+   const closeMobileMenuOnclick = () => {
+      setIsMenuOpen(false);
+   };
+
    useEffect(() => {
       closeMobileMenu();
       const handleResize = () => {
@@ -42,7 +46,7 @@ function Header() {
          </div>
          <div className={`header__row2 ${isMenuOpen ? openMenu : ""}`}>
             <div className='header__mobileMenu'>
-               <NavBar links={headerLinks} />
+               <NavBar links={headerLinks} closeMobileMenuOnclick={closeMobileMenuOnclick} />
                <OuterLinks links={headerOuterLinks} />
             </div>
          </div>
